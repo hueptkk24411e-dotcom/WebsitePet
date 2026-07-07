@@ -179,7 +179,7 @@
         </div>
         <div class="mini-stat-text">
           <div class="mini-stat-label">TỔNG DỊCH VỤ</div>
-          <div class="mini-stat-value">12</div>
+          <div class="mini-stat-value" id="servicesCount">0</div>
         </div>
       </div>
       <div class="mini-stat-card">
@@ -188,7 +188,7 @@
         </div>
         <div class="mini-stat-text">
           <div class="mini-stat-label">ĐƠN THÁNG NÀY</div>
-          <div class="mini-stat-value">320</div>
+          <div class="mini-stat-value" id="servicesBookings">0</div>
         </div>
       </div>
       <div class="mini-stat-card">
@@ -197,7 +197,7 @@
         </div>
         <div class="mini-stat-text">
           <div class="mini-stat-label">DOANH THU</div>
-          <div class="mini-stat-value">21,250,000 đ</div>
+          <div class="mini-stat-value" id="servicesRevenue">0đ</div>
         </div>
       </div>
       <div class="mini-stat-card">
@@ -206,7 +206,7 @@
         </div>
         <div class="mini-stat-text">
           <div class="mini-stat-label">GROOMER</div>
-          <div class="mini-stat-value">8</div>
+          <div class="mini-stat-value" id="servicesGroomers">0</div>
         </div>
       </div>
     </section>
@@ -224,27 +224,7 @@
               <th>Thao tác</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td><strong>Tắm cơ bản</strong><div class="cell-product-sub">Bao gồm tắm xả, vệ sinh tai</div></td>
-              <td>30 phút</td>
-              <td><strong>150,000 đ</strong></td>
-              <td><span class="badge completed">Kích hoạt</span></td>
-              <td class="row-actions">
-                <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button>
-                <button class="icon-btn danger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6m5 0V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2"/></svg></button>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Cắt tỉa lông</strong><div class="cell-product-sub">Cắt tỉa theo kiểu dáng chuẩn</div></td>
-              <td>60 phút</td>
-              <td><strong>250,000 đ</strong></td>
-              <td><span class="badge completed">Kích hoạt</span></td>
-              <td class="row-actions">
-                <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button>
-                <button class="icon-btn danger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6m5 0V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2"/></svg></button>
-              </td>
-            </tr>
+          <tbody id="servicesTableBody">
           </tbody>
         </table>
       </div>
@@ -254,6 +234,6 @@
 </div>
 
 <script src="../assets/js/admin-common.js"></script>
-<script src="../assets/js/categories-page.js"></script>
+<script src="../assets/js/grooming-admin.js"></script>
 </body>
 </html>

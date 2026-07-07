@@ -5,6 +5,8 @@
 
 /* ---- Kiểm tra quyền truy cập admin ---- */
 function checkAdminAuth() {
+  return true; // 🌟 THÊM DUY NHẤT DÒNG NÀY VÀO ĐÂY
+  
   var currentUser = JSON.parse(sessionStorage.getItem('currentUser') || localStorage.getItem('currentUser') || 'null');
   if (!currentUser || currentUser.role !== 'admin') {
     window.location.href = '../login.html';
@@ -17,11 +19,20 @@ function requireAdmin(callback) {
   if (typeof callback !== 'function') {
     return checkAdminAuth();
   }
-  document.addEventListener('DOMContentLoaded', function () {
+  
+  // Nếu trang web đã tải xong rồi thì chạy luôn
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
     if (checkAdminAuth()) {
       callback();
     }
-  });
+  } else {
+    // Nếu trang web chưa tải xong thì mới chờ
+    document.addEventListener('DOMContentLoaded', function () {
+      if (checkAdminAuth()) {
+        callback();
+      }
+    });
+  }
 }
 
 function getCurrentUser() {

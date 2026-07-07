@@ -1,0 +1,56 @@
+[
+  {
+    "id": "groomer_1",
+    "name": "Nguyễn Thị Mai",
+    "phone": "0901234567",
+    "rating": 4.9,
+    "reviews": 128,
+    "status": "active",
+    "avatar": "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    "id": "groomer_2",
+    "name": "Trần Văn Hùng",
+    "phone": "0912345678",
+    "rating": 4.7,
+    "reviews": 96,
+    "status": "active",
+    "avatar": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": "groomer_3",
+    "name": "Lê Thị Hương",
+    "phone": "0923456789",
+    "rating": 4.8,
+    "reviews": 142,
+    "status": "active",
+    "avatar": "https://i.pravatar.cc/150?img=32"
+  },
+  {
+    "id": "groomer_4",
+    "name": "Phạm Minh Tuấn",
+    "phone": "0934567890",
+    "rating": 4.6,
+    "reviews": 74,
+    "status": "offline",
+    "avatar": "https://i.pravatar.cc/150?img=15"
+  },
+  {
+    "id": "groomer_5",
+    "name": "Hoàng Thị Linh",
+    "phone": "0945678901",
+    "rating": 5.0,
+    "reviews": 211,
+    "status": "active",
+    "avatar": "https://i.pravatar.cc/150?img=49"
+  },
+  {
+    "id": "groomer_6",
+    "name": "Võ Đức Anh",
+    "phone": "0956789012",
+    "rating": 4.5,
+    "reviews": 58,
+    "status": "offline",
+    "avatar": "https://i.pravatar.cc/150?img=51"
+  }
+]

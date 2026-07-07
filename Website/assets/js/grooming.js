@@ -427,10 +427,45 @@ function confirmBooking() {
   };
   groomingState.bookings.push(booking);
   try { localStorage.setItem('groomingBookings', JSON.stringify(groomingState.bookings)); } catch(e) {}
-  try { // also save to petProfileBookings for grooming-profile.js
-    var pb = JSON.parse(localStorage.getItem('petProfileBookings') || '[]');
-    pb.push(booking);
-    localStorage.setItem('petProfileBookings', JSON.stringify(pb));
+  try {
+    var PET_STORAGE_KEY = 'petopia_pets';
+    var raw = localStorage.getItem(PET_STORAGE_KEY);
+    var pets = raw ? JSON.parse(raw) : [];
+    var petName = (booking.pet && booking.pet.name) ? booking.pet.name.trim() : '';
+    var petSpecies = (booking.pet && booking.pet.species) ? booking.pet.species : '';
+    var petBreed = (booking.pet && booking.pet.breed) ? booking.pet.breed.trim() : '';
+    var matched = pets.find(function(p) {
+      return p.name && p.name.trim().toLowerCase() === petName.toLowerCase()
+        && ((p.type || '').toLowerCase() === (petSpecies || '').toLowerCase())
+        && ((p.breed || '').toLowerCase() === (petBreed || '').toLowerCase());
+    });
+    if (!matched) {
+      matched = {
+        id: 'pet_' + Date.now() + '_' + Math.random().toString(36).slice(2,8),
+        name: petName || 'Không tên',
+        type: (petSpecies || '').toLowerCase() === 'cat' ? 'cat' : 'dog',
+        breed: petBreed || '',
+        weight: booking.pet && booking.pet.weight ? Number(booking.pet.weight) : 0,
+        createdAt: new Date().toISOString(),
+        notes: '',
+        bookings: []
+      };
+      pets.push(matched);
+    }
+    matched.bookings = matched.bookings || [];
+    matched.bookings.push({
+      id: booking.bookingId || ('srv_' + Date.now()),
+      type: 'grooming',
+      serviceId: booking.serviceId,
+      serviceName: booking.serviceName,
+      date: booking.appointmentDate,
+      time: booking.appointmentTime,
+      price: booking.estimatedPrice,
+      status: booking.status || 'Booked',
+      createdAt: booking.createdAt || new Date().toISOString()
+    });
+    localStorage.setItem(PET_STORAGE_KEY, JSON.stringify(pets));
+    try { window.dispatchEvent(new Event('petProfilesUpdated')); localStorage.setItem('pet_profiles_last_update', Date.now().toString()); } catch(e){}
   } catch(e) {}
   showSuccess(booking);
 }

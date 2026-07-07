@@ -1,0 +1,110 @@
+[
+  {
+    "id": "schedule_1",
+    "petName": "Bông",
+    "customerName": "Chị Lan Anh",
+    "date": "2026-07-07T09:00",
+    "serviceId": "service_2",
+    "groomerId": "groomer_1",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_2",
+    "petName": "Milo",
+    "customerName": "Anh Tuấn",
+    "date": "2026-07-07T10:30",
+    "serviceId": "service_5",
+    "groomerId": "groomer_3",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_3",
+    "petName": "Coco",
+    "customerName": "Chị Ngọc",
+    "date": "2026-07-07T14:00",
+    "serviceId": "service_3",
+    "groomerId": "groomer_5",
+    "status": "pending"
+  },
+  {
+    "id": "schedule_4",
+    "petName": "Lucky",
+    "customerName": "Anh Hải",
+    "date": "2026-07-08T08:30",
+    "serviceId": "service_1",
+    "groomerId": "groomer_2",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_5",
+    "petName": "Mèo Con",
+    "customerName": "Chị Hoa",
+    "date": "2026-07-08T11:00",
+    "serviceId": "service_6",
+    "groomerId": "groomer_3",
+    "status": "pending"
+  },
+  {
+    "id": "schedule_6",
+    "petName": "Bưởi",
+    "customerName": "Anh Nam",
+    "date": "2026-07-09T09:30",
+    "serviceId": "service_9",
+    "groomerId": "groomer_1",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_7",
+    "petName": "Tobi",
+    "customerName": "Chị Mai",
+    "date": "2026-07-09T15:30",
+    "serviceId": "service_4",
+    "groomerId": "groomer_5",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_8",
+    "petName": "Gấu",
+    "customerName": "Anh Dũng",
+    "date": "2026-07-10T10:00",
+    "serviceId": "service_12",
+    "groomerId": "groomer_2",
+    "status": "pending"
+  },
+  {
+    "id": "schedule_9",
+    "petName": "Miu",
+    "customerName": "Chị Linh",
+    "date": "2026-07-05T13:00",
+    "serviceId": "service_5",
+    "groomerId": "groomer_3",
+    "status": "cancelled"
+  },
+  {
+    "id": "schedule_10",
+    "petName": "Bánh Bao",
+    "customerName": "Anh Kiên",
+    "date": "2026-07-11T09:00",
+    "serviceId": "service_8",
+    "groomerId": "groomer_1",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_11",
+    "petName": "Kiki",
+    "customerName": "Chị Trang",
+    "date": "2026-07-11T16:00",
+    "serviceId": "service_3",
+    "groomerId": "groomer_5",
+    "status": "confirmed"
+  },
+  {
+    "id": "schedule_12",
+    "petName": "Bốp",
+    "customerName": "Anh Sơn",
+    "date": "2026-07-12T08:00",
+    "serviceId": "service_14",
+    "groomerId": "groomer_2",
+    "status": "pending"
+  }
+]

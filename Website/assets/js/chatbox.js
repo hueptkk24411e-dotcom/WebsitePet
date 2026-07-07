@@ -6,7 +6,7 @@ var PETOPIA_KB = [];
 var FALLBACK_REPLY = 'Dạ, Petopia đã nhận được tin nhắn của bạn! 📩\nVấn đề này cần tư vấn trực tiếp để hỗ trợ tốt nhất.\nĐội ngũ nhân viên sẽ liên hệ lại ngay qua:\n📞 0909 123 456 (Zalo/Gọi)\n🌐 petopia.vn ❤️';
 
 // ↓↓↓ THAY KEY CỦA BẠN VÀO ĐÂY ↓↓↓
-
+var GEMINI_API_KEY = ''; 
 // Sử dụng model gemini-1.5-flash tốc độ cao
 var GEMINI_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY;
 

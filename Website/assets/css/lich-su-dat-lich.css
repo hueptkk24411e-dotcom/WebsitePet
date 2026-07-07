@@ -1,0 +1,286 @@
+/* =========================================================
+   LỊCH SỬ ĐẶT LỊCH — CLEAN & BIG UI
+   ========================================================= */
+
+.lich-su-page,
+#modalBookingHistoryList {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* ---------- Layout tổng ---------- */
+.lich-su-page {
+  background: #fffaf6;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.lich-su-page .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 24px !important;
+}
+
+/* ---------- Tiêu đề ---------- */
+.lich-su-page .container > h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #1a1a1a !important;
+  letter-spacing: -0.5px;
+}
+
+.lich-su-page .container > h2 i {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffefe3, #ffd4ad);
+  color: #ff6600 !important;
+  font-size: 24px !important;
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.18);
+}
+
+.lich-su-page .container > p {
+  margin-bottom: 26px !important;
+  font-size: 17px !important;
+  color: #666 !important;
+  line-height: 1.6;
+}
+
+/* ---------- Filter tabs ---------- */
+#bookingFilterTabs,
+#modalBookingFilterTabs {
+  display: flex !important;
+  align-items: center;
+  gap: 8px !important;
+  width: fit-content;
+  margin-bottom: 28px !important;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #f0e5dc;
+  border-radius: 999px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.booking-filter-btn {
+  min-width: 96px;
+  padding: 11px 18px !important;
+  border: none !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #666 !important;
+  font-family: 'Be Vietnam Pro', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.booking-filter-btn:hover {
+  background: #fff0e3 !important;
+  color: #ff6600 !important;
+  transform: translateY(-1px);
+}
+
+.booking-filter-btn.active,
+.booking-filter-btn.active:hover {
+  background: linear-gradient(135deg, #ff8a3d, #ff6600) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 18px rgba(255, 102, 0, 0.32) !important;
+}
+
+/* ---------- Danh sách đơn ---------- */
+.booking-history-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Trạng thái tải / rỗng */
+.booking-history-list > div[style*="Đang tải"],
+.booking-history-list > div[style*="Chưa có đơn"],
+#modalBookingHistoryList > div[style*="Đang tải"],
+#modalBookingHistoryList > div[style*="Chưa có đơn"] {
+  grid-column: 1 / -1;
+  padding: 52px 24px !important;
+  background: #fff;
+  border: 2px dashed #ffd0a8;
+  border-radius: 22px;
+  color: #999 !important;
+  font-size: 17px !important;
+  font-weight: 600;
+}
+
+/* ---------- Card đơn ---------- */
+.booking-history-list .pet-card,
+#modalBookingHistoryList .pet-card {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff !important;
+  border: 1px solid #f1e6dd !important;
+  border-radius: 24px !important;
+  padding: 26px 28px 24px !important;
+  margin-bottom: 0 !important;
+  box-shadow: 0 10px 28px rgba(30, 20, 10, 0.08) !important;
+  transition: all 0.25s ease;
+}
+
+.booking-history-list .pet-card::before,
+#modalBookingHistoryList .pet-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7px;
+  background: linear-gradient(180deg, #ff6600, #ffb36b);
+}
+
+.booking-history-list .pet-card:hover,
+#modalBookingHistoryList .pet-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffc28f !important;
+  box-shadow: 0 18px 38px rgba(255, 102, 0, 0.18) !important;
+}
+
+/* Header card */
+.booking-history-list .pet-card > div:first-child,
+#modalBookingHistoryList .pet-card > div:first-child {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 16px;
+  padding-bottom: 16px !important;
+  margin-bottom: 16px !important;
+  border-bottom: 1px dashed #eadfd6;
+}
+
+.booking-history-list .pet-card strong,
+#modalBookingHistoryList .pet-card strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff6600 !important;
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  line-height: 1.4;
+}
+
+.booking-history-list .pet-card strong i,
+#modalBookingHistoryList .pet-card strong i {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff1e6;
+  color: #ff6600;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+/* Badge trạng thái */
+.booking-history-list .pet-card span[style*="border-radius:20px"],
+#modalBookingHistoryList .pet-card span[style*="border-radius:20px"] {
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+}
+
+/* Nội dung chi tiết */
+.booking-history-list .pet-card p,
+#modalBookingHistoryList .pet-card p {
+  margin: 0 !important;
+  color: #555 !important;
+  font-size: 16px !important;
+  line-height: 2.05 !important;
+}
+
+.booking-history-list .pet-card p b,
+#modalBookingHistoryList .pet-card p b {
+  min-width: 86px;
+  display: inline-block;
+  color: #222 !important;
+  font-weight: 800 !important;
+}
+
+/* Dòng giá */
+.booking-history-list .pet-card p:last-child,
+#modalBookingHistoryList .pet-card p:last-child {
+  margin-top: 14px !important;
+  padding-top: 16px !important;
+  border-top: 1px dashed #eadfd6;
+  color: #1a1a1a !important;
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+.booking-history-list .pet-card p:last-child b,
+#modalBookingHistoryList .pet-card p:last-child b {
+  color: #ff6600 !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .lich-su-page .container {
+    padding: 28px 16px !important;
+  }
+
+  .lich-su-page .container > h2 {
+    font-size: 26px !important;
+  }
+
+  .lich-su-page .container > h2 i {
+    width: 46px;
+    height: 46px;
+    font-size: 20px !important;
+  }
+
+  .lich-su-page .container > p {
+    font-size: 15.5px !important;
+  }
+
+  #bookingFilterTabs,
+  #modalBookingFilterTabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .booking-filter-btn {
+    flex: 1;
+    min-width: unset;
+    padding: 10px 8px !important;
+    font-size: 13.5px !important;
+  }
+
+  .booking-history-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .booking-history-list .pet-card,
+  #modalBookingHistoryList .pet-card {
+    padding: 22px 20px 20px !important;
+    border-radius: 20px !important;
+  }
+
+  .booking-history-list .pet-card strong,
+  #modalBookingHistoryList .pet-card strong {
+    font-size: 17px !important;
+  }
+
+  .booking-history-list .pet-card p,
+  #modalBookingHistoryList .pet-card p {
+    font-size: 15px !important;
+  }
+}
