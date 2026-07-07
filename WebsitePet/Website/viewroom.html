@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="assets/css/about.css">
 <link rel="stylesheet" href="assets/css/member.css">
 <link rel="stylesheet" href="assets/css/recruit.css">
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 <link rel="stylesheet" href="assets/css/blog.css">
 <link rel="stylesheet" href="assets/css/contact.css"/>
 <link rel="stylesheet" href="assets/css/shop.css"/>
@@ -39,6 +40,7 @@
     }
 </script>
 <script src="assets/js/chinhsach.js"></script>
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 </head>
 <header>
 
@@ -131,35 +133,30 @@
         </ul>
 
     </nav>
-</header><body data-page="policy">
-<section id="policy-page">
+</header><body data-page="viewroom">
+<section id="viewroom-page">
+  <div class="viewroom-container">
+    <!-- BÊN TRÁI: Menu phân loại Chó / Mèo và Danh sách loại phòng -->
+    <aside class="viewroom-sidebar">
+        <div class="pet-toggle">
+            <button class="pet-btn active" onclick="switchPetTab('dog')">🐶 Phòng Cho Chó</button>
+            <button class="pet-btn" onclick="switchPetTab('cat')">🐱 Phòng Cho Mèo</button>
+        </div>
+        
+        <!-- Danh sách các phòng cụ thể sẽ tự động render vào đây -->
+        <div id="room-list-sidebar" class="room-list-sidebar">
+            <!-- JavaScript sẽ render danh sách phòng ở đây -->
+        </div>
+    </aside>
 
-<div class="policy-layout">
-
-    <div class="policy-menu">
-
-        <button onclick="showPolicy('return')">Chính sách đổi trả</button>
-
-        <button onclick="showPolicy('warranty')">Chính sách bảo hành</button>
-
-        <button onclick="showPolicy('buy')">Hướng dẫn mua hàng</button>
-
-        <button onclick="showPolicy('payment')">Hướng dẫn thanh toán</button>
-
-        <button onclick="showPolicy('shipping')">Chính sách vận chuyển</button>
-
-        <button onclick="showPolicy('faq')">Câu hỏi thường gặp</button>
-
-    </div>
-
-    <div class="policy-content">
-
-        <h1 id="policy-title"></h1>
-
-        <div id="policy-detail"></div>
-
-    </div>
-
+    <!-- BÊN PHẢI: Nội dung chi tiết của phòng được chọn -->
+    <main class="viewroom-content">
+        <div id="room-detail-display">
+            <div class="empty-state">Vui lòng chọn một phòng bên trái để xem chi tiết 🐾</div>
+        </div>
+    </main>
+</div>
+    </main>
 </div>
 </section>
 <footer>
@@ -490,6 +487,7 @@ document.querySelectorAll(".grooming-faq-question")
 </body>
 <script src="assets/js/chatbox.js"></script>
 <script src="assets/js/pet-profile.js"></script>
+<script src="assets/js/lich-su-dat-lich.js"></script>
 </html>
 
 <script src="router.js"></script>

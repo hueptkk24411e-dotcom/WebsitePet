@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/chinhsach.css">
 <link rel="stylesheet" href="assets/css/hotel.css">
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 <link rel="stylesheet" href="assets/css/about.css">
 <link rel="stylesheet" href="assets/css/member.css">
 <link rel="stylesheet" href="assets/css/recruit.css">
@@ -39,6 +40,7 @@
     }
 </script>
 <script src="assets/js/chinhsach.js"></script>
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 </head>
 <header>
 
@@ -131,147 +133,17 @@
         </ul>
 
     </nav>
-</header><body data-page="grooming-booking">
-<section id="grooming-booking-page">
-    <div class="container">
-    <button class="btn btn-white" style="margin: 20px 0;" onclick="showPage('grooming')">← Quay lại danh sách dịch vụ</button>
-    <section class="booking-complete-section">
-      <aside class="booking-services-sidebar">
-        <h3>Chọn dịch vụ</h3>
-        <div id="booking-services-list"></div>
-      </aside>
-      <div class="booking-main">
-        <section class="booking-section" id="booking-section">
-            <h2>📅 Đặt lịch chăm sóc thú cưng</h2>
-          <div class="booking-inner">
-              <form class="booking-form" id="bookingFormElement">
-                  <div class="form-grid">
-                      <div class="form-group">
-                          <label for="petName">Tên thú cưng</label>
-                          <input id="petName" name="petName" type="text" placeholder="Ví dụ: Miu Miu" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="species">Loài</label>
-                          <select id="species" name="species" required>
-                              <option value="">Chọn loại</option>
-                              <option value="Dog">Chó</option>
-                              <option value="Cat">Mèo</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="service">Dịch vụ</label>
-                          <select id="service" name="service" required>
-                              <option value="">Chọn dịch vụ</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="breed">Giống</label>
-                          <select id="breed" name="breed" required>
-                              <option value="">Chọn giống</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="weight">Cân nặng (kg)</label>
-                          <input id="weight" name="weight" type="number" min="0.1" step="0.1" placeholder="Ví dụ: 4.5" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="furType">Loại lông</label>
-                          <select id="furType" name="furType" required>
-                              <option value="">Chọn lông</option>
-                              <option value="Short">Ngắn</option>
-                              <option value="Medium">Trung bình</option>
-                              <option value="Long">Dài</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="hairStyle">Kiểu tóc</label>
-                          <select id="hairStyle" name="hairStyle">
-                              <option value="">Không chọn</option>
-                              <option value="Teddy">Teddy +50k</option>
-                              <option value="Lion">Lion +60k</option>
-                              <option value="Korean">Korean +70k</option>
-                              <option value="Summer">Summer +40k</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="appointmentDate">Ngày</label>
-                          <input id="appointmentDate" name="appointmentDate" type="date" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="appointmentTime">Giờ hẹn</label>
-                          <select id="appointmentTime" name="appointmentTime" required>
-                              <option value="">Chọn giờ</option>
-                              <option value="09:00">09:00</option>
-                              <option value="10:00">10:00</option>
-                              <option value="11:00">11:00</option>
-                              <option value="13:00">13:00</option>
-                              <option value="14:00">14:00</option>
-                              <option value="15:00">15:00</option>
-                              <option value="16:00">16:00</option>
-                              <option value="17:00">17:00</option>
-                          </select>
-                          <div class="time-warning" id="timeWarning" aria-live="polite"></div>
-                      </div>
-                  </div>
-                  <div class="form-divider"></div>
-                <div class="form-group full-width">
-                    <label for="customerName">Customer Name</label>
-                    <input id="customerName" name="customerName" type="text" placeholder="Tên khách hàng" required>
-                </div>
-                <div class="form-group full-width">
-                    <label for="customerPhone">Phone Number</label>
-                    <input id="customerPhone" name="customerPhone" type="tel" placeholder="0123 456 789" required>
-                </div>
-                <div class="form-group full-width">
-                    <label for="notes">Notes</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Ghi chú thêm (tùy chọn)"></textarea>
-                </div>
-                <button type="submit" class="btn-submit-booking">Xác nhận đặt lịch</button>
-            </form>
-            <div class="booking-summary" aria-live="polite">
-                <div class="booking-summary__header">Bảng dự đoán</div>
-                <div class="booking-summary__content">
-                    <div class="summary-item"><span>Dịch vụ</span><span id="summaryService">-</span></div>
-                    <div class="summary-item"><span>Cân nặng</span><span id="summaryWeight">-</span></div>
-                    <div class="summary-item"><span>Loại lông</span><span id="summaryFurType">-</span></div>
-                    <div class="summary-item"><span>Kiểu tóc</span><span id="summaryHairStyle">-</span></div>
-                    <div class="summary-item"><span>Giá cơ bản</span><span id="summaryBasePrice">-</span></div>
-                    <div class="summary-item"><span>Chi phí bổ sung</span><span id="summaryAddCost">-</span></div>
-                    <div class="summary-divider"></div>
-                    <div class="summary-item total"><span>Dự đoán tổng phí</span><span id="summaryTotal">0 VND</span></div>
-                </div>
-            </div>
+</header><body data-page="room-detail">
+<section id="room-detail-page">
+    <div class="room-detail-container">
+        <button onclick="showPage('hotel')">← Quay lại</button>
+        <h1 id="room-category"></h1>
+        <div class="room-price">
+            <span id="room-price"></span>
         </div>
-      </section>
-      <section class="rules-section">
-          <h2>Bảng Giá Theo Loại Lông & Cân Nặng</h2>
-          <div class="rules-grid" id="rulesGrid"></div>
-      </section>
-      </div>
-    </section>
-    <div class="confirmation-modal" id="confirmationModal">
-        <div class="confirmation-modal__overlay"></div>
-        <div class="confirmation-modal__content">
-            <h3>Xác nhận đặt lịch</h3>
-            <p id="confirmText">Kiểm tra lại thông tin đặt lịch trước khi xác nhận.</p>
-            <div class="modal-actions">
-                <button class="btn btn-white" id="btnCancel">Hủy</button>
-                <button class="btn btn-orange" id="btnConfirmSubmit">Xác nhận</button>
-            </div>
-        </div>
+        <div id="room-grid"></div>
     </div>
-    <div class="success-modal" id="successModal">
-        <div class="success-modal__overlay"></div>
-        <div class="success-modal__content">
-            <div class="success-modal__icon">✓</div>
-            <h3>Đặt lịch thành công</h3>
-            <p id="successMessage"></p>
-            <button class="btn btn-orange" id="btnCloseSuccess">Đóng</button>
-        </div>
-    </div>
-</div>
-
- </section>
+</section>
 <footer>
 
         <div class="footer-top-bg">
@@ -600,6 +472,7 @@ document.querySelectorAll(".grooming-faq-question")
 </body>
 <script src="assets/js/chatbox.js"></script>
 <script src="assets/js/pet-profile.js"></script>
+<script src="assets/js/lich-su-dat-lich.js"></script>
 </html>
 
 <script src="router.js"></script>

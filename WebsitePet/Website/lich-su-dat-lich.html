@@ -306,6 +306,51 @@ document.querySelectorAll(".grooming-faq-question")
   </div>
 </div>
 
+<!-- ===== MODAL: XEM CHI TIẾT ĐƠN ===== -->
+<div id="bookingDetailModal" class="bh-modal-overlay" style="display:none;">
+  <div class="bh-modal-box">
+    <div class="bh-modal-header">
+      <h3><i class="fa-solid fa-file-lines"></i> Chi tiết đơn</h3>
+      <button type="button" class="bh-modal-close" onclick="closeBookingDetailModal()">&times;</button>
+    </div>
+    <div class="bh-modal-body" id="bookingDetailBody"></div>
+  </div>
+</div>
+
+<!-- ===== MODAL: ĐÁNH GIÁ DỊCH VỤ ===== -->
+<div id="reviewModal" class="bh-modal-overlay" style="display:none;">
+  <div class="bh-modal-box">
+    <div class="bh-modal-header">
+      <h3><i class="fa-solid fa-star"></i> Đánh giá dịch vụ</h3>
+      <button type="button" class="bh-modal-close" onclick="closeReviewModal()">&times;</button>
+    </div>
+    <div class="bh-modal-body">
+      <p style="margin:0 0 14px;color:#555;">Bạn đang đánh giá: <strong id="reviewModalTargetName" style="color:#ff6600;">-</strong></p>
+
+      <label class="bh-form-label">Số sao</label>
+      <div id="reviewStarInput" class="bh-star-input">
+        <i class="fa-solid fa-star" onclick="bhSetReviewStars(1)"></i>
+        <i class="fa-solid fa-star" onclick="bhSetReviewStars(2)"></i>
+        <i class="fa-solid fa-star" onclick="bhSetReviewStars(3)"></i>
+        <i class="fa-solid fa-star" onclick="bhSetReviewStars(4)"></i>
+        <i class="fa-solid fa-star" onclick="bhSetReviewStars(5)"></i>
+      </div>
+
+      <label class="bh-form-label">Nội dung đánh giá</label>
+      <textarea id="reviewContentInput" rows="4" placeholder="Chia sẻ trải nghiệm của bạn về dịch vụ..."></textarea>
+
+      <label class="bh-form-label">Hình ảnh (tùy chọn)</label>
+      <input type="file" id="reviewImageInput" accept="image/*" multiple onchange="handleReviewImageUpload(this)">
+      <div id="reviewImagePreview" class="bh-img-preview"></div>
+
+      <div class="bh-actions" style="margin-top:18px;">
+        <button type="button" class="bh-btn bh-btn-review" onclick="submitReview()"><i class="fa-solid fa-paper-plane"></i> Gửi đánh giá</button>
+        <button type="button" class="bh-btn bh-btn-detail" onclick="closeReviewModal()">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- footer copied from index.html -->
 <footer>
 

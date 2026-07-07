@@ -565,7 +565,37 @@ async function confirmBooking() {
   groomingState.bookings.push(booking);
   await persistBookings(booking);
   saveToPetProfile(booking);
+  saveToBookingHistory(booking);
   showSuccess(booking);
+}
+
+// Đồng bộ đơn grooming vào kho lưu trữ chung "petProfileBookings" để hiển thị
+// trong trang "Lịch sử đặt lịch" / tab "Đặt phòng" của hồ sơ thú cưng, cùng
+// chỗ với các đơn đặt phòng hotel (xem thêm hotel.js -> saveHotelBookingToPetProfile).
+function saveToBookingHistory(booking) {
+  if (typeof window === 'undefined') return;
+  try {
+    var raw = localStorage.getItem('petProfileBookings');
+    var bookings = raw ? JSON.parse(raw) : [];
+    bookings.push({
+      id: booking.bookingId,
+      bookingId: booking.bookingId,
+      type: 'grooming',
+      serviceId: booking.serviceId,
+      serviceName: booking.serviceName,
+      pet: booking.pet,
+      customer: booking.customer,
+      appointmentDate: booking.appointmentDate,
+      appointmentTime: booking.appointmentTime,
+      estimatedPrice: booking.estimatedPrice,
+      status: booking.status,
+      createdAt: booking.createdAt,
+      reviewed: false
+    });
+    localStorage.setItem('petProfileBookings', JSON.stringify(bookings));
+  } catch (error) {
+    console.error('Error saving grooming booking to booking history:', error);
+  }
 }
 
 async function persistBookings(booking) {

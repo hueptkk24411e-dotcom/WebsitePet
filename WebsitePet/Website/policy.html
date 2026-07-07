@@ -39,6 +39,7 @@
     }
 </script>
 <script src="assets/js/chinhsach.js"></script>
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 </head>
 <header>
 
@@ -131,114 +132,36 @@
         </ul>
 
     </nav>
-</header><body data-page="home">
-<section id="home-page" class="home-page">
+</header><body data-page="policy">
+<section id="policy-page">
 
-    
-    <!-- Banner Carousel: thay src bên dưới bằng ảnh của bạn -->
-    <div class="home-banner-carousel" id="homeBannerCarousel">
-        <div class="carousel-track" id="homeCarouselTrack">
-            <div class="carousel-slide">
-                <a href="#" onclick="openShop(); return false;">
-                    <img src="assets/img/banner1.png" alt="Banner 1">
-                </a>
-            </div>
-            <div class="carousel-slide">
-                <a href="#" onclick="showPage('grooming'); return false;">
-                    <img src="assets/img/bannergroom.png" alt="Banner 2">
-                </a>
-            </div>
-            <div class="carousel-slide">
-                <a href="#" onclick="showPage('hotel'); return false;">
-                    <img src="assets/img/bannerhotel.png" alt="Banner 3">
-                </a>
-            </div>
-        </div>
-        <button class="carousel-btn prev" id="homeCarouselPrev" aria-label="Slide trước">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="carousel-btn next" id="homeCarouselNext" aria-label="Slide sau">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="carousel-dots" id="homeCarouselDots"></div>
+<div class="policy-layout">
+
+    <div class="policy-menu">
+
+        <button onclick="showPolicy('return')">Chính sách đổi trả</button>
+
+        <button onclick="showPolicy('warranty')">Chính sách bảo hành</button>
+
+        <button onclick="showPolicy('buy')">Hướng dẫn mua hàng</button>
+
+        <button onclick="showPolicy('payment')">Hướng dẫn thanh toán</button>
+
+        <button onclick="showPolicy('shipping')">Chính sách vận chuyển</button>
+
+        <button onclick="showPolicy('faq')">Câu hỏi thường gặp</button>
+
     </div>
 
-    <!-- Dịch vụ của chúng tôi: thay src trong .service-card-media bằng ảnh của bạn -->
-    <h2 class="home-section-title">Dịch vụ của chúng tôi</h2>
-    <div class="home-services-grid">
-        <div class="service-card service-card-large">
-            <div class="service-card-body">
-                <p class="service-card-text">Deal mới hấp dẫn mỗi ngày</p>
-                <button class="service-btn service-btn-purple" onclick="openShop()">
-                    Mua ngay <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-            <div class="service-card-media">
-                <img src="assets/img/camket.png" alt="Cửa hàng Petopia">
-            </div>
-        </div>
-        <div class="service-card service-card-grooming">
-            <div class="service-card-body">
-                <p class="service-card-text">Giữ cho thú cưng của bạn luôn sạch sẽ, khỏe mạnh và vui vẻ</p>
-                <button class="service-btn service-btn-orange" onclick="showPage('grooming')">
-                    Đặt lịch ngay <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-            <div class="service-card-media">
-                <img src="assets/img/nvbanhang.png" alt="Dịch vụ Grooming">
-            </div>
-        </div>
-        <div class="service-card service-card-hotel">
-            <div class="service-card-body">
-                <p class="service-card-text">Khách sạn Petopia cho thú cưng yêu quý của bạn</p>
-                <button class="service-btn service-btn-green" onclick="showPage('hotel')">
-                    Đặt phòng ngay <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-            <div class="service-card-media">
-                <img src="assets/img/hotel/5.png" alt="Pet Hotel">
-            </div>
-        </div>
+    <div class="policy-content">
+
+        <h1 id="policy-title"></h1>
+
+        <div id="policy-detail"></div>
+
     </div>
 
-    <!-- Sản phẩm nổi bật -->
-    <div class="home-featured-header">
-        <h2 class="home-section-title" style="margin-bottom:0;">Sản phẩm nổi bật</h2>
-        <a class="home-featured-link" onclick="openShop()">Xem tất cả &gt;</a>
-    </div>
-    <div class="home-featured-grid" id="homeFeaturedGrid">
-        <div class="home-featured-loading"><i class="fas fa-spinner fa-spin"></i> Đang tải sản phẩm...</div>
-    </div>
-
-    <!-- Các phòng Pet Hotel -->
-    <div class="home-featured-header home-section-spaced">
-        <h2 class="home-section-title" style="margin-bottom:0;">Các phòng Pet Hotel</h2>
-        <a class="home-featured-link" onclick="showPage('hotel')">Xem chi tiết &gt;</a>
-    </div>
-    <div class="home-hotel-grid" id="homeHotelGrid">
-        <div class="home-featured-loading"><i class="fas fa-spinner fa-spin"></i> Đang tải phòng...</div>
-    </div>
-
-    <!-- Các dịch vụ Grooming -->
-    <div class="home-featured-header home-section-spaced">
-        <h2 class="home-section-title" style="margin-bottom:0;">Các dịch vụ Grooming</h2>
-        <a class="home-featured-link" onclick="showPage('grooming')">Xem tất cả &gt;</a>
-    </div>
-    <div class="home-grooming-grid" id="homeGroomingGrid">
-        <div class="home-featured-loading"><i class="fas fa-spinner fa-spin"></i> Đang tải dịch vụ...</div>
-    </div>
-
-    <!-- Petopia's Blog -->
-    <h2 class="home-section-title home-section-spaced">Petopia's Blog</h2>
-    <div class="home-blog-grid" id="homeBlogGrid">
-        <div class="home-blog-preview home-blog-preview--loading">
-            <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
-        </div>
-    </div>
-    <div class="home-blog-more-wrap">
-        <a class="home-blog-more" onclick="showPage('blog')">Xem thêm bài viết &gt;</a>
-    </div>
-
+</div>
 </section>
 <footer>
 
@@ -557,12 +480,6 @@ document.querySelectorAll(".grooming-faq-question")
           <span style="background:#ffebee;color:#c62828;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã hủy</span>
         </div>
 
-        <div style="display:flex;gap:8px;margin-bottom:14px;" id="modalBookingFilterTabs">
-          <button class="booking-filter-btn active" onclick="setBookingFilter('all')" style="padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:white;cursor:pointer;font-size:12px;font-weight:600;color:#888;">Tất cả</button>
-          <button class="booking-filter-btn" onclick="setBookingFilter('grooming')" style="padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:white;cursor:pointer;font-size:12px;font-weight:600;color:#888;">Grooming</button>
-          <button class="booking-filter-btn" onclick="setBookingFilter('hotel')" style="padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:white;cursor:pointer;font-size:12px;font-weight:600;color:#888;">Hotel</button>
-        </div>
-
         <div id="modalBookingHistoryList">
           <div style="text-align:center;padding:30px;color:#aaa;">Đang tải...</div>
         </div>
@@ -574,5 +491,7 @@ document.querySelectorAll(".grooming-faq-question")
 </body>
 <script src="assets/js/chatbox.js"></script>
 <script src="assets/js/pet-profile.js"></script>
+<script src="assets/js/lich-su-dat-lich.js"></script>
 </html>
+
 <script src="router.js"></script>

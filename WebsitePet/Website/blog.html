@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/home.css"/>
     <script src="assets/js/shop.js"></script>
 <link rel="stylesheet" href="assets/css/chatbox.css">
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 <script src="assets/js/contact.js"></script>
 <script src="assets/js/hotel.js"></script>
 <script src="assets/js/trangchu.js"></script>
@@ -39,6 +40,7 @@
     }
 </script>
 <script src="assets/js/chinhsach.js"></script>
+<link rel="stylesheet" href="assets/css/lich-su-dat-lich.css"/>
 </head>
 <header>
 
@@ -131,225 +133,32 @@
         </ul>
 
     </nav>
-</header><body data-page="contact">
-<section id="contact-page">
+</header><body data-page="blog">
+<section id="blog-page">
+   <div class="blog-wrapper">
 
- <div class="contact-wrapper">
+    <!-- Breadcrumb điều hướng (ẩn khi ở trang chủ blog) -->
+    <nav id="blog-breadcrumb" style="display:none;">
+      <button class="blog-back-btn" onclick="Blog.goBack()">
+        <i class="fa-solid fa-arrow-left"></i> Quay lại Blog
+      </button>
+      <span class="blog-breadcrumb-sep">/</span>
+      <span id="blog-breadcrumb-title"></span>
+    </nav>
 
-    <!-- ── TIÊU ĐỀ ─────────────────────────────────────── -->
-    <h1 class="contact-page-title">Liên hệ Petopia</h1>
-    <p  class="contact-page-sub">Chúng mình luôn sẵn sàng hỗ trợ bạn và Boss yêu!</p>
+    <!-- Trạng thái loading (hiện khi đang tải dữ liệu) -->
+    <div id="blog-loading" class="blog-loading">
+      <div class="blog-spinner"></div>
+      <p>Đang tải bài viết...</p>
+    </div>
 
-    <!-- ── 4 CHANNEL CARDS ───────────────────────────────── -->
-    <div class="contact-channels">
+    <!-- 3 view — blog.js tự fill nội dung vào đây -->
+    <div id="blog-home-view"     style="display:none;"></div>
+    <div id="blog-category-view" style="display:none;"></div>
+    <div id="blog-detail-view"   style="display:none;"></div>
 
-      <!-- HOTLINE (hover only) -->
-      <div class="channel-card channel-card--hotline">
-        <div class="channel-card__icon icon--hotline">
-          <i class="fa-solid fa-phone"></i>
-        </div>
-        <span class="channel-card__label" >Hotline</span>
-        <span class="channel-card__name" ><a href="tel:0365507533">1-800-PET-CARE</a></span>
-        <span class="channel-card__note">Hằng ngày 8:00 – 22:00</span>
-      </div>
-
-      <!-- EMAIL (hover only) -->
-      <div class="channel-card channel-card--email">
-        <div class="channel-card__icon icon--email">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <span class="channel-card__label" >Email</span>
-        <span class="channel-card__name"><a href="mailto:hueptkk24411e@st.uel.edu.vn" >support@petopia.vn</a></span>
-        <span class="channel-card__note">Phản hồi trong 24h</span>
-      </div>
-
-      <!-- ZALO (hover + click → zalo) -->
-      <a class="channel-card channel-card--link channel-card--zalo"
-   href="https://zalo.me/0365507533"
-   target="_blank">
-        <div class="channel-card__icon icon--zalo">
-          <i class="fa-solid fa-comment-dots"></i>
-        </div>
-        <span class="channel-card__label">Zalo</span>
-        <span class="channel-card__name">Petopia Official</span>
-        <span class="channel-card__note">Chat trực tiếp</span>
-      </a>
-
-      <!-- FACEBOOK (hover + click → facebook) -->
-      <a  class="channel-card channel-card--link channel-card--fb"
-          href="https://facebook.com/THAY_BANG_LINK_FB_CUA_BAN"
-          target="_blank" rel="noopener noreferrer">
-        <div class="channel-card__icon icon--facebook">
-          <i class="fa-brands fa-facebook-f"></i>
-        </div>
-        <span class="channel-card__label">Facebook</span>
-        <span class="channel-card__name">Petopia Pet Shop</span>
-        <span class="channel-card__note">Inbox bất cứ lúc nào</span>
-      </a>
-
-    </div><!-- /contact-channels -->
-
-
-    <!-- ── MAIN 2-COLUMN ─────────────────────────────────── -->
-    <div class="contact-main">
-
-      <!-- LEFT: FORM ─────────────────────────────────────── -->
-      <div class="contact-form-section">
-        <h2 class="contact-form-title">Gửi tin nhắn cho Petopia</h2>
-        <p  class="contact-form-sub">
-          Hỏi về sản phẩm, hợp tác kinh doanh, hoặc góp ý —
-          chúng mình đọc hết!
-        </p>
-
-        <!-- SUCCESS MESSAGE -->
-        <div class="contact-success-msg" id="contactSuccessMsg">
-          <i class="fa-solid fa-circle-check"></i>
-          Tin nhắn đã được gửi thành công! Chúng mình sẽ phản hồi trong 24h.
-        </div>
-
-        <form class="contact-form" id="contactForm" novalidate>
-
-          <!-- ROW 1: Họ tên + SĐT -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="cf-name">Họ và tên <span>*</span></label>
-              <input type="text" id="cf-name"
-                     placeholder="Nguyễn Văn A"
-                     autocomplete="name"/>
-              <span class="form-error-msg" id="cf-name-err">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <span></span>
-              </span>
-            </div>
-            <div class="form-group">
-              <label for="cf-phone">Số điện thoại <span>*</span></label>
-              <input type="tel" id="cf-phone"
-                     placeholder="0912 345 678"
-                     autocomplete="tel"/>
-              <span class="form-error-msg" id="cf-phone-err">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <span></span>
-              </span>
-            </div>
-          </div>
-
-          <!-- ROW 2: Email (không bắt buộc) -->
-          <div class="form-group">
-            <label for="cf-email" >Email</label>
-            <input type="email" id="cf-email"
-                   placeholder="email@example.com"
-                   autocomplete="email"/>
-            <span class="form-error-msg" id="cf-email-err">
-              <i class="fa-solid fa-circle-exclamation"></i>
-              <span></span>
-            </span>
-          </div>
-
-          <!-- ROW 3: Nội dung -->
-          <div class="form-group">
-            <label for="cf-message">Nội dung <span>*</span></label>
-            <textarea id="cf-message"
-                      placeholder="Nội dung tin nhắn..."></textarea>
-            <span class="form-error-msg" id="cf-message-err">
-              <i class="fa-solid fa-circle-exclamation"></i>
-              <span></span>
-            </span>
-          </div>
-
-          <!-- SUBMIT -->
-          <button type="submit" class="btn-contact-submit" id="contactSubmitBtn">
-            <i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn
-          </button>
-
-        </form>
-      </div><!-- /form section -->
-
-
-      <!-- RIGHT: INFO + SOCIAL ────────────────────────────── -->
-      <div class="contact-right">
-
-        <!-- Thông tin công ty -->
-        <div class="contact-info-card">
-          <div class="contact-card-title">
-            <i class="fa-solid fa-building"></i> Thông tin công ty
-          </div>
-          <table class="contact-info-table">
-            <tr>
-              <td>Công ty</td>
-              <td>Công ty CP TM &amp; DV Petopia</td>
-            </tr>
-            <tr>
-              <td>MST</td>
-              <td><a href="tel:0365507533">0316459054</a></td>
-            </tr>
-            <tr>
-              <td>Trụ sở</td>
-              <td><a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76" >669 Đỗ Mười, P. Linh Xuân<br/>TP. Thủ Đức, TP. HCM </a></td>
-            </tr>
-            <tr>
-              <td>Email</td>
-              <td><a href="mailto:hueptkk24411e@st.uel.edu.vn" >support@petopia.vn</a></td>
-            </tr>
-            <tr>
-              <td>Hotline</td>
-              <td><a href="tel:0365507533">1-800-PET-CARE</a></td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- Kết nối với Petopia -->
-        <div class="contact-social-card">
-          <div class="contact-card-title">
-            <i class="fa-solid fa-share-nodes"></i> Kết nối với Petopia
-          </div>
-          <div class="contact-social-body">
-
-            <a href="https://facebook.com/THAY_BANG_LINK_FB"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--facebook">
-              <i class="fa-brands fa-facebook-f"></i> Facebook
-            </a>
-
-            <a href="https://instagram.com/THAY_BANG_LINK_IG"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--instagram">
-              <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-
-            <a href="https://tiktok.com/@THAY_BANG_LINK_TT"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--tiktok">
-              <i class="fa-brands fa-tiktok"></i> TikTok
-            </a>
-
-            <a href="https://zalo.me/THAY_BANG_LINK_ZALO"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--zalo">
-              <i class="fa-solid fa-comment-dots"></i> Zalo
-            </a>
-
-            <a href="https://shopee.vn/THAY_BANG_LINK_SHOPEE"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--shopee">
-              <i class="fa-solid fa-bag-shopping"></i> Shopee
-            </a>
-
-            <a href="https://lazada.vn/THAY_BANG_LINK_LAZADA"
-               target="_blank" rel="noopener noreferrer"
-               class="social-pill pill--lazada">
-              <i class="fa-solid fa-cart-shopping"></i> Lazada
-            </a>
-
-          </div>
-        </div>
-
-      </div><!-- /contact-right -->
-
-    </div><!-- /contact-main -->
-
-  </div><!-- /contact-wrapper -->
-
- </section>
+  </div>
+</section>
 <footer>
 
         <div class="footer-top-bg">
@@ -678,6 +487,7 @@ document.querySelectorAll(".grooming-faq-question")
 </body>
 <script src="assets/js/chatbox.js"></script>
 <script src="assets/js/pet-profile.js"></script>
+<script src="assets/js/lich-su-dat-lich.js"></script>
 </html>
 
 <script src="router.js"></script>
