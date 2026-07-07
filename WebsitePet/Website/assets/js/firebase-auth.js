@@ -35,6 +35,10 @@ const facebookProvider = new FacebookAuthProvider();
 
 /* ================= TIỆN ÍCH CHUNG (Gắn vào window để HTML gọi được) ================= */
 
+function getRedirectTarget(role) {
+    return role === 'admin' ? 'admin/dashboard.html' : 'index.html';
+}
+
 window.showToast = function (message, type = 'success', duration = 4000) {
     const container = document.getElementById('toastContainer');
     if (!container) return;
@@ -129,7 +133,7 @@ function handleGoogleAuthSuccess(result) {
             localStorage.setItem('currentUser', JSON.stringify(cu));
             window.showToast(`Chào mừng ${cu.name || 'bạn'} đã quay trở lại!`, "success");
             console.log("Google User đã đăng nhập:", user);
-            setTimeout(() => { window.location.href = "index.html"; }, 1000);
+            setTimeout(() => { window.location.href = getRedirectTarget(cu.role); }, 1000);
         });
 }
 
@@ -173,7 +177,7 @@ function handleFacebookAuthSuccess(result) {
             localStorage.setItem('currentUser', JSON.stringify(cu));
             window.showToast(`Chào mừng ${cu.name || 'bạn'} đã quay trở lại!`, "success");
             console.log("Facebook User đã đăng nhập:", user);
-            setTimeout(() => { window.location.href = "index.html"; }, 1000);
+            setTimeout(() => { window.location.href = getRedirectTarget(cu.role); }, 1000);
         });
 }
 
@@ -262,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (pendingItem) {
                             localStorage.removeItem("pending_cart_item");
                         }
-                        setTimeout(() => { window.location.href = "index.html"; }, 1000);
+                        setTimeout(() => { window.location.href = getRedirectTarget(cu.role); }, 1000);
                     })
                     .catch(() => {
                         if(btnSubmit) btnSubmit.disabled = false;

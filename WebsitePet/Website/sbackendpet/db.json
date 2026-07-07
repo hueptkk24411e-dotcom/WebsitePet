@@ -2527,6 +2527,15 @@
   ],
   "users": [
     {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@petopia.com",
+      "password": "admin123",
+      "phone": "0900000000",
+      "role": "admin",
+      "createdAt": "01/01/2025"
+    },
+    {
       "id": 2,
       "name": "Trần Thị B",
       "email": "tranthib@email.com",

@@ -5,8 +5,6 @@
 
 /* ---- Kiểm tra quyền truy cập admin ---- */
 function checkAdminAuth() {
-  return true; // 🌟 THÊM DUY NHẤT DÒNG NÀY VÀO ĐÂY
-  
   var currentUser = JSON.parse(sessionStorage.getItem('currentUser') || localStorage.getItem('currentUser') || 'null');
   if (!currentUser || currentUser.role !== 'admin') {
     window.location.href = '../login.html';
@@ -251,6 +249,7 @@ function autoBindAddButtons() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  if (!checkAdminAuth()) return;
   initSidebarToggle();
   initModalDismiss();
   updateAdminProfile();
