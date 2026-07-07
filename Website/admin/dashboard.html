@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Petopia Admin Panel</title>
+<link rel="icon" href="../assets/img/admin/logo.png">
+<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell" id="adminShell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="admin-sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+      <div class="sidebar-logo-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12.5c-1.66 0-3-1.79-3-4s1.34-4 3-4 3 1.79 3 4-1.34 4-3 4zm6 0c-1.66 0-3-1.79-3-4s1.34-4 3-4 3 1.79 3 4-1.34 4-3 4zM4.5 16c-1.38 0-2.5-1.34-2.5-3s1.12-3 2.5-3S7 11.34 7 13s-1.12 3-2.5 3zm15 0c-1.38 0-2.5-1.34-2.5-3s1.12-3 2.5-3S22 11.34 22 13s-1.12 3-2.5 3zM12 14c2.67 0 7 1.34 7 4v.5c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V18c0-2.66 4.33-4 7-4z"/></svg>
+      </div>
+      <div class="sidebar-logo-text">
+        <strong>PETOPIA</strong>
+        <span>ADMIN PANEL</span>
+      </div>
+    </div>
+   
+
+    <nav class="sidebar-nav">
+
+      <div class="nav-group">
+        <p class="nav-group-title">TỔNG QUAN</p>
+        <a href="dashboard.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          Dashboard
+        </a>
+      </div>
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN LÝ CỬA HÀNG (SHOP)</p>
+        <a href="categories.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 11 3.83A2 2 0 0 0 9.59 3.2L4 3a1 1 0 0 0-1 1l.2 5.59a2 2 0 0 0 .58 1.41l9.59 9.59a2 2 0 0 0 2.83 0l4.39-4.39a2 2 0 0 0 0-2.83Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
+          Danh mục sản phẩm
+        </a>
+        <a href="products.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+          Sản phẩm
+        </a>
+        <a href="orders.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Đơn hàng
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN LÝ GROOMING</p>
+        <a href="grooming-services.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+          Dịch vụ Grooming
+        </a>
+        <a href="groomers.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          Groomer
+        </a>
+        <a href="grooming-schedule.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Lịch Grooming
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN LÝ PET HOTEL</p>
+        <a href="room-types.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7"/><path d="M3 18h18"/><path d="M3 11V7a2 2 0 0 1 2-2h4v6"/></svg>
+          Loại phòng
+        </a>
+        <a href="bookings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          Đặt phòng
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN LÝ THÚ CƯNG</p>
+        <a href="pet-profiles.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="2"/><circle cx="16" cy="6" r="2"/><circle cx="4.5" cy="11.5" r="2"/><circle cx="19.5" cy="11.5" r="2"/><path d="M12 17c-3 0-5.5 1.5-5.5 3.5 0 1 1 1.5 2.2 1.2.9-.2 2-.5 3.3-.5s2.4.3 3.3.5c1.2.3 2.2-.2 2.2-1.2 0-2-2.5-3.5-5.5-3.5Z"/></svg>
+          Hồ sơ thú cưng
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN TRỊ NGƯỜI DÙNG</p>
+        <a href="users.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Người dùng
+        </a>
+        <a href="reviews.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+          Đánh giá
+        </a>
+        <a href="contact-messages.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 8.97 6.2a2 2 0 0 0 2.06 0L22 7"/></svg>
+          Tin nhắn liên hệ
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">NỘI DUNG</p>
+        <a href="blog.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8M8 9h2"/></svg>
+          Blog
+        </a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-group-title">PHÂN TÍCH</p>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="13" y="8" width="3" height="10"/><rect x="19" y="5" width="0" height="13"/><path d="M18 6v13"/></svg>
+          Báo cáo
+        </a>
+        <a href="audit-log.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          Nhật ký kiểm toán
+        </a>
+      </div>
+
+    </nav>
+  </aside>
+
+  <!-- ============ TOPBAR ============ -->
+  <header class="admin-topbar">
+    <div class="topbar-left">
+      <button class="hamburger-btn" id="toggleSidebar" aria-label="Ẩn/hiện menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+     
+    </div>
+
+    <div class="topbar-right">
+      
+      <button class="notif-btn" aria-label="Thông báo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notif-badge">5</span>
+      </button>
+      <button class="admin-profile-btn">
+        <img src="../assets/img/admin/avatar-dog.png" alt="Admin">
+        <span>Admin</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="admin-main">
+ <h1 class="page-title">Dashboard</h1>
+    <!-- STAT CARDS -->
+    <section class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="stat-label">TỔNG DOANH THU</div>
+        <div class="stat-value">85,000,000 đ</div>
+        <div class="stat-growth"><span class="up">▲ 20.5%</span>&nbsp;so với tháng trước</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <div class="stat-label">ĐƠN HÀNG</div>
+        <div class="stat-value">1,200</div>
+        <div class="stat-growth"><span class="up">▲ 15.3%</span>&nbsp;so với tháng trước</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+        </div>
+        <div class="stat-label">DỊCH VỤ GROOMING</div>
+        <div class="stat-value">320</div>
+        <div class="stat-growth"><span class="up">▲ 18.7%</span>&nbsp;so với tháng trước</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7"/><path d="M3 18h18"/><path d="M3 11V7a2 2 0 0 1 2-2h4v6"/></svg>
+        </div>
+        <div class="stat-label">ĐẶT PHÒNG HOTEL</div>
+        <div class="stat-value">150</div>
+        <div class="stat-growth"><span class="up">▲ 12.4%</span>&nbsp;so với tháng trước</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="stat-label">NGƯỜI DÙNG</div>
+        <div class="stat-value">250</div>
+        <div class="stat-growth"><span class="up">▲ 10.2%</span>&nbsp;so với tháng trước</div>
+      </div>
+    </section>
+
+    <!-- ROW 1: revenue chart / donut / recent orders -->
+    <section class="dashboard-row-1">
+
+      <div class="card revenue-card">
+        <div class="card-head">
+          <h3>Doanh thu trong 7 ngày qua</h3>
+          <button class="card-select">
+            7 ngày qua
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="revenueChart"></canvas>
+        </div>
+      </div>
+
+      <div class="card donut-card">
+        <div class="card-head">
+          <h3>Tỉ lệ doanh thu theo dịch vụ</h3>
+        </div>
+        <div class="donut-wrap">
+          <div class="donut-canvas-box">
+            <canvas id="serviceDonutChart"></canvas>
+            <div class="donut-center">
+              <span>Tổng</span>
+              <strong>85,000,000 đ</strong>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="legend-row">
+              <span class="legend-dot" style="background:#1b934b"></span>
+              <div class="legend-text"><strong>Sản phẩm</strong><span>60% (51,000,000 đ)</span></div>
+            </div>
+            <div class="legend-row">
+              <span class="legend-dot" style="background:#9845c9"></span>
+              <div class="legend-text"><strong>Grooming</strong><span>25% (21,250,000 đ)</span></div>
+            </div>
+            <div class="legend-row">
+              <span class="legend-dot" style="background:#f2994a"></span>
+              <div class="legend-text"><strong>Pet Hotel</strong><span>15% (12,750,000 đ)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card recent-orders-card">
+        <div class="card-head">
+          <h3>Đơn hàng mới nhất</h3>
+          <button class="card-link-btn">Xem tất cả</button>
+        </div>
+        <div class="list-rows">
+          <div class="list-row">
+            <span class="order-id">#DH12345</span>
+            <span class="order-name">Nguyễn Văn A</span>
+            <span class="order-amount">850,000 đ</span>
+            <span class="badge pending">Pending</span>
+          </div>
+          <div class="list-row">
+            <span class="order-id">#DH12344</span>
+            <span class="order-name">Trần Thị B</span>
+            <span class="order-amount">560,000 đ</span>
+            <span class="badge processing">Processing</span>
+          </div>
+          <div class="list-row">
+            <span class="order-id">#DH12343</span>
+            <span class="order-name">Lê Văn C</span>
+            <span class="order-amount">1,250,000 đ</span>
+            <span class="badge shipping">Shipping</span>
+          </div>
+          <div class="list-row">
+            <span class="order-id">#DH12342</span>
+            <span class="order-name">Phạm Thị D</span>
+            <span class="order-amount">780,000 đ</span>
+            <span class="badge pending">Pending</span>
+          </div>
+          <div class="list-row">
+            <span class="order-id">#DH12341</span>
+            <span class="order-name">Hoàng Văn E</span>
+            <span class="order-amount">1,100,000 đ</span>
+            <span class="badge completed">Completed</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ROW 2: grooming today / booking today / messages -->
+    <section class="dashboard-row-2">
+
+      <div class="card grooming-card">
+        <div class="card-head">
+          <h3>Lịch Grooming hôm nay</h3>
+          <button class="card-link-btn">Xem lịch</button>
+        </div>
+        <div class="list-rows">
+          <div class="list-row">
+            <span class="schedule-time">09:00</span>
+            <img class="pet-avatar" src="../assets/img/admin/avatar-dog.png" alt="Bông">
+            <div class="schedule-body">
+              <div class="schedule-pet">Bông</div>
+              <div class="schedule-sub">Mai Anh · Tắm cơ bản</div>
+            </div>
+            <span class="badge confirmed">Confirmed</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">10:30</span>
+            <img class="pet-avatar" src="../assets/img/admin/avatar-dog.png" alt="Milo">
+            <div class="schedule-body">
+              <div class="schedule-pet">Milo</div>
+              <div class="schedule-sub">Quốc Huy · Cắt tỉa lông</div>
+            </div>
+            <span class="badge confirmed">Confirmed</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">14:00</span>
+            <img class="pet-avatar" src="../assets/img/admin/avatar-dog.png" alt="Miu">
+            <div class="schedule-body">
+              <div class="schedule-pet">Miu</div>
+              <div class="schedule-sub">Cát Linh · Tắm &amp; sấy</div>
+            </div>
+            <span class="badge pending">Pending</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">16:00</span>
+            <img class="pet-avatar" src="../assets/img/admin/avatar-dog.png" alt="Coco">
+            <div class="schedule-body">
+              <div class="schedule-pet">Coco</div>
+              <div class="schedule-sub">Tấn Lộc · Spa cao cấp</div>
+            </div>
+            <span class="badge pending">Pending</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card booking-card">
+        <div class="card-head">
+          <h3>Lịch đặt phòng hôm nay</h3>
+          <button class="card-link-btn">Xem tất cả</button>
+        </div>
+        <div class="list-rows">
+          <div class="list-row">
+            <span class="schedule-time">08:30</span>
+            <div class="schedule-body">
+              <div class="schedule-pet">Bali · Nguyễn Văn A</div>
+              <span class="room-tag">Premium</span>
+            </div>
+            <span class="badge checkin">Check-in</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">10:00</span>
+            <div class="schedule-body">
+              <div class="schedule-pet">Coco · Trần Thị B</div>
+              <span class="room-tag">Basic</span>
+            </div>
+            <span class="badge booked">Booked</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">14:00</span>
+            <div class="schedule-body">
+              <div class="schedule-pet">Milo · Lê Văn C</div>
+              <span class="room-tag">VIP Room</span>
+            </div>
+            <span class="badge checkin">Check-in</span>
+          </div>
+          <div class="list-row">
+            <span class="schedule-time">18:00</span>
+            <div class="schedule-body">
+              <div class="schedule-pet">Bu · Phạm Thị D</div>
+              <span class="room-tag">Premium</span>
+            </div>
+            <span class="badge booked">Booked</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card messages-card">
+        <div class="card-head">
+          <h3>Tin nhắn liên hệ mới</h3>
+          <button class="card-link-btn">Xem tất cả</button>
+        </div>
+        <div class="list-rows">
+          <div class="list-row">
+            <span class="msg-avatar" style="background:#2276d8">NT</span>
+            <div class="msg-body">
+              <div class="msg-top"><span class="msg-name">Nguyễn Thanh Tâm</span><span class="msg-time">10:30</span></div>
+              <div class="msg-preview">Hỏi về sản phẩm thức ăn cho mèo...</div>
+            </div>
+          </div>
+          <div class="list-row">
+            <span class="msg-avatar" style="background:#e8536f">LH</span>
+            <div class="msg-body">
+              <div class="msg-top"><span class="msg-name">Lê Hoàng Nam</span><span class="msg-time">09:15</span></div>
+              <div class="msg-preview">Tư vấn dịch vụ grooming cho chó poodle...</div>
+            </div>
+          </div>
+          <div class="list-row">
+            <span class="msg-avatar" style="background:#1b934b">PA</span>
+            <div class="msg-body">
+              <div class="msg-top"><span class="msg-name">Phạm Anh Thư</span><span class="msg-time">08:45</span></div>
+              <div class="msg-preview">Hỏi về đặt phòng khách sạn cho mèo...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- OVERVIEW TABLE -->
+    <section class="overview-table-card card">
+      <div class="card-head">
+        <h3>Thống kê tổng quan</h3>
+        <button class="card-select">
+          Tháng này
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+      </div>
+      <div class="overview-table-wrap">
+        <table class="overview-table">
+          <thead>
+            <tr>
+              <th>Hạng mục</th>
+              <th>Sản phẩm</th>
+              <th>Grooming</th>
+              <th>Pet Hotel</th>
+              <th>Tổng cộng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">Doanh thu</td>
+              <td>51,000,000 đ <span class="cell-growth">▲ 20.5%</span></td>
+              <td>21,250,000 đ <span class="cell-growth">▲ 18.7%</span></td>
+              <td>12,750,000 đ <span class="cell-growth">▲ 12.4%</span></td>
+              <td class="total">85,000,000 đ <span class="cell-growth">▲ 17.9%</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">Đơn hàng / Đặt lịch</td>
+              <td>1,200 <span class="cell-growth">▲ 15.3%</span></td>
+              <td>320 <span class="cell-growth">▲ 18.7%</span></td>
+              <td>150 <span class="cell-growth">▲ 12.4%</span></td>
+              <td class="total">1,670 <span class="cell-growth">▲ 15.8%</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">Số lượng khách hàng</td>
+              <td>250 <span class="cell-growth">▲ 10.2%</span></td>
+              <td>180 <span class="cell-growth">▲ 15.6%</span></td>
+              <td>120 <span class="cell-growth">▲ 9.1%</span></td>
+              <td class="total">550 <span class="cell-growth">▲ 11.6%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="../assets/js/admin-common.js"></script>
+<script src="../assets/js/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petopia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/grooming.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chinhsach.css">
+<link rel="stylesheet" href="assets/css/hotel.css">
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/member.css">
+<link rel="stylesheet" href="assets/css/recruit.css">
+<link rel="stylesheet" href="assets/css/blog.css">
+<link rel="stylesheet" href="assets/css/contact.css"/>
+<link rel="stylesheet" href="assets/css/shop.css"/>
+    <script src="assets/js/momo-payment.js"></script>
+    <script src="assets/js/home.js"></script>
+    <link rel="stylesheet" href="assets/css/home.css"/>
+    <script src="assets/js/shop.js"></script>
+<link rel="stylesheet" href="assets/css/chatbox.css">
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/hotel.js"></script>
+<script src="assets/js/trangchu.js"></script>
+<script src="assets/js/blog.js"></script> 
+<script src="assets/js/grooming.js"></script>
+<script src="assets/js/grooming-booking.js"></script> 
+
+<script>
+    // Hàm này sẽ được gọi khi nhấp vào "Cửa hàng"
+    function openShop() {
+        showPage('shop'); // Hiển thị toàn bộ section cửa hàng
+        switchTab('home'); // Kích hoạt tab sản phẩm (tab-home) bên trong section cửa hàng
+    }
+</script>
+<script src="assets/js/chinhsach.js"></script>
+</head>
+<header>
+
+    <div class="top-header">
+
+        <div class="left-box">
+
+            <div class="header-logo">
+                <a href="#" onclick="showPage('home')"><img  src="assets/img/bglogo.png" alt=""></a>
+            </div>
+
+<div class="header-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+                        autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions"
+                        oninput="handleSearch()" onfocus="handleSearchFocus()" onkeydown="handleSearchKeydown(event)">
+                    <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Gợi ý sản phẩm"></div>
+                </div>
+        </div>
+     
+        <div class="right-box">
+
+            <a href="#"   onclick="showPage('contact')" class="header-action-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span> Hỗ trợ</span>
+            </a>
+                    
+                <a class="header-action-item" onclick="switchTab('wishlist')" id="tab-btn-wishlist">
+                    <i class="fas fa-heart"></i> Yêu Thích <span class="badge-count" id="wishlistCount">0</span>
+                </a>
+                <a class="header-action-item" onclick="switchTab('orders')" id="tab-btn-orders">
+                    <i class="fas fa-box-open"></i><span> Đơn Hàng</span>
+                </a>              
+            <a class="header-action-item" onclick="switchTab('cart')" id="tab-btn-cart">
+                    <i class="fas fa-shopping-cart"></i><span> Giỏ Hàng </span><span class="badge-count" id="cartCount">0</span>
+            </a>
+
+           <div id="userAuthSection">
+    <a href="login.html" class="header-action-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Đăng nhập</span>
+    </a>
+</div>
+<a href="#"class="header-btn-profile" onclick="showPage('lich-su-dat-lich')">Hồ sơ thú cưng</a>
+                     
+        </div>
+
+    </div>
+<nav class="main-nav">
+
+        <ul class="menu">
+
+            <li>
+                <a href="#" onclick="showPage('home')" >
+                    Trang chủ
+                </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openShop()">
+    Cửa hàng
+</a>
+
+            </li>
+
+            <li>
+                <a href="#"  onclick="showPage('grooming')" >
+                    Grooming
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('hotel')">
+                    Pet Hotel
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('blog')">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('contact')" >
+                    Liên hệ
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header>
+<body data-page="grooming">
+
+
+<!-- ================================================================
+     B – GROOMING PAGE (trang dịch vụ)
+     ================================================================ -->
+<section id="grooming-page" class="page active">
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Chăm sóc Grooming chuyên nghiệp cho thú cưng</h1>
+        <p>Giữ thú cưng luôn sạch sẽ, thoải mái và xinh đẹp với dịch vụ grooming đầy tâm huyết.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-orange" href="#services-section">Xem dịch vụ</a>
+          <a class="btn btn-white" href="#" onclick="showGroomingBooking(); return false;">Đặt lịch ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop layout -->
+    <section class="shop-layout">
+      <aside class="shop-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Loại dịch vụ</div>
+          <ul class="sidebar-filter-list" id="filterServiceType">
+            <li class="sidebar-filter-item active" data-filter="all">Tất cả</li>
+            <li class="sidebar-filter-item" data-filter="basic">Cắt tỉa</li>
+            <li class="sidebar-filter-item" data-filter="spa">Tắm &amp; Spa</li>
+            <li class="sidebar-filter-item" data-filter="full">Trọn gói</li>
+          </ul>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Đối tượng</div>
+          <ul class="sidebar-filter-list" id="filterPetType">
+            <li class="sidebar-filter-item active" data-filter="all">Tất cả</li>
+            <li class="sidebar-filter-item" data-filter="dog">Chó</li>
+            <li class="sidebar-filter-item" data-filter="cat">Mèo</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <div>
+            <span class="shop-toolbar__title">Dịch vụ Grooming</span>
+            <span class="shop-toolbar__count" id="serviceCount">0 dịch vụ</span>
+          </div>
+          <div class="shop-toolbar__right">
+            <select class="sort-select" id="sortSelect">
+              <option value="default">Mặc định</option>
+              <option value="price-asc">Giá tăng dần</option>
+              <option value="price-desc">Giá giảm dần</option>
+            </select>
+          </div>
+        </div>
+        <div class="active-filters" id="activeTags"></div>
+        <div class="services-grid" id="services-section"></div>
+      </div>
+    </section>
+
+    <h2 class="section-title">🐾 Dịch vụ Grooming 🐾</h2>
+    <div class="services-grid" id="services-section">
+        <div class="service-card">
+            <div class="service-img">
+                <img src="https://static.wixstatic.com/media/41bb54_a1498b39e5904f7eaddf9eb102cf18c7~mv2.jpeg/v1/fill/w_4096,h_2730,al_c,q_90,enc_auto/41bb54_a1498b39e5904f7eaddf9eb102cf18c7~mv2.jpeg" alt="Basic Grooming" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"> 
+            </div>
+            <div class="service-info">
+                <h3>Grooming Cơ bản</h3>
+                <ul>
+                    <li>Tắm</li>
+                    <li>Styling</li>
+                    <li>Cắt móng</li>
+                    <li>Điều trị tai</li>
+                </ul>
+                <div class="service-price">Từ 200,000 VND</div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-img">
+                <img src="https://thumbs.dreamstime.com/b/toy-poodle-dog-getting-groomed-pet-salon-neat-stylish-haircut-showing-its-adorable-face-fluffy-fur-clean-bright-320989222.jpg?w=768" alt="Full Grooming" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="service-info">
+                <h3>Grooming trọn gói</h3>
+                <ul>
+                    <li>Tắm</li>
+                    <li>Cắt tóc</li>
+                    <li>Styling</li>
+                    <li>Cắt móng</li>
+                    <li>Điều trị tai</li>
+                </ul>
+                <div class="service-price">Từ 350,000 VND</div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-img">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.PQyFtbDRolm4ykxdn8CcUgHaEJ?pid=Api&h=220&P=0" alt="Spa Package" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="service-info">
+                <h3>Spa Package</h3>
+                <ul>
+                    <li>Tắm</li>
+                    <li>Massage</li>
+                    <li>Chăm sóc da</li>
+                    <li>Thuốc gội cao cấp</li>
+                    <li>Khử mùi</li>
+                </ul>
+                <div class="service-price">Từ 450,000 VND</div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-img">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.lemWIlLmS2GV2vJwBC6AiQHaEK?pid=Api&h=220&P=0&w=300" alt="Nail Care" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="service-info">
+                <h3>Care móng</h3>
+                <ul>
+                    <li>Cắt móng</li>
+                    <li>Điều trị móng</li>
+                    <li>Mài móng</li>
+                </ul>
+                <div class="service-price">Từ 120,000 VND</div>
+            </div>
+        </div>
+    </div>
+
+  <h2 class="section-title">🐾 Các kiểu Grooming 🐾</h2>
+
+<div class="styles-grid">
+
+    <!-- Teddy Cut -->
+    <div class="style-card" data-style="Teddy Cut" role="button" tabindex="0" aria-label="Select Teddy Cut style">
+        <h4>Teddy Cut</h4>
+
+        <div class="style-images">
+            <div class="img-box">
+                <img src="assets/img/truoc1.jpg" alt="Trước">
+                <span class="img-label">Trước</span>
+            </div>
+
+            <div class="arrow-icon">▶</div>
+
+            <div class="img-box">
+                <img src="assets/img/sau1.jpg" alt="Sau">
+                <span class="img-label">Sau</span>
+            </div>
+        </div>
+
+        <div class="style-price">+50,000 VND</div>
+    </div>
+
+    <!-- Lion Cut -->
+    <div class="style-card" data-style="Lion Cut" role="button" tabindex="0" aria-label="Select Lion Cut style">
+        <h4>Lion Cut</h4>
+
+        <div class="style-images">
+            <div class="img-box">
+                <img src="assets/img/truoc2.jpg" alt="Trước">
+                <span class="img-label">Trước</span>
+            </div>
+
+            <div class="arrow-icon">▶</div>
+
+            <div class="img-box">
+                <img src="assets/img/sau2.jpg" alt="Sau">
+                <span class="img-label">Sau</span>
+            </div>
+        </div>
+
+        <div class="style-price">+60,000 VND</div>
+    </div>
+
+    <!-- Korean Style -->
+    <div class="style-card" data-style="Korean Style" role="button" tabindex="0" aria-label="Select Korean Style style">
+        <h4>Korean Style</h4>
+
+        <div class="style-images">
+            <div class="img-box">
+                <img src="assets/img/truoc3.jpg" alt="Trước">
+                <span class="img-label">Trước</span>
+            </div>
+
+            <div class="arrow-icon">▶</div>
+
+            <div class="img-box">
+                <img src="assets/img/sau3.jpg" alt="Sau">
+                <span class="img-label">Sau</span>
+            </div>
+        </div>
+
+        <div class="style-price">+70,000 VND</div>
+    </div>
+
+    <!-- Summer Cut -->
+    <div class="style-card" data-style="Summer Cut" role="button" tabindex="0" aria-label="Select Summer Cut style">
+        <h4>Summer Cut</h4>
+
+        <div class="style-images">
+            <div class="img-box">
+                <img src="assets/img/truoc4.jpg" alt="Trước">
+                <span class="img-label">Trước</span>
+            </div>
+
+            <div class="arrow-icon">▶</div>
+
+            <div class="img-box">
+                <img src="assets/img/sau4.jpg" alt="Sau">
+                <span class="img-label">Sau</span>
+            </div>
+        </div>
+
+        <div class="style-price">+40,000 VND</div>
+    </div>
+
+</div>
+    <!-- Confirmation Modal -->
+    <div class="confirmation-modal" id="confirmationModal">
+        <div class="confirmation-modal__overlay"></div>
+        <div class="confirmation-modal__content">
+            <div class="confirmation-modal__header">
+                <h3>Xác nhận đặt lịch</h3>
+            </div>
+            <div class="confirmation-modal__body">
+                <p>Bạn đã chắc chắn muốn đặt lịch với những thông tin trên chưa?</p>
+            </div>
+            <div class="confirmation-modal__footer">
+                <button class="btn-cancel" id="btnCancel">Quay lại</button>
+                <button class="btn-confirm" id="btnConfirmSubmit">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+<h2 class="section-title">Quy trình chăm sóc</h2>
+    <div class="process-container">
+        <div class="process-line"></div>
+        <div class="process-step">
+            <div class="process-icon">📋</div>
+            <h4>Check-in</h4>
+            <p>Chúng tôi chào đón thú cưng của bạn</p>
+        </div>
+        <div class="process-step">
+            <div class="process-icon">❤️</div>
+            <h4>Health Check</h4>
+            <p>Kiểm tra tình trạng sức khỏe của thú cưng</p>
+        </div>
+        <div class="process-step">
+            <div class="process-icon">🛁</div>
+            <h4>Bath & Cleaning</h4>
+            <p>Làm sạch sâu với sản phẩm cao cấp</p>
+        </div>
+        <div class="process-step">
+            <div class="process-icon">✂️</div>
+            <h4>Hair Styling</h4>
+            <p>Cắt, tỉa và tạo kiểu theo yêu cầu</p>
+        </div>
+        <div class="process-step">
+            <div class="process-icon">🛡️</div>
+            <h4>Quality Check</h4>
+            <p>Đảm bảo kết quả hoàn hảo</p>
+        </div>
+        <div class="process-step">
+            <div class="process-icon">🏠</div>
+            <h4>Đón thú cưng</h4>
+            <p>Thú cưng được đón về an toàn và hạnh phúc</p>
+        </div>
+    </div>
+    <!-- Reviews + FAQ -->
+    <div class="bottom-grid full-width-bottom">
+      <div class="panel-box">
+        <div class="panel-header">Chủ thú cưng nói gì</div>
+        <div class="panel-subtitle">Những đánh giá mới nhất đều được hiển thị bên dưới.</div>
+        <div class="reviews-container">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Thú cưng của tôi trông rất dễ thương! Nhân viên rất nhẹ nhàng và chuyên nghiệp."</p>
+            <div class="reviewer">
+              <div class="reviewer-img"></div>
+              <div class="reviewer-info"><h5>Lan Anh</h5><p>with Poodle – Chip</p></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Dịch vụ tuyệt vời! Mèo của tôi thường rất khó tính nhưng họ xử lý rất tốt."</p>
+            <div class="reviewer">
+              <div class="reviewer-img"></div>
+              <div class="reviewer-info"><h5>Thanh Mai</h5><p>with Cat – Miu</p></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Thú cưng trông rất đáng yêu! Sẽ tiếp tục ủng hộ Petopia."</p>
+            <div class="reviewer">
+              <div class="reviewer-img"></div>
+              <div class="reviewer-info"><h5>Hoang Nam</h5><p>with Corgi – Gấu</p></div>
+            </div>
+          </div>
+          <div class="review-card extra-review hidden">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Nhân viên chu đáo, không gian sạch sẽ, bé cưng về nhà vui vẻ."</p>
+            <div class="reviewer">
+              <div class="reviewer-img"></div>
+              <div class="reviewer-info"><h5>Vy Lê</h5><p>with Shih Tzu – Tí</p></div>
+            </div>
+          </div>
+          <div class="review-card extra-review hidden">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Giá hợp lý, đặt lịch nhanh gọn. Lần sau mình sẽ quay lại."</p>
+            <div class="reviewer">
+              <div class="reviewer-img"></div>
+              <div class="reviewer-info"><h5>Minh Hoàng</h5><p>with Beagle – Cookie</p></div>
+            </div>
+          </div>
+        </div>
+        <button id="reviewsToggleBtn" class="reviews-toggle" onclick="toggleMoreReviews()">Xem thêm đánh giá</button>
+      </div>
+
+      <div class="panel-box">
+        <div class="panel-header">Câu hỏi thường gặp</div>
+        <div class="faq-list">
+          <div class="faq-item"><div class="faq-item__question"><span class="faq-item__text">Grooming mất bao lâu?</span><span class="faq-item__arrow">▼</span></div><div class="faq-item__answer">Thông thường từ 1–2 giờ tùy dịch vụ và kích thước thú cưng.</div></div>
+          <div class="faq-item"><div class="faq-item__question"><span class="faq-item__text">Tôi có thể chọn nhân viên cụ thể không?</span><span class="faq-item__arrow">▼</span></div><div class="faq-item__answer">Có! Ghi vào phần ghi chú khi đặt lịch, đội ngũ sẽ sắp xếp nếu có thể.</div></div>
+          <div class="faq-item"><div class="faq-item__question"><span class="faq-item__text">Cần chuẩn bị gì trước khi grooming?</span><span class="faq-item__arrow">▼</span></div><div class="faq-item__answer">Mang theo giấy tờ tiêm chủng và thông báo nếu thú cưng có dị ứng hoặc bệnh lý.</div></div>
+          <div class="faq-item"><div class="faq-item__question"><span class="faq-item__text">Grooming nên thực hiện thường xuyên như thế nào?</span><span class="faq-item__arrow">▼</span></div><div class="faq-item__answer">Khuyến nghị mỗi 4–8 tuần tùy giống và loại lông.</div></div>
+          <div class="faq-item"><div class="faq-item__question"><span class="faq-item__text">Phụ thu loại lông được tính như thế nào?</span><span class="faq-item__arrow">▼</span></div><div class="faq-item__answer">Lông ngắn: không phụ thu. Lông trung bình: +30.000đ. Lông dài: +60.000đ.</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Modals -->
+    <div class="confirmation-modal" id="confirmationModal">
+      <div class="confirmation-modal__overlay"></div>
+      <div class="confirmation-modal__content">
+        <h3>Xác nhận đặt lịch</h3>
+        <p id="confirmText">Kiểm tra lại thông tin đặt lịch trước khi xác nhận.</p>
+        <div class="modal-actions">
+          <button class="btn btn-white" id="btnCancel">Hủy</button>
+          <button class="btn btn-orange" id="btnConfirmSubmit">Xác nhận</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="success-modal" id="successModal">
+      <div class="success-modal__overlay"></div>
+      <div class="success-modal__content">
+        <div class="success-modal__icon">✓</div>
+        <h3>Đặt lịch thành công!</h3>
+        <p id="successMessage"></p>
+        <button class="btn btn-orange" id="btnCloseSuccess">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     CHATBOX
+     ================================================================ -->
+<div class="chat-fab" id="chatFab" title="Chat với Petopia AI">
+  <span class="chat-fab__icon">🐾</span>
+  <span class="chat-fab__badge" id="chatBadge"></span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header__info">
+      <div class="chat-header__avatar">🐾</div>
+      <div>
+        <div class="chat-header__name">Petopia AI</div>
+        <div class="chat-header__status"><span class="chat-status-dot"></span> Đang hoạt động</div>
+      </div>
+    </div>
+    <button class="chat-header__close" id="chatClose" title="Đóng">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages"></div>
+
+  <div class="chat-quick-btns" id="quickBtns">
+    <button class="quick-btn" data-q="Dịch vụ grooming có gì?">🛁 Dịch vụ</button>
+    <button class="quick-btn" data-q="Bảng giá dịch vụ?">💰 Bảng giá</button>
+    <button class="quick-btn" data-q="Giờ làm việc?">🕐 Giờ mở cửa</button>
+    <button class="quick-btn" data-q="Cần chuẩn bị gì trước khi grooming?">📋 Chuẩn bị</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Nhắn tin cho Petopia AI..." maxlength="300">
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+</section>
+  
+                <div class="grooming-faq-item" data-faq="4">
+  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-cta">
+        <div class="cta-content">
+            <div class="cta-img"></div>
+            <div class="cta-text">
+                <h3>Sẵn sàng cho một vẻ ngoài mới mẻ?</h3>
+                <p>Đặt lịch grooming ngay hôm nay và khiến thú cưng của bạn hạnh phúc!</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<footer>
+
+        <div class="footer-top-bg">
+            <div class="container footer-top">
+                <div class="footer-col col-info" style="flex: 1.5;">
+                    <a href="#" onclick="showPage('home')"> <img src="assets/img/bglogo.png" alt="Petopia Logo" class="logo"></a>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:0365507533"> <strong>1900 1234</strong></a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hueptkk24411e@st.uel.edu.vn" > support.petopia@gmail.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90HQG-HCM+(UEL)/@10.8704278,106.7757352,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8704225!4d106.7783101!16s%2Fm%2F0ds8rvh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D"> <div>669 Đỗ Mười, phường Linh Xuân TP. Thủ Đức, TP. Hồ Chí Minh</div></a></li>
+                    </ul>
+                    <div class="social-wrap">
+
+                        <span class="social-title">
+                            KẾT NỐI VỚI CHÚNG TÔI</span> 
+                       
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://zalo.me/0365507533"><img src="assets/img/zalo.png" class="zalo-icon" alt="Zalo"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col about">
+                    <h4><i class="fa-solid fa-house col-icon">
+                    
+                    </i> VỀ PETOPIA</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about');showAbout('intro')">Giới thiệu</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('member')">Thành viên</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Liên hệ</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('recruit')">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-cart-shopping col-icon"></i> MUA SẮM</h4>
+                    <ul>
+                        <li><a href="#">Thức ăn cho chó</a></li>
+                        <li><a href="#">Thức ăn cho mèo</a></li>
+                        <li><a href="#">Đồ chơi & phụ kiện</a></li>
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col support" >
+                    <h4><i class="fa-solid fa-headset col-icon"></i> HỖ TRỢ KHÁCH HÀNG</h4>
+                    
+                    <ul>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('return')">Chính sách đổi trả</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('warranty')">Chính sách bảo hành</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('buy')">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('payment')">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('shipping')">Chính sách vận chuyển</a></li>
+                        <li><a href="#"  onclick="showPage('policy');showPolicy('faq')">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" >
+                    <h4><i class="fa-solid fa-location-dot col-icon" style="color: #f7941d;"></i> HỆ THỐNG CỬA HÀNG</h4>
+                    <p style="font-size: 17px; line-height: 1.6; margin-bottom: 15px;">Hệ thống cửa hàng Petopia trải dài khắp TP. Hồ Chí Minh</p>
+                    <button class="store-btn"
+            onclick="openStoreModal()">
+        XEM CỬA HÀNG GẦN BẠN
+    </button>
+                </div>
+                <div id="storeModal" class="store-modal">
+
+    <div class="store-modal-content">
+
+    <span class="close-btn" onclick="closeStoreModal()"> &times; </span>
+
+    <h2>Hệ Thống Cửa Hàng Petopia</h2>
+<span class="close-btn" onclick="closeStoreModal()">
+    &times;
+</span>
+
+    <div id="storeContainer"></div>
+
+</div>
+        <h2>Hệ Thống Cửa Hàng Petopia</h2>
+        <div id="storeContainer"></div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-features">
+            <div class="container features-wrapper">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('warranty')">
+                    <div class="feature-text">
+                        <h5>100% CHÍNH HÃNG</h5>
+                        <p>Cam kết sản phẩm chính hãng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('shipping')">
+                    <div class="feature-text">
+                        <h5>GIAO HÀNG NHANH</h5>
+                        <p>Giao hàng toàn quốc, nhanh chóng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-right-left"></i></div>
+                <a href="#" onclick="showPage('policy');showPolicy('return')">
+                    <div class="feature-text">
+                        <h5>ĐỔI HÀNG DỄ DÀNG</h5>
+                        <p>Đổi trả trong vòng 3 ngày</p>
+                    </div>
+                </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-text">
+                        <h5>HỖ TRỢ 24/7</h5>
+                        <p>Hỗ trợ khách hàng mọi lúc mọi nơi</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <div class="feature-text">
+                        <h5>TÍCH ĐIỂM ƯU ĐÃI</h5>
+                        <p>Tích điểm thành viên, nhận nhiều ưu đãi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bg">
+            <div class="container footer-partners">
+                <div class="partner-group">
+                    <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+<div class="partner-logos">
+                        <img src="assets/img/payment method/visa.png" alt="Visa">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHJp7Jq6QVMw-_-_ar5n4GzK_sXhdWKCYBi3JSHR04A&s=10" alt="MoMo">
+                        <img src="assets/img/payment method/QRR.png" alt="VNPay">
+                        <img src="assets/img/payment method/bank.png" alt="Bank Transfer">
+                        <img src="assets/img/payment method/COD.png" alt="COD">
+                    </div>
+                </div>
+                <div class="partner-group" style="padding-left: 30px;">
+                    <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+                    <div class="partner-logos">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL31d7lx8ioc5orJkvsIxq3T5PDPXkhilRewvZGwMSg&s=10" alt="GHN">
+                        <img src="assets/img/shipping unit/J&T.png" alt="J&T">
+                        <img src="assets/img/shipping unit/viettel port.png" alt="Viettel Post">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <div class="bottom-wrapper">
+                    <div class="company-info">
+                        <strong>@ Công Ty Cổ Phần TM & DV Petopia. MST: (028) 372 44 555.</strong><br>
+                        <a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76" >669 Đỗ Mười, khu phố 13, phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh</a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Đăng ký để nhận thông tin và ưu đãi</p>
+                        <form class="newsletter-form" action="#">
+                            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+                            <button type="submit">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+
+document.querySelectorAll(".hotel-faq-question").forEach(function(btn){
+
+    btn.onclick = function(){
+
+        let answer = this.nextElementSibling;
+
+        if(answer.style.display === "block"){
+            answer.style.display = "none";
+        }else{
+            answer.style.display = "block";
+        }
+
+    };
+
+});
+
+</script>
+<script>
+
+document.querySelectorAll(".grooming-faq-question")
+.forEach(function(btn){
+
+    btn.onclick = function(){
+
+        this.nextElementSibling.classList.toggle("show");
+
+    };
+
+});
+
+</script>
+
+
+<!-- ===== AI CHATBOX ===== -->
+<div class="chat-fab" id="chatFab" title="Chat với Petopia AI">
+  <span class="chat-fab__icon">🐾</span>
+  <span class="chat-fab__badge" id="chatBadge"></span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header__info">
+      <div class="chat-header__avatar">🐾</div>
+      <div>
+        <div class="chat-header__name">Petopia AI</div>
+        <div class="chat-header__status"><span class="chat-status-dot"></span> Đang hoạt động</div>
+      </div>
+    </div>
+    <button class="chat-header__close" id="chatClose" title="Đóng">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages">
+    <!-- messages injected by JS -->
+  </div>
+
+  <div class="chat-quick-btns" id="quickBtns">
+    <button class="quick-btn" data-q="Dịch vụ grooming có gì?">🛁 Dịch vụ</button>
+    <button class="quick-btn" data-q="Bảng giá dịch vụ?">💰 Bảng giá</button>
+    <button class="quick-btn" data-q="Giờ làm việc?">🕐 Giờ mở cửa</button>
+    <button class="quick-btn" data-q="Cần chuẩn bị gì trước khi grooming?">📋 Chuẩn bị</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Nhắn tin cho Petopia AI..." maxlength="300"/>
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+
+
+<div id="petModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;width:90%;max-width:560px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 40px rgba(0,0,0,0.2);">
+
+    <!-- Header -->
+    <div style="padding:20px 24px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 style="margin:0;font-size:18px;color:#ff6600;"><i class="fa-solid fa-paw"></i> Hồ Sơ Thú Cưng</h2>
+        <button onclick="closePetModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#aaa;line-height:1;">✕</button>
+      </div>
+      <!-- Tabs -->
+      <div style="display:flex;gap:0;">
+        <button class="pet-modal-tab active" data-tab="profile" onclick="switchPetModalTab('profile')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-id-card"></i> Hồ sơ
+        </button>
+        <button class="pet-modal-tab" data-tab="bookings" onclick="switchPetModalTab('bookings')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-hotel"></i> Đặt phòng
+        </button>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div style="flex:1;overflow-y:auto;padding:20px 24px;">
+
+      <!-- Panel: Hồ sơ -->
+      <div id="petPanel-profile" class="pet-modal-panel">
+        <h3 id="petFormTitle" style="margin-top:0;color:#ff6600;">🐾 Thêm thú cưng mới</h3>
+        <form id="petForm" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+          <input type="hidden" name="petId" value="">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="petName" placeholder="Tên thú cưng" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <select name="petType" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="dog">🐕 Chó</option>
+              <option value="cat">🐈 Mèo</option>
+            </select>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="breed" placeholder="Giống (VD: Poodle)" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <input name="weight" type="number" step="0.1" min="0.1" placeholder="Cân nặng (kg)" required style="flex:1;min-width:80px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <select name="gender" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="">Giới tính</option>
+              <option value="male">Đực</option>
+              <option value="female">Cái</option>
+            </select>
+            <input name="color" placeholder="Màu lông" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <input name="birthDate" type="date" placeholder="Ngày sinh" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          <textarea name="notes" rows="2" placeholder="Ghi chú (tùy chọn)" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;"></textarea>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-submit-booking" style="flex:1;">💾 Lưu thông tin</button>
+            <button type="button" onclick="document.getElementById('petForm').reset(); document.getElementById('petForm').removeAttribute('data-edit-id'); document.getElementById('petFormTitle').textContent='🐾 Thêm thú cưng mới';" class="btn-submit-booking" style="flex:1;background:#bbb;">Đặt lại</button>
+          </div>
+        </form>
+        <div id="petListContainer"></div>
+      </div>
+
+      <!-- Panel: Đặt phòng -->
+      <div id="petPanel-bookings" class="pet-modal-panel" style="display:none;">
+        <!-- Booking status legend -->
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
+          <span style="background:#fff8e1;color:#f57c00;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Chờ xác nhận</span>
+          <span style="background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã xác nhận</span>
+          <span style="background:#e3f2fd;color:#1565c0;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đang lưu trú</span>
+          <span style="background:#f3e5f5;color:#6a1b9a;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Hoàn thành</span>
+          <span style="background:#ffebee;color:#c62828;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã hủy</span>
+        </div>
+
+        <div id="modalBookingHistoryList">
+          <div style="text-align:center;padding:30px;color:#aaa;">Đang tải...</div>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div>
+</div>
+</body>
+<script src="assets/js/chatbox.js"></script>
+<script src="assets/js/pet-profile.js"></script>
+</html>
+
+<script src="router.js"></script>

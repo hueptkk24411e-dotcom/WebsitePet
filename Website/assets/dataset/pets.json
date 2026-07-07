@@ -1,0 +1,23 @@
+[
+  {
+    "id": "PET001",
+    "name": "Đậu Đậu",
+    "type": "Dog",
+    "breed": "Poodle",
+    "weight": 6.5
+  },
+  {
+    "id": "PET002",
+    "name": "Mimi",
+    "type": "Cat",
+    "breed": "British Shorthair",
+    "weight": 4.2
+  },
+  {
+    "id": "PET003",
+    "name": "Bông",
+    "type": "Dog",
+    "breed": "Golden Retriever",
+    "weight": 12
+  }
+]

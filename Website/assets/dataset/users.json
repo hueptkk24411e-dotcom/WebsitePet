@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Văn A",
+    "email": "nguyenvana@email.com",
+    "password": "123456",
+    "phone": "0901 234 567",
+    "role": "admin",
+    "createdAt": "01/01/2025"
+  },
+  {
+    "id": 2,
+    "name": "Trần Thị B",
+    "email": "tranthib@email.com",
+    "password": "123456",
+    "phone": "0902 345 678",
+    "role": "customer",
+    "createdAt": "02/01/2025"
+  },
+  {
+    "id": 3,
+    "name": "Phạm Văn C",
+    "email": "phamvanc@email.com",
+    "password": "123456",
+    "phone": "0903 456 789",
+    "role": "staff",
+    "createdAt": "03/01/2025"
+  }
+]

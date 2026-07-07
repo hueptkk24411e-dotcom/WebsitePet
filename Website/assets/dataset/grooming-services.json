@@ -1,0 +1,143 @@
+[
+  {
+    "id": "service_1",
+    "name": "Grooming Cơ bản",
+    "description": "Tắm, cắt tỉa cơ bản, cắt móng, vệ sinh tai",
+    "basePrice": 200000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "dog",
+    "image": "https://static.wixstatic.com/media/41bb54_a1498b39e5904f7eaddf9eb102cf18c7~mv2.jpeg/v1/fill/w_4096,h_2730,al_c,q_90,enc_auto/41bb54_a1498b39e5904f7eaddf9eb102cf18c7~mv2.jpeg"
+  },
+  {
+    "id": "service_2",
+    "name": "Grooming Trọn gói",
+    "description": "Tắm, cắt tóc, styling, cắt móng, vệ sinh tai",
+    "basePrice": 350000,
+    "category": "full",
+    "serviceType": "full",
+    "petType": "dog",
+    "image": "https://thumbs.dreamstime.com/b/toy-poodle-dog-getting-groomed-pet-salon-neat-stylish-haircut-showing-its-adorable-face-fluffy-fur-clean-bright-320989222.jpg?w=768"
+  },
+  {
+    "id": "service_3",
+    "name": "Spa Package",
+    "description": "Tắm, massage, chăm sóc da, thuốc gội cao cấp, khử mùi",
+    "basePrice": 450000,
+    "category": "spa",
+    "serviceType": "spa",
+    "petType": "dog",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.PQyFtbDRolm4ykxdn8CcUgHaEJ?pid=Api&h=220&P=0"
+  },
+  {
+    "id": "service_4",
+    "name": "Chăm sóc móng",
+    "description": "Cắt móng, điều trị móng, mài móng",
+    "basePrice": 120000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "all",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.lemWIlLmS2GV2vJwBC6AiQHaEK?pid=Api&h=220&P=0&w=300"
+  },
+  {
+    "id": "service_5",
+    "name": "Grooming cho mèo",
+    "description": "Tắm và cắt tỉa chuyên biệt cho mèo",
+    "basePrice": 280000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "cat",
+    "image": "https://i.pinimg.com/1200x/8b/ca/c1/8bcac1c4e915691361d9b9873e1857ad.jpg"
+  },
+  {
+    "id": "service_6",
+    "name": "Spa cho mèo",
+    "description": "Tắm, massage, chăm sóc da cho mèo",
+    "basePrice": 380000,
+    "category": "spa",
+    "serviceType": "spa",
+    "petType": "cat",
+    "image": "https://i.pinimg.com/vwebp/1200x/94/5d/22/945d2234331c51cc79d98d5f2024a0e5.webp"
+  }
+  ,
+  {
+    "id": "service_7",
+    "name": "Kiểu tóc Teddy",
+    "description": "Tạo kiểu Teddy cho thú cưng",
+    "basePrice": 50000,
+    "category": "addon",
+    "serviceType": "addon",
+    "petType": "dog",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSxe7aLqFNKwibBAQFi2trMdWmg1vWRB4-IxoIv4Ff14LvYplHhOoQCo&s=10"
+  },
+  {
+    "id": "service_8",
+    "name": "Kiểu tóc Lion",
+    "description": "Tạo kiểu Lion (đầu sư tử) cho thú cưng",
+    "basePrice": 60000,
+    "category": "addon",
+    "serviceType": "addon",
+    "petType": "dog",
+    "image": "https://i.pinimg.com/vwebp/1200x/5e/15/a9/5e15a95947ccb89810ff1e0a15afe621.webp"
+  },
+  {
+    "id": "service_9",
+    "name": "Kiểu tóc Korean",
+    "description": "Tạo kiểu Hàn Quốc cho thú cưng",
+    "basePrice": 70000,
+    "category": "addon",
+    "serviceType": "addon",
+    "petType": "dog",
+    "image": "https://i.pinimg.com/1200x/07/b7/94/07b7943a647f6f2c420d0890d6296775.jpg"
+  },
+  {
+    "id": "service_10",
+    "name": "Kiểu tóc Summer",
+    "description": "Tạo kiểu Summer mát mẻ cho thú cưng",
+    "basePrice": 40000,
+    "category": "addon",
+    "serviceType": "addon",
+    "petType": "dog",
+    "image": "https://i.pinimg.com/vwebp/1200x/74/28/22/742822577f28efe93433a97769223492.webp"
+  },
+  {
+    "id": "service_11",
+    "name": "Chăm sóc móng chuyên nghiệp",
+    "description": "Cắt móng, mài móng, chăm sóc da quanh móng",
+    "basePrice": 150000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "all",
+    "image": "https://i.pinimg.com/736x/21/e2/1b/21e21bfa95253e6ce059ca87881c51eb.jpg"
+  },
+  {
+    "id": "service_12",
+    "name": "Massage thư giãn",
+    "description": "Massage toàn thân giúp thú cưng thư giãn",
+    "basePrice": 200000,
+    "category": "spa",
+    "serviceType": "spa",
+    "petType": "all",
+    "image": "https://i.pinimg.com/vwebp/1200x/36/ee/35/36ee35b3f48f3a7887110f5b50f78de1.webp"
+  },
+  {
+    "id": "service_13",
+    "name": "Vệ sinh và chăm sóc tai",
+    "description": "Vệ sinh tai sạch sẽ, nhổ lông tai an toàn",
+    "basePrice": 120000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "all",
+    "image": "https://i.pinimg.com/1200x/3e/c8/6d/3ec86dcb14acc35448ac176a442335f9.jpg"
+  },
+  {
+    "id": "service_14",
+    "name": "Chăm sóc mắt",
+    "description": "Vệ sinh quanh mắt, loại bỏ lông thừa, chăm sóc đặc biệt",
+    "basePrice": 100000,
+    "category": "basic",
+    "serviceType": "basic",
+    "petType": "all",
+    "image": "https://i.pinimg.com/1200x/50/f8/db/50f8dbda5d5e5dc302468b1b484cba8a.jpg"
+  }
+]

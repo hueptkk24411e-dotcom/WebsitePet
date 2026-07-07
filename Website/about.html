@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petopia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/grooming.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chinhsach.css">
+<link rel="stylesheet" href="assets/css/hotel.css">
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/member.css">
+<link rel="stylesheet" href="assets/css/recruit.css">
+<link rel="stylesheet" href="assets/css/blog.css">
+<link rel="stylesheet" href="assets/css/contact.css"/>
+<link rel="stylesheet" href="assets/css/shop.css"/>
+    <script src="assets/js/momo-payment.js"></script>
+    <script src="assets/js/home.js"></script>
+    <link rel="stylesheet" href="assets/css/home.css"/>
+    <script src="assets/js/shop.js"></script>
+<link rel="stylesheet" href="assets/css/chatbox.css">
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/hotel.js"></script>
+<script src="assets/js/trangchu.js"></script>
+<script src="assets/js/blog.js"></script> 
+<script src="assets/js/grooming.js"></script>
+<script src="assets/js/grooming-booking.js"></script> 
+
+<script>
+    // Hàm này sẽ được gọi khi nhấp vào "Cửa hàng"
+    function openShop() {
+        showPage('shop'); // Hiển thị toàn bộ section cửa hàng
+        switchTab('home'); // Kích hoạt tab sản phẩm (tab-home) bên trong section cửa hàng
+    }
+</script>
+<script src="assets/js/chinhsach.js"></script>
+</head>
+<header>
+
+    <div class="top-header">
+
+        <div class="left-box">
+
+            <div class="header-logo">
+                <a href="#" onclick="showPage('home')"><img  src="assets/img/bglogo.png" alt=""></a>
+            </div>
+
+<div class="header-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+                        autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions"
+                        oninput="handleSearch()" onfocus="handleSearchFocus()" onkeydown="handleSearchKeydown(event)">
+                    <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Gợi ý sản phẩm"></div>
+                </div>
+        </div>
+     
+        <div class="right-box">
+
+            <a href="#"   onclick="showPage('contact')" class="header-action-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span> Hỗ trợ</span>
+            </a>
+                    
+                <a class="header-action-item" onclick="switchTab('wishlist')" id="tab-btn-wishlist">
+                    <i class="fas fa-heart"></i> Yêu Thích <span class="badge-count" id="wishlistCount">0</span>
+                </a>
+                <a class="header-action-item" onclick="switchTab('orders')" id="tab-btn-orders">
+                    <i class="fas fa-box-open"></i><span> Đơn Hàng</span>
+                </a>              
+            <a class="header-action-item" onclick="switchTab('cart')" id="tab-btn-cart">
+                    <i class="fas fa-shopping-cart"></i><span> Giỏ Hàng </span><span class="badge-count" id="cartCount">0</span>
+            </a>
+
+           <div id="userAuthSection">
+    <a href="login.html" class="header-action-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Đăng nhập</span>
+    </a>
+</div>
+<a href="#"class="header-btn-profile" onclick="showPage('lich-su-dat-lich')">Hồ sơ thú cưng</a>
+                     
+        </div>
+
+    </div>
+<nav class="main-nav">
+
+        <ul class="menu">
+
+            <li>
+                <a href="#" onclick="showPage('home')" >
+                    Trang chủ
+                </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openShop()">
+    Cửa hàng
+</a>
+
+            </li>
+
+            <li>
+                <a href="#"  onclick="showPage('grooming')" >
+                    Grooming
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('hotel')">
+                    Pet Hotel
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('blog')">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('contact')" >
+                    Liên hệ
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header><body data-page="about">
+<section id="about-page">
+    <div id="intro-content">
+      <div class="about-image">
+        <img src="assets/img/gt.png" alt="Petopia">
+    </div>
+
+    <section class="about-section">
+
+    <div class="about-left">
+        <img src="assets/img/meo.png" alt="Mèo Petopia">
+    </div>
+
+    <div class="about-right">
+
+        <span class="about-subtitle">
+            <i class="fa-solid fa-paw"></i>
+            GIỚI THIỆU
+        </span>
+
+        <h1>GIỚI THIỆU PETOPIA</h1>
+
+        <h3>Chào mừng đến với Petopia</h3>
+
+        <p>
+            Petopia là điểm đến dành cho những người yêu thú cưng, nơi mang đến
+            các sản phẩm và dịch vụ chất lượng nhằm giúp thú cưng có cuộc sống
+            khỏe mạnh và hạnh phúc hơn.
+        </p>
+
+        <p>
+            Chúng tôi hiểu rằng thú cưng không chỉ là vật nuôi mà còn là những
+            người bạn đồng hành đặc biệt trong mỗi gia đình.
+        </p>
+
+    </div>
+
+</section>
+<section class="mission-vision">
+
+    <!-- SỨ MỆNH -->
+    <div class="mv-card">
+
+        <div class="mv-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="mv-content">
+            <h2>SỨ MỆNH CỦA PETOPIA</h2>
+
+            <p>
+                Petopia được xây dựng với sứ mệnh cung cấp những sản phẩm an toàn,
+                chất lượng cùng trải nghiệm mua sắm tiện lợi cho cộng đồng yêu thú cưng.
+                Chúng tôi luôn nỗ lực mang đến giải pháp chăm sóc toàn diện, giúp khách hàng
+                dễ dàng tìm thấy những sản phẩm phù hợp nhất cho người bạn bốn chân của mình.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- TẦM NHÌN -->
+    <div class="mv-card vision-card">
+
+        <div class="mv-icon">
+            <i class="fa-solid fa-bullseye"></i>
+        </div>
+
+        <div class="mv-content">
+            <h2>TẦM NHÌN</h2>
+
+            <p>
+                Petopia hướng tới trở thành một trong những thương hiệu chăm sóc
+                thú cưng uy tín hàng đầu tại Việt Nam, xây dựng cộng đồng những
+                người yêu thú cưng gắn kết và lan tỏa giá trị yêu thương động vật
+                đến mọi người.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section class="featured-products">
+
+    <div class="section-title">
+        <i class="fa-solid fa-paw"></i>
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+    </div>
+
+    <p class="section-desc">
+        Đa dạng sản phẩm dành cho chó, mèo và các loại thú cưng khác
+    </p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://fexafkqzpbzjcupvbfhe.supabase.co/storage/v1/object/public/product-images/products/b9a00574-52f2-4b7b-8d99-8aecf9d11157/ffaaf27e-bb32-4ad9-a0d5-b305c3026357/h-t-cho-ch-tr-ng-th-nh-zoi-dog.png" alt="">
+            <h3>Thức ăn dinh dưỡng</h3>
+            <p>Thức ăn dinh dưỡng chất lượng cao.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fexafkqzpbzjcupvbfhe.supabase.co/storage/v1/object/public/product-images/products/e90b0b8d-1152-42ae-b355-59e8977c0421/5ab3efda-f5c0-41bd-b990-52356a9b0bf2/b-nh-th-ng-cho-ch-b-nh-quy-doggyman.jpg" alt="">
+            <h3>Bánh thưởng</h3>
+            <p>Bánh thưởng và đồ ăn vặt cho thú cưng.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fexafkqzpbzjcupvbfhe.supabase.co/storage/v1/object/public/product-images/products/86f98892-691a-4bbc-ab16-3ee2e1ab2dda/88b83545-3f73-4619-aa57-ae1379825670/-ch-i-cho-ch-nhai-g-m-cao-su-nhi-u-m-u-paddy-pet-s.png" alt="">
+            <h3>Đồ chơi</h3>
+            <p>Đồ chơi giúp giải trí và vận động.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fexafkqzpbzjcupvbfhe.supabase.co/storage/v1/object/public/product-images/products/195136a7-b289-4cd1-917a-7d245862283a/dd50924c-44d9-41fb-8112-27c98d49637d/balo-v-n-chuy-n-nh-a-d-o-cho-m-o-diamond.jpg" alt="">
+            <h3>Phụ kiện</h3>
+            <p>Vòng cổ, dây dắt, quần áo và giường nằm.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fexafkqzpbzjcupvbfhe.supabase.co/storage/v1/object/public/product-images/products/0f2e59f2-23b1-49b8-a10b-66e34a3c73c9/2318dc5e-e723-4291-808d-fde4b810289d/s-a-t-m-x-t-tr-ve-b-ch-t-cho-ch-m-o-tropiclean-nat.png" alt="">
+            <h3>Chăm sóc sức khỏe</h3>
+            <p>Sản phẩm vệ sinh và chăm sóc sức khỏe.</p>
+        </div>
+
+    </div>
+
+    <div class="feature-note">
+        <div class="note-icon">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+        <p>
+            Tất cả sản phẩm đều được lựa chọn kỹ lưỡng từ những thương hiệu uy tín
+            nhằm đảm bảo sự an toàn và chất lượng cho thú cưng.
+        </p>
+
+        <i class="fa-regular fa-heart heart-icon"></i>
+    </div>
+
+</section>
+<section class="why-choose">
+
+    <div class="why-title">
+        <i class="fa-solid fa-paw"></i>
+        <h2>VÌ SAO CHỌN PETOPIA?</h2>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3>Sản phẩm chính hãng</h3>
+            <p>Cam kết chính hãng, nguồn gốc rõ ràng.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Chất lượng đảm bảo</h3>
+            <p>Sản phẩm an toàn, được chọn lọc kỹ lưỡng.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-tags"></i>
+            </div>
+            <h3>Giá cả hợp lý</h3>
+            <p>Giá tốt, cạnh tranh, nhiều ưu đãi hấp dẫn.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Giao hàng nhanh chóng</h3>
+            <p>Giao hàng nhanh trên toàn quốc.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3>Đổi trả minh bạch</h3>
+            <p>Chính sách đổi trả rõ ràng, dễ dàng.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Hỗ trợ tận tâm</h3>
+            <p>Đội ngũ hỗ trợ khách hàng luôn sẵn sàng.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="commitment-section">
+
+    <div class="commitment-image">
+        <img src="assets/img/camket.png" alt="Petopia">
+    </div>
+
+    <div class="commitment-content">
+
+        <div class="commitment-title">
+            <i class="fa-regular fa-heart"></i>
+            <h2>CAM KẾT CỦA CHÚNG TÔI</h2>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="commitment-features">
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-dog"></i>
+                </div>
+
+                <div>
+                    <h4>Chất lượng hàng đầu</h4>
+                    <p>Sản phẩm chính hãng, được kiểm định chất lượng.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <div>
+                    <h4>Khách hàng là ưu tiên</h4>
+                    <p>Luôn lắng nghe và hỗ trợ tốt nhất cho khách hàng.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                </div>
+
+                <div>
+                    <h4>Đồng hành dài lâu</h4>
+                    <p>Xây dựng mối quan hệ bền vững cùng thú cưng.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="commitment-text">
+            Petopia cam kết không ngừng cải thiện chất lượng sản phẩm, dịch vụ và trải nghiệm mua sắm
+            để đồng hành cùng khách hàng trong hành trình chăm sóc những người bạn đáng yêu của mình.
+        </p>
+
+    </div>
+</section>
+<section class="petopia-world">
+
+    <h2>Khám phá thế giới Petopia</h2>
+
+    <div class="world-grid">
+        <div class="world-card">
+            <div class="world-icon">👨‍👩‍👧‍👦</div>
+            <h3>Thành viên Petopia</h3>
+            <p>Đội ngũ sáng lập và phát triển Petopia</p>
+            <a href="#" onclick="showPage('about');showAbout('recruit')">Xem ngay →</a>
+        </div>
+
+        <div class="world-card">
+            <div class="world-icon">📖</div>
+            <h3>Blog Petopia</h3>
+            <p>Kiến thức chăm sóc chó mèo và thú cưng</p>
+            <a href="#" onclick="showPage('blog')"> Đọc ngay →</a>
+        </div>
+
+        <div class="world-card">
+            <div class="world-icon">🐾</div>
+            <h3>Petopia Club</h3>
+            <p>Kết nối cộng đồng yêu thú cưng</p>
+            <a href="#" onclick="showPage('about');showAbout('member')">Tham gia →</a>
+        </div>
+
+        <div class="world-card">
+            <div class="world-icon">💬</div>
+            <h3>Liên hệ</h3>
+            <p>Hotline, Email và hỗ trợ khách hàng</p>
+            <a href="#" onclick="showPage('contact')">Liên hệ →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="petopia-banner">
+
+    <img src="assets/img/chó.png"
+         alt="Dog"
+         class="banner-dog">
+
+    <div class="banner-content">
+
+        <p class="banner-subtitle">
+            🐾 Hãy cùng Petopia 🐾
+        </p>
+
+        <h2>CHĂM SÓC NGƯỜI BẠN NHỎ</h2>
+
+        <a href="#" class="banner-btn">
+            MUA SẮM NGAY
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+    </div>
+    <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t51.82787-15/714403698_18049988420786846_8872326691213842389_n.jpg?stp=c0.89.1080.1080a_dst-jpg_tt6&cstp=mx1080x1080&ctp=s206x206&_nc_cat=111&ccb=1-7&_nc_sid=714c7a&_nc_eui2=AeF244zkdX6OxLGdWr1lAZYm1pAyTbyXB5rWkDJNvJcHmkW63R-WinRHrAIXggbQs5e3SGG-lZSYhVPk4S-Q3212&_nc_ohc=LzEZ-RFMlWMQ7kNvwF_uT1q&_nc_oc=Ado1T_4zhk_25_zraW5ue6fKQeopYApRyYgA2YqHB66mIoACbC8QcC0hKkjJrpeGIVQ&_nc_zt=23&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=xqfcboeRWP1G_yJEEsmG6Q&_nc_ss=7b2a8&oh=00_AQBhOBbvPv5aRnQWoXKgcRjsaWqaC_SqTl8dS8ki6HyHwQ&oe=6A4E66AB"
+         alt="Cat"
+         class="banner-cat">
+    </section>
+</div>
+<div id="member-content" style="display:none;">
+    <section class="member-banner">
+        <img src="assets/img/thanhvien.png">
+        <div class="member-content" >
+            <h1>THÀNH VIÊN</h1>
+            <h2>Petopia</h2>
+            <p>
+                Trở thành thành viên Petopia để nhận ngay nhiều ưu đãi hấp dẫn,<br>
+                tích điểm dễ dàng và tận hưởng đặc quyền dành riêng cho bạn<br>
+                và người bạn bốn chân của mình.
+            </p>
+
+            <a href="#" class="register-btn">
+                🐾 ĐĂNG KÝ NGAY
+            </a>
+        </div>
+    </section>
+
+<section class="why-join">
+    <h2>🐾 TẠI SAO NÊN THAM GIA PETOPIA CLUB? 🐾</h2>
+
+    <div class="benefit-container">
+
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/535/535285.png" alt="">
+            <h3>TÍCH ĐIỂM DỄ DÀNG</h3>
+            <p>
+                Tích điểm khi mua sắm, sử dụng dịch vụ.
+                Pet hotel và nhiều dịch vụ khác.
+            </p>
+        </div>
+
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/2991/2991148.png" alt="">
+            <h3>GIÁM GIÁ HẤP DẪN</h3>
+            <p>
+                Nhận ưu đãi giảm giá lên đến 10%
+                cho các dịch vụ Grooming, Hotel
+                và nhiều hơn nữa.
+            </p>
+        </div>
+
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/2921/2921822.png" alt="">
+            <h3>ƯU TIÊN ĐẶT DỊCH VỤ</h3>
+            <p>
+                Ưu tiên lịch cắt tỉa, Grooming,
+                trông Hotel vào các dịp cao điểm.
+            </p>
+        </div>
+
+        <div class="benefit-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/869/869636.png" alt="">
+            <h3>QUÀ TẶNG ĐỘC QUYỀN</h3>
+            <p>
+                Nhận quà sinh nhật Box, voucher
+                đặc biệt và nhiều chương trình
+                ưu đãi riêng cho thành viên.
+            </p>
+        </div>
+
+    </div>
+</section>
+<section class="member-rank">
+    <h2>🐾 CÁC HẠNG THÀNH VIÊN 🐾</h2>
+
+    <div class="rank-container">
+
+        <div class="rank-card bronze">
+            <div class="rank-icon">🥉</div>
+            <h3>BRONZE</h3>
+            <span>0 - 499 điểm</span>
+
+            <ul>
+                <li>Miễn phí tham gia</li>
+                <li>Tích điểm cơ bản</li>
+                <li>Nhận khuyến mãi hàng tháng</li>
+            </ul>
+        </div>
+
+        <div class="rank-card silver">
+            <div class="rank-icon">🥈</div>
+            <h3>SILVER</h3>
+            <span>500 - 999 điểm</span>
+
+            <ul>
+                <li>Tích điểm x1.2</li>
+                <li>Giảm 5% dịch vụ Grooming</li>
+                <li>Voucher sinh nhật 100.000đ</li>
+                <li>Ưu đãi thành viên</li>
+            </ul>
+        </div>
+
+        <div class="rank-card gold">
+            <div class="rank-icon">🏅</div>
+            <h3>GOLD</h3>
+            <span>1000 - 1999 điểm</span>
+
+            <ul>
+                <li>Tích điểm x1.5</li>
+                <li>Giảm 10% dịch vụ Grooming</li>
+                <li>Giảm 10% dịch vụ Pet Hotel</li>
+                <li>Ưu tiên đặt lịch</li>
+                <li>Quà tặng đặc biệt</li>
+            </ul>
+        </div>
+
+        <div class="rank-card platinum">
+            <div class="rank-icon">💎</div>
+            <h3>PLATINUM</h3>
+            <span>2000+ điểm</span>
+
+            <ul>
+                <li>Tích điểm x2</li>
+                <li>Giảm 15% toàn bộ dịch vụ</li>
+                <li>Ưu tiên phòng VIP Pet Hotel</li>
+                <li>Quà sinh nhật cao cấp</li>
+                <li>Nhiều ưu đãi độc quyền</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<section class="point-guide">
+    <h2>🐾 CÁCH TÍCH ĐIỂM 🐾</h2>
+
+    <div class="point-container">
+
+        <div class="point-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/263/263142.png" alt="">
+            <h3>MUA SẮM TẠI PET SHOP</h3>
+            <p>Mua thức ăn, phụ kiện,<br>đồ chơi, vitamin...</p>
+            <span>1.000đ = 1 điểm</span>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="point-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/2965/2965567.png" alt="">
+            <h3>DỊCH VỤ GROOMING</h3>
+            <p>Tắm gội, cắt tỉa lông,<br>làm đẹp...</p>
+            <span>1.000đ = 1 điểm</span>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="point-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/619/619153.png" alt="">
+            <h3>DỊCH VỤ PET HOTEL</h3>
+            <p>Lưu trú theo ngày<br>hoặc theo giờ.</p>
+            <span>1.000đ = 1 điểm</span>
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="point-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/2331/2331941.png" alt="">
+            <h3>THANH TOÁN</h3>
+            <p>Thanh toán thành công<br>→ Điểm cộng vào tài khoản.</p>
+            <span>TÍCH ĐIỂM NGAY</span>
+        </div>
+
+    </div>
+</section>
+<section class="member-reward">
+    <div class="reward-container">
+
+        <!-- Quà thăng hạng -->
+        <div class="reward-box">
+            <h2>🐾 QUÀ THĂNG HẠNG 🐾</h2>
+
+            <div class="gift-item">
+                <div class="gift-left">
+                    🎁 <span>Lên Silver</span>
+                </div>
+                <strong>Voucher 50K</strong>
+            </div>
+
+            <div class="gift-item">
+                <div class="gift-left">
+                    🎁 <span>Lên Gold</span>
+                </div>
+                <strong>Voucher 200K</strong>
+            </div>
+
+            <div class="gift-item">
+                <div class="gift-left">
+                    🎁 <span>Lên Platinum</span>
+                </div>
+                <strong>Voucher 500K</strong>
+            </div>
+        </div>
+
+        <!-- Ví dụ tích điểm -->
+        <div class="reward-box">
+            <h2>🐾 VÍ DỤ TÍCH ĐIỂM 🐾</h2>
+
+            <div class="point-item">
+                <span>🛒 Mua thức ăn 500.000đ</span>
+                <strong>+50 điểm</strong>
+            </div>
+
+            <div class="point-item">
+                <span>✂️ Grooming Premium 350.000đ</span>
+                <strong>+35 điểm</strong>
+            </div>
+
+            <div class="point-item">
+                <span>🏠 Pet Hotel 2 ngày 1.000.000đ</span>
+                <strong>+100 điểm</strong>
+            </div>
+
+            <div class="total-point">
+                <span>Tổng cộng</span>
+                <strong>+185 điểm</strong>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="faq-section">
+
+    <h2>🐾 CÂU HỎI THƯỜNG GẶP 🐾</h2>
+
+    <div class="faq-grid">
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Điểm thành viên có thời hạn không?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Điểm tích lũy có thời hạn 12 tháng kể từ ngày phát sinh. Sau thời gian này, điểm chưa sử dụng sẽ tự động hết hạn.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Điểm có thể dùng để thanh toán không?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Có. Thành viên có thể đổi điểm thành voucher giảm giá hoặc sử dụng theo các chương trình ưu đãi của Petopia.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Làm thế nào để lên hạng thành viên?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Hệ thống sẽ tự động nâng hạng khi tổng điểm tích lũy của bạn đạt mức quy định cho từng hạng thành viên.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Điểm có dùng cho dịch vụ Grooming không?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Có. Điểm được tích lũy từ dịch vụ Grooming và có thể dùng để nhận ưu đãi theo chính sách thành viên.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Tôi có thể kiểm tra điểm ở đâu?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Bạn có thể xem điểm tích lũy trong tài khoản thành viên hoặc liên hệ nhân viên Petopia để được hỗ trợ.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+                Điểm có dùng cho dịch vụ Pet Hotel không?
+                <span>▼</span>
+            </button>
+            <div class="faq-answer">
+                Có. Các dịch vụ lưu trú tại Pet Hotel đều được tích điểm và áp dụng ưu đãi thành viên.
+            </div>
+        </div>
+
+    </div>
+
+</section>
+</div>
+<div id="recruit-content" style="display:none;">
+<section class="recruit-join-team">
+    <div class="recruit-join-content">
+
+        <div class="recruit-join-left">
+            <h2>Gia nhập đội ngũ</h2>
+
+            <h1>Petopia</h1>
+
+            <div class="recruit-join-slogan">
+                Biến tình yêu thú cưng thành sự nghiệp
+            </div>
+
+            <p>
+                Tại Petopia, chúng tôi tin rằng mỗi thú cưng đều xứng đáng
+                nhận được sự chăm sóc tốt nhất. Nếu bạn yêu động vật và muốn
+                lan tỏa điều tích cực, Petopia chính là nơi dành cho bạn!
+            </p>
+        </div>
+
+        <div class="recruit-join-right">
+            <img src="https://i.pinimg.com/736x/4e/5a/4c/4e5a4cc4cffe3377eadb49ff408e3cd9.jpg"
+                class="dog" alt="Dog">
+
+            <img src="https://i.pinimg.com/1200x/02/14/c4/0214c460f10854ecc35b5438eeee532c.jpg"
+                class="cat" alt="Cat">
+        </div>
+
+    </div>
+
+    <div class="recruit-join-stats">
+        <div class="recruit-stat-item">
+            <div class="recruit-icon">💼</div>
+            <h3>10+</h3>
+            <p>Vị trí đang tuyển</p>
+        </div>
+
+        <div class="recruit-stat-item">
+            <div class="recruit-icon">📍</div>
+            <h3>5</h3>
+            <p>Cửa hàng tại HCM</p>
+        </div>
+
+        <div class="recruit-stat-item">
+            <div class="recruit-icon">👥</div>
+            <h3>50+</h3>
+            <p>Thành viên Petopia</p>
+        </div>
+
+        <div class="recruit-stat-item">
+            <div class="recruit-icon">📅</div>
+            <h3>6</h3>
+            <p>Năm hoạt động</p>
+        </div>
+
+    </div>
+</section>
+<section class="recruit-why-petopia">
+
+    <h2>Vì sao chọn Petopia? <span>🐾</span></h2>
+
+    <div class="recruit-why-grid">
+
+        <div class="recruit-why-card">
+            <div class="recruit-why-icon pink">
+                ❤️
+            </div>
+
+            <h3>Làm việc<br>cùng đam mê</h3>
+
+            <p>
+                Tiếp xúc với chó mèo mỗi ngày và lan tỏa tình yêu đến nhiều Boss hơn.
+            </p>
+        </div>
+
+        <div class="recruit-why-card">
+            <div class="recruit-why-icon blue">
+                🎓
+            </div>
+
+            <h3>Đào tạo &<br>phát triển</h3>
+
+            <p>
+                Đào tạo bài bản, cơ hội thăng tiến rõ ràng lên Team Leader,
+                Store Manager.
+            </p>
+        </div>
+
+        <div class="recruit-why-card">
+            <div class="recruit-why-icon green">
+                🕒
+            </div>
+
+            <h3>Lịch làm việc<br>linh hoạt</h3>
+
+            <p>
+                Full-time và Part-time linh hoạt, phù hợp với sinh viên.
+            </p>
+        </div>
+
+        <div class="recruit-why-card">
+            <div class="recruit-why-icon yellow">
+                💰
+            </div>
+
+            <h3>Thu nhập<br>hấp dẫn</h3>
+
+            <p>
+                Lương cạnh tranh, thưởng doanh số, thưởng lễ tết và các phúc lợi khác.
+            </p>
+        </div>
+
+        <div class="recruit-why-card">
+            <div class="recruit-why-icon purple">
+                👥
+            </div>
+
+            <h3>Môi trường<br>thân thiện</h3>
+
+            <p>
+                Đội ngũ trẻ trung, văn hóa hỗ trợ và tôn trọng lẫn nhau.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section class="recruit-recruitment">
+
+    <h2>Vị trí đang tuyển dụng 🐾</h2>
+
+    <div class="recruit-job-grid">
+
+        <div class="recruit-job-card sale">
+            <img src="assets/img/nvbanhang.png" alt="">
+
+            <h3>Nhân viên bán hàng</h3>
+
+            <ul>
+                <li>Tư vấn sản phẩm cho khách hàng</li>
+                <li>Hỗ trợ chăm sóc thú cưng tại cửa hàng</li>
+                <li>Sắp xếp và kiểm kê hàng hóa</li>
+            </ul>
+
+            <button onclick="showJob(1)">Xem chi tiết</button>
+        </div>
+
+        <div class="recruit-job-card warehouse">
+            <img src="assets/img/nvkho.png" alt="">
+
+            <h3>Nhân viên kho</h3>
+
+            <ul>
+                <li>Nhập xuất hàng hóa</li>
+                <li>Kiểm tra tồn kho</li>
+                <li>Đóng gói đơn hàng</li>
+            </ul>
+
+            <button onclick="showJob(2)">Xem chi tiết</button>
+        </div>
+
+        <div class="recruit-job-card marketing">
+            <img src="assets/img/nvmar.png" alt="">
+
+            <h3>Nhân viên Marketing</h3>
+
+            <ul>
+                <li>Quản lý Fanpage, mạng xã hội</li>
+                <li>Viết nội dung quảng bá</li>
+                <li>Hỗ trợ các chiến dịch truyền thông</li>
+            </ul>
+
+            <button onclick="showJob(3)">Xem chi tiết</button>
+        </div>
+
+        <div class="recruit-job-card delivery">
+            <img src="assets/img/nvgiaohang.png" alt="">
+
+            <h3>Nhân viên giao hàng</h3>
+
+            <ul>
+                <li>Giao sản phẩm đến khách hàng</li>
+                <li>Kiểm tra đơn hàng trước khi giao</li>
+                <li>Hỗ trợ thu hộ (COD)</li>
+            </ul>
+
+            <button onclick="showJob(4)">Xem chi tiết</button>
+        </div>
+
+    </div>
+<div class="recruit-all-job">
+    <button onclick="showAllJobs()">
+        Xem tất cả vị trí
+    </button>
+</div>
+<div id="jobModal" class="job-modal">
+
+    <div class="job-modal-content">
+
+        <span class="close-modal" onclick="closeJobModal()">
+            &times;
+        </span>
+        
+
+        <div id="jobContent"></div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="recruit-apply-process">
+
+    <h2>Quy trình ứng tuyển 4 bước 🐾</h2>
+
+    <div class="recruit-process-container">
+
+        <div class="recruit-process-step">
+
+            <div class="recruit-step-circle">
+
+                <div class="recruit-step-number">1</div>
+                <h3>Chọn vị trí phù hợp</h3>
+
+                <p>
+                    Xem mô tả công việc và yêu cầu chi tiết.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="recruit-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+
+        <div class="recruit-process-step">
+
+            <div class="recruit-step-circle">
+
+                <div class="recruit-step-number green">2</div>
+
+                <h3>Gửi hồ sơ</h3>
+
+                <p>
+                    Điền form ứng tuyển hoặc gửi CV cho chúng tôi.
+                </p>
+
+            </div>
+
+        </div>
+
+       <div class="recruit-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+
+
+        <div class="recruit-process-step">
+
+            <div class="recruit-step-circle">
+
+                <div class="recruit-step-number orange">3</div>
+
+                <h3>Phỏng vấn</h3>
+
+                <p>
+                    Trao đổi trực tiếp cùng bộ phận tuyển dụng.
+                </p>
+
+            </div>
+
+        </div>
+<div class="recruit-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+        <div class="recruit-process-step">
+
+            <div class="recruit-step-circle">
+
+                <div class="recruit-step-number purple">4</div>
+
+                <h3>Nhận việc</h3>
+
+                <p>
+                    Tham gia đội ngũ Petopia và bắt đầu hành trình mới.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="recruit-career-banner">
+
+    <img src="assets/img/tuyẻn.png" class="recruit-career-banner-dog">
+
+    <div class="recruit-career-banner-content">
+
+        <h4>
+            Sẵn sàng cùng <span>Petopia</span><br>
+            kiến tạo hạnh phúc cho thú cưng?
+        </h4>
+        <p>
+            Gửi CV ngay hôm nay, chúng tôi rất mong được gặp bạn!
+        </p>
+        <button class="recruit-career-apply-btn"  onclick="showAllJobs()">
+            🐾 Ứng tuyển ngay
+        </button>
+
+        <div class="recruit-career-contact">
+
+            <span><a href="mailto:hueptkk24411e@st.uel.edu.vn" >✉ recruitment@petopia.vn</a></span>
+
+            <span><a href="tel:0365507533">📞 0900 123 456</a></span>
+
+            <span><a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76">📍 TP. Hồ Chí Minh</a></span>
+
+        </div>
+
+    </div>
+    <div class="recruit-career-banner-right">
+
+        <img src="assets/img/tủy.png" class="recruit-career-banner-cat">
+        </section>
+    </div>
+</section>
+<footer>
+
+        <div class="footer-top-bg">
+            <div class="container footer-top">
+                <div class="footer-col col-info" style="flex: 1.5;">
+                    <a href="#" onclick="showPage('home')"> <img src="assets/img/bglogo.png" alt="Petopia Logo" class="logo"></a>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:0365507533"> <strong>1900 1234</strong></a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hueptkk24411e@st.uel.edu.vn" > support.petopia@gmail.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90HQG-HCM+(UEL)/@10.8704278,106.7757352,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8704225!4d106.7783101!16s%2Fm%2F0ds8rvh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D"> <div>669 Đỗ Mười, phường Linh Xuân TP. Thủ Đức, TP. Hồ Chí Minh</div></a></li>
+                    </ul>
+                    <div class="social-wrap">
+
+                        <span class="social-title">
+                            KẾT NỐI VỚI CHÚNG TÔI</span> 
+                       
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://zalo.me/0365507533"><img src="assets/img/zalo.png" class="zalo-icon" alt="Zalo"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col about">
+                    <h4><i class="fa-solid fa-house col-icon">
+                    
+                    </i> VỀ PETOPIA</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about');showAbout('intro')">Giới thiệu</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('member')">Thành viên</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Liên hệ</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('recruit')">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-cart-shopping col-icon"></i> MUA SẮM</h4>
+                    <ul>
+                        <li><a href="#">Thức ăn cho chó</a></li>
+                        <li><a href="#">Thức ăn cho mèo</a></li>
+                        <li><a href="#">Đồ chơi & phụ kiện</a></li>
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col support" >
+                    <h4><i class="fa-solid fa-headset col-icon"></i> HỖ TRỢ KHÁCH HÀNG</h4>
+                    
+                    <ul>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('return')">Chính sách đổi trả</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('warranty')">Chính sách bảo hành</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('buy')">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('payment')">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('shipping')">Chính sách vận chuyển</a></li>
+                        <li><a href="#"  onclick="showPage('policy');showPolicy('faq')">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" >
+                    <h4><i class="fa-solid fa-location-dot col-icon" style="color: #f7941d;"></i> HỆ THỐNG CỬA HÀNG</h4>
+                    <p style="font-size: 17px; line-height: 1.6; margin-bottom: 15px;">Hệ thống cửa hàng Petopia trải dài khắp TP. Hồ Chí Minh</p>
+                    <button class="store-btn"
+            onclick="openStoreModal()">
+        XEM CỬA HÀNG GẦN BẠN
+    </button>
+                </div>
+                <div id="storeModal" class="store-modal">
+
+    <div class="store-modal-content">
+
+    <span class="close-btn" onclick="closeStoreModal()"> &times; </span>
+
+    <h2>Hệ Thống Cửa Hàng Petopia</h2>
+<span class="close-btn" onclick="closeStoreModal()">
+    &times;
+</span>
+
+    <div id="storeContainer"></div>
+
+</div>
+        <h2>Hệ Thống Cửa Hàng Petopia</h2>
+        <div id="storeContainer"></div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-features">
+            <div class="container features-wrapper">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('warranty')">
+                    <div class="feature-text">
+                        <h5>100% CHÍNH HÃNG</h5>
+                        <p>Cam kết sản phẩm chính hãng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('shipping')">
+                    <div class="feature-text">
+                        <h5>GIAO HÀNG NHANH</h5>
+                        <p>Giao hàng toàn quốc, nhanh chóng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-right-left"></i></div>
+                <a href="#" onclick="showPage('policy');showPolicy('return')">
+                    <div class="feature-text">
+                        <h5>ĐỔI HÀNG DỄ DÀNG</h5>
+                        <p>Đổi trả trong vòng 3 ngày</p>
+                    </div>
+                </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-text">
+                        <h5>HỖ TRỢ 24/7</h5>
+                        <p>Hỗ trợ khách hàng mọi lúc mọi nơi</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <div class="feature-text">
+                        <h5>TÍCH ĐIỂM ƯU ĐÃI</h5>
+                        <p>Tích điểm thành viên, nhận nhiều ưu đãi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bg">
+            <div class="container footer-partners">
+                <div class="partner-group">
+                    <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+<div class="partner-logos">
+                        <img src="assets/img/payment method/visa.png" alt="Visa">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHJp7Jq6QVMw-_-_ar5n4GzK_sXhdWKCYBi3JSHR04A&s=10" alt="MoMo">
+                        <img src="assets/img/payment method/QRR.png" alt="VNPay">
+                        <img src="assets/img/payment method/bank.png" alt="Bank Transfer">
+                        <img src="assets/img/payment method/COD.png" alt="COD">
+                    </div>
+                </div>
+                <div class="partner-group" style="padding-left: 30px;">
+                    <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+                    <div class="partner-logos">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL31d7lx8ioc5orJkvsIxq3T5PDPXkhilRewvZGwMSg&s=10" alt="GHN">
+                        <img src="assets/img/shipping unit/J&T.png" alt="J&T">
+                        <img src="assets/img/shipping unit/viettel port.png" alt="Viettel Post">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <div class="bottom-wrapper">
+                    <div class="company-info">
+                        <strong>@ Công Ty Cổ Phần TM & DV Petopia. MST: (028) 372 44 555.</strong><br>
+                        <a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76" >669 Đỗ Mười, khu phố 13, phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh</a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Đăng ký để nhận thông tin và ưu đãi</p>
+                        <form class="newsletter-form" action="#">
+                            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+                            <button type="submit">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+
+document.querySelectorAll(".hotel-faq-question").forEach(function(btn){
+
+    btn.onclick = function(){
+
+        let answer = this.nextElementSibling;
+
+        if(answer.style.display === "block"){
+            answer.style.display = "none";
+        }else{
+            answer.style.display = "block";
+        }
+
+    };
+
+});
+
+</script>
+<script>
+
+document.querySelectorAll(".grooming-faq-question")
+.forEach(function(btn){
+
+    btn.onclick = function(){
+
+        this.nextElementSibling.classList.toggle("show");
+
+    };
+
+});
+
+</script>
+
+
+<!-- ===== AI CHATBOX ===== -->
+<div class="chat-fab" id="chatFab" title="Chat với Petopia AI">
+  <span class="chat-fab__icon">🐾</span>
+  <span class="chat-fab__badge" id="chatBadge"></span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header__info">
+      <div class="chat-header__avatar">🐾</div>
+      <div>
+        <div class="chat-header__name">Petopia AI</div>
+        <div class="chat-header__status"><span class="chat-status-dot"></span> Đang hoạt động</div>
+      </div>
+    </div>
+    <button class="chat-header__close" id="chatClose" title="Đóng">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages">
+    <!-- messages injected by JS -->
+  </div>
+
+  <div class="chat-quick-btns" id="quickBtns">
+    <button class="quick-btn" data-q="Dịch vụ grooming có gì?">🛁 Dịch vụ</button>
+    <button class="quick-btn" data-q="Bảng giá dịch vụ?">💰 Bảng giá</button>
+    <button class="quick-btn" data-q="Giờ làm việc?">🕐 Giờ mở cửa</button>
+    <button class="quick-btn" data-q="Cần chuẩn bị gì trước khi grooming?">📋 Chuẩn bị</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Nhắn tin cho Petopia AI..." maxlength="300"/>
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+
+
+<div id="petModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;width:90%;max-width:560px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 40px rgba(0,0,0,0.2);">
+
+    <!-- Header -->
+    <div style="padding:20px 24px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 style="margin:0;font-size:18px;color:#ff6600;"><i class="fa-solid fa-paw"></i> Hồ Sơ Thú Cưng</h2>
+        <button onclick="closePetModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#aaa;line-height:1;">✕</button>
+      </div>
+      <!-- Tabs -->
+      <div style="display:flex;gap:0;">
+        <button class="pet-modal-tab active" data-tab="profile" onclick="switchPetModalTab('profile')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-id-card"></i> Hồ sơ
+        </button>
+        <button class="pet-modal-tab" data-tab="bookings" onclick="switchPetModalTab('bookings')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-hotel"></i> Đặt phòng
+        </button>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div style="flex:1;overflow-y:auto;padding:20px 24px;">
+
+      <!-- Panel: Hồ sơ -->
+      <div id="petPanel-profile" class="pet-modal-panel">
+        <h3 id="petFormTitle" style="margin-top:0;color:#ff6600;">🐾 Thêm thú cưng mới</h3>
+        <form id="petForm" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+          <input type="hidden" name="petId" value="">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="petName" placeholder="Tên thú cưng" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <select name="petType" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="dog">🐕 Chó</option>
+              <option value="cat">🐈 Mèo</option>
+            </select>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="breed" placeholder="Giống (VD: Poodle)" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <input name="weight" type="number" step="0.1" min="0.1" placeholder="Cân nặng (kg)" required style="flex:1;min-width:80px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <select name="gender" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="">Giới tính</option>
+              <option value="male">Đực</option>
+              <option value="female">Cái</option>
+            </select>
+            <input name="color" placeholder="Màu lông" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <input name="birthDate" type="date" placeholder="Ngày sinh" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          <textarea name="notes" rows="2" placeholder="Ghi chú (tùy chọn)" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;"></textarea>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-submit-booking" style="flex:1;">💾 Lưu thông tin</button>
+            <button type="button" onclick="document.getElementById('petForm').reset(); document.getElementById('petForm').removeAttribute('data-edit-id'); document.getElementById('petFormTitle').textContent='🐾 Thêm thú cưng mới';" class="btn-submit-booking" style="flex:1;background:#bbb;">Đặt lại</button>
+          </div>
+        </form>
+        <div id="petListContainer"></div>
+      </div>
+
+      <!-- Panel: Đặt phòng -->
+      <div id="petPanel-bookings" class="pet-modal-panel" style="display:none;">
+        <!-- Booking status legend -->
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
+          <span style="background:#fff8e1;color:#f57c00;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Chờ xác nhận</span>
+          <span style="background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã xác nhận</span>
+          <span style="background:#e3f2fd;color:#1565c0;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đang lưu trú</span>
+          <span style="background:#f3e5f5;color:#6a1b9a;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Hoàn thành</span>
+          <span style="background:#ffebee;color:#c62828;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã hủy</span>
+        </div>
+
+        <div id="modalBookingHistoryList">
+          <div style="text-align:center;padding:30px;color:#aaa;">Đang tải...</div>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div>
+</div>
+</body>
+<script src="assets/js/chatbox.js"></script>
+<script src="assets/js/pet-profile.js"></script>
+</html>
+
+<script src="router.js"></script>

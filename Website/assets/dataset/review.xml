@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reviews>
+
+    <review id="1">
+        <name>Nguyễn Thu</name>
+        <role>Khách hàng</role>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <image>https://i.pinimg.com/736x/26/2f/4e/262f4eca035f6b53212fcc3cf4574b7d.jpg</image>
+        <content>
+            Tôi rất yên tâm khi gửi bé Poodle tại Petopia.
+            Nhân viên thân thiện và thường xuyên cập nhật tình trạng của bé.
+        </content>
+    </review>
+
+    <review id="2">
+        <name>Trần Minh</name>
+        <role>Khách hàng</role>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <image>https://i.pinimg.com/736x/b0/0f/99/b00f99ff91fbf34c720d8e8c1f4c32f9.jpg</image>
+        <content>
+            Dịch vụ tuyệt vời! Phòng ốc sạch sẽ, bé nhà tôi về rất vui vẻ và khỏe mạnh.
+            Sẽ tiếp tục ủng hộ Petopia.
+        </content>
+    </review>
+
+    <review id="3">
+        <name>Lê Hương</name>
+        <role>Khách hàng</role>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <image>https://i.pinimg.com/736x/d7/4b/ff/d74bffc47680592a4d739ae3a6a97381.jpg</image>
+        <content>
+            Petopia như một ngôi nhà thứ hai của bé.
+            Cảm ơn đội ngũ đã chăm sóc bé tận tình!
+        </content>
+    </review>
+
+    <review id="4">
+        <name>Hoàng Nam</name>
+        <role>Khách hàng VIP</role>
+        <stars>⭐⭐⭐⭐⭐</stars>
+        <image>https://i.pravatar.cc/150?img=12</image>
+        <content>
+            Dịch vụ khách sạn thú cưng rất chuyên nghiệp.
+            Camera trực tuyến giúp tôi theo dõi thú cưng mọi lúc.
+        </content>
+    </review>
+
+    <review id="5">
+        <name>Phạm Linh</name>
+        <role>Khách hàng</role>
+        <stars>⭐⭐⭐⭐</stars>
+        <image>https://i.pravatar.cc/150?img=32</image>
+        <content>
+            Đặt lịch nhanh chóng, nhân viên hỗ trợ nhiệt tình.
+            Thú cưng được chăm sóc rất tốt.
+        </content>
+    </review>
+
+</reviews>

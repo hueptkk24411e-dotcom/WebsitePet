@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Phòng Basic",
+    "description": "Phòng tiêu chuẩn cho thú cưng",
+    "price": 200000,
+    "size": "2m x 2m",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Basic"
+  },
+  {
+    "id": 2,
+    "name": "Phòng Premium",
+    "description": "Phòng rộng rãi, có cửa sổ",
+    "price": 350000,
+    "size": "3m x 3m",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Premium"
+  },
+  {
+    "id": 3,
+    "name": "VIP Room",
+    "description": "Phòng VIP cao cấp, có máy lạnh",
+    "price": 500000,
+    "size": "4m x 4m",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=VIP"
+  }
+]

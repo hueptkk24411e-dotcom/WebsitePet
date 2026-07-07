@@ -1,0 +1,1185 @@
+{
+  "featured": {
+    "id": "cham-soc-mua-he",
+    "title": "Hướng dẫn toàn diện về chăm sóc thú cưng mùa hè",
+    "excerpt": "Mùa hè đến mang theo nhiều niềm vui nhưng cũng tiềm ẩn nhiều nguy cơ sức khỏe cho thú cưng của bạn. Khám phá những bí quyết quan trọng để giữ cho bé luôn an toàn và khỏe mạnh trong những ngày nắng nóng.",
+    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1400&auto=format&fit=crop&q=80",
+    "category": "featured",
+    "categoryLabel": "Nổi bật",
+    "badgeClass": "badge--featured",
+    "date": "15 Thg 5, 2024",
+    "readTime": 10,
+    "author": "Đội ngũ Petopia",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Với nhiệt độ có thể lên đến 38–40°C tại TP.HCM, mùa hè là thời điểm nguy hiểm nhất trong năm đối với thú cưng. Không giống con người, chó và mèo không thể đổ mồ hôi qua da — chúng chủ yếu điều hòa thân nhiệt qua việc thở dốc. Điều này khiến chúng dễ bị say nắng (heat stroke) hơn chúng ta nghĩ rất nhiều."
+      },
+      {
+        "type": "heading",
+        "text": "🌡️ Nguy cơ say nắng — Kẻ thù số một mùa hè"
+      },
+      {
+        "type": "paragraph",
+        "text": "Say nắng là tình trạng thân nhiệt tăng cao đột ngột vượt quá ngưỡng cơ thể có thể kiểm soát. Ở chó, nhiệt độ cơ thể vượt 40°C là đã nguy hiểm; trên 41.5°C có thể gây tổn thương não, suy thận và tử vong nếu không được xử lý kịp thời."
+      },
+      {
+        "type": "list",
+        "title": "Dấu hiệu nhận biết say nắng",
+        "items": [
+          "Thở dốc nhanh và mạnh, lưỡi thè dài, đổi màu đỏ sậm",
+          "Chảy nhiều nước dãi, bọt miệng",
+          "Mắt đỏ, dáng đi loạng choạng, mất phương hướng",
+          "Nôn mửa hoặc tiêu chảy",
+          "Ngã quỵ hoặc bất tỉnh"
+        ]
+      },
+      {
+        "type": "warning",
+        "title": "Xử lý khẩn cấp khi thú cưng bị say nắng",
+        "text": "Đưa ngay vào nơi mát mẻ, có điều hòa. Thấm khăn ướt mát (KHÔNG dùng nước đá) lên cổ, nách, bẹn. Cho uống nước từng ngụm nhỏ nếu còn tỉnh táo. Liên hệ thú y NGAY lập tức — đây là tình trạng khẩn cấp y tế."
+      },
+      {
+        "type": "heading",
+        "text": "🌿 6 cách giữ thú cưng mát mẻ trong mùa hè"
+      },
+      {
+        "type": "ordered-list",
+        "items": [
+          "Để quạt hoặc mở điều hòa ở phòng thú cưng sinh hoạt trong giờ cao điểm (10h–16h)",
+          "Luôn có sẵn tô nước lớn, sạch — thay nước ít nhất 2 lần/ngày",
+          "Đặt thảm làm mát (cooling mat) cho thú cưng nằm",
+          "Cho thú cưng tắm nước mát (nhẹ nhàng, không ép) nếu chúng đồng ý",
+          "Dùng quần áo chống nắng khi ra ngoài (dành cho chó)",
+          "Cung cấp đồ chơi đá lạnh — bỏ đồ ăn yêu thích vào khuôn nước đá, đông đá lại"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "💧 Chế độ nước uống mùa hè"
+      },
+      {
+        "type": "paragraph",
+        "text": "Về lý thuyết, chó cần uống khoảng 50ml nước/kg thể trọng mỗi ngày — nhưng vào mùa hè, con số này tăng lên 80–100ml/kg. Mèo thường uống ít hơn, khoảng 40–60ml/kg, nhưng cần được khuyến khích uống nhiều hơn vào mùa nóng."
+      },
+      {
+        "type": "tip",
+        "title": "Mẹo khuyến khích thú cưng uống nhiều nước hơn",
+        "text": "Đặt nhiều tô nước ở các góc khác nhau trong nhà. Dùng đài phun nước (pet water fountain) — nhiều thú cưng thích nước chảy hơn nước đứng. Thêm một ít nước vào thức ăn khô. Cho ăn thức ăn ướt (pate, canned food) để bổ sung độ ẩm tự nhiên."
+      },
+      {
+        "type": "heading",
+        "text": "⏰ Thời điểm lý tưởng để đi dạo"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tuyệt đối tránh dắt chó ra ngoài trong khoảng 10h sáng đến 4h chiều khi nhiệt độ đường nhựa có thể lên đến 60–70°C, đủ sức gây bỏng chân chó chỉ sau 60 giây. Thời điểm tốt nhất là sớm mai (trước 8h) hoặc tối muộn (sau 6h chiều)."
+      },
+      {
+        "type": "heading",
+        "text": "🐾 Bảo vệ đôi chân nhỏ"
+      },
+      {
+        "type": "paragraph",
+        "text": "Đường nhựa và xi măng hấp thụ và giữ nhiệt cực tốt. Thử nghiệm đơn giản: đặt lòng bàn tay của bạn lên mặt đường 5 giây — nếu bạn không chịu được, thú cưng của bạn cũng vậy. Nên dùng giày bảo vệ cho chó, hoặc đi dạo trên bãi cỏ, công viên có bóng mát."
+      },
+      {
+        "type": "heading",
+        "text": "🏥 Khi nào cần đưa đến thú y ngay?"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Nhiệt độ cơ thể trên 40°C (đo ở hậu môn)",
+          "Thở không đều, thở dốc kéo dài trên 30 phút dù đã ở nơi mát",
+          "Bất tỉnh hoặc co giật",
+          "Tiêu chảy hoặc nôn mửa nhiều lần",
+          "Lợi (nướu) chuyển sang màu trắng hoặc tím"
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mùa hè không cần là nỗi lo lắng nếu bạn chuẩn bị đủ. Hãy quan sát thú cưng của mình mỗi ngày, đảm bảo nước và bóng mát luôn sẵn có, và đừng ngần ngại liên hệ thú y khi có bất kỳ dấu hiệu bất thường nào. Petopia luôn ở đây để hỗ trợ bạn!"
+      }
+    ]
+  },
+  "categories": {
+    "huong-dan": {
+      "label": "Hướng dẫn chăm sóc",
+      "icon": "🩺",
+      "articles": [
+        {
+          "id": "ve-sinh-tai-meo",
+          "categoryLabel": "Mèo",
+          "badgeClass": "badge--cat",
+          "title": "5 bước vệ sinh tai cho mèo an toàn tại nhà",
+          "excerpt": "Vệ sinh tai định kỳ giúp ngăn ngừa nhiễm khuẩn và ve rận. Hãy làm theo hướng dẫn chi tiết này để bảo vệ tai cho mèo yêu của bạn.",
+          "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&auto=format&fit=crop&q=80",
+          "date": "12 Thg 5, 2024",
+          "readTime": 5,
+          "author": "BS. Thú y Minh Anh",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Tai mèo là nơi tích tụ bụi bẩn, sáp tai và có thể trở thành môi trường lý tưởng cho vi khuẩn và ve tai phát triển. Vệ sinh tai đúng cách mỗi 2–4 tuần một lần là cách đơn giản nhất để ngăn ngừa các bệnh về tai, đặc biệt là viêm tai ngoài — một trong những bệnh phổ biến nhất ở mèo."
+            },
+            {
+              "type": "heading",
+              "text": "🔍 Tại sao cần vệ sinh tai mèo định kỳ?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Tai mèo có hình chữ L đặc biệt — phần ống tai nằm ngang ở đáy khiến chất bẩn khó tự thoát ra ngoài. Không vệ sinh định kỳ có thể dẫn đến tích tụ sáp tai (cerumen), nhiễm nấm, ve tai (otodectes), hoặc viêm tai nặng với mủ và mùi hôi khó chịu."
+            },
+            {
+              "type": "list",
+              "title": "Dấu hiệu tai mèo đang có vấn đề",
+              "items": [
+                "Lắc đầu liên tục hoặc dùng chân cào tai",
+                "Tai có mùi hôi bất thường",
+                "Có dịch nâu đen hoặc mủ trong tai",
+                "Mèo kêu đau khi chạm vào tai",
+                "Mèo nghiêng đầu sang một bên"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🛒 Dụng cụ cần chuẩn bị"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Dung dịch vệ sinh tai chuyên dụng cho mèo (mua tại pet shop hoặc thú y)",
+                "Bông gòn hoặc gạc mềm (KHÔNG dùng cotton bud/tăm bông)",
+                "Khăn nhỏ sạch",
+                "Đồ ăn thưởng yêu thích để mèo hợp tác"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "📋 5 bước vệ sinh tai đúng cách"
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "<strong>Chuẩn bị mèo:</strong> Chọn lúc mèo đang thư giãn, buồn ngủ. Quấn mèo nhẹ nhàng trong khăn mềm để hạn chế cào cấu. Thưởng đồ ăn ngay từ đầu để tạo liên kết tích cực.",
+                "<strong>Kiểm tra tai trước:</strong> Dùng ngón tay nhẹ nhàng kéo vành tai lên để quan sát bên trong. Tai bình thường có màu hồng nhạt, ít sáp và không có mùi. Nếu thấy bất thường, nên đưa đến thú y trước khi tự vệ sinh.",
+                "<strong>Nhỏ dung dịch vệ sinh:</strong> Nhỏ từ 5–10 giọt dung dịch vào ống tai. Giữ nhẹ vành tai để dung dịch không chảy ra ngay.",
+                "<strong>Massage nhẹ phần gốc tai:</strong> Dùng ngón cái và ngón trỏ massage nhẹ vùng gốc tai (bên ngoài) khoảng 20–30 giây. Bạn sẽ nghe tiếng \"sột soạt\" — đây là dung dịch đang làm tan sáp tai.",
+                "<strong>Lau sạch bên ngoài:</strong> Để mèo lắc đầu cho dịch và bẩn văng ra (nên làm ở phòng tắm). Sau đó dùng bông gòn hoặc gạc mềm lau nhẹ PHẦN BÊN NGOÀI cửa tai. Không bao giờ đưa bông gòn sâu vào trong."
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Những điều TUYỆT ĐỐI không làm",
+              "text": "Không dùng tăm bông (cotton bud) đưa vào trong ống tai — có thể đẩy bẩn sâu hơn và làm tổn thương màng nhĩ. Không dùng nước thường, cồn hoặc hydrogen peroxide — gây kích ứng. Không cố vệ sinh khi mèo đang quá sợ hoặc vùng vẫy mạnh."
+            },
+            {
+              "type": "tip",
+              "title": "Tần suất vệ sinh phù hợp",
+              "text": "Mèo tai dựng (tai thẳng): vệ sinh mỗi 3–4 tuần. Mèo tai xếp (Scottish Fold, American Curl): vệ sinh mỗi 1–2 tuần vì cấu trúc tai đặc biệt dễ tích tụ bẩn hơn. Mèo hay ra ngoài: kiểm tra mỗi tuần."
+            }
+          ]
+        },
+        {
+          "id": "tiem-phong-cho-con",
+          "categoryLabel": "Chó",
+          "badgeClass": "badge--dog",
+          "title": "Lịch tiêm phòng đầy đủ cho chó con",
+          "excerpt": "Bảo vệ cún cưng của bạn khỏi các truyền nhiễm nguy hiểm bằng cách tuân thủ lịch tiêm phòng khoa học ngay từ khi còn nhỏ.",
+          "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format&fit=crop&q=80",
+          "date": "10 Thg 5, 2024",
+          "readTime": 7,
+          "author": "BS. Thú y Tuấn Khoa",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Tiêm phòng là \"lá chắn\" quan trọng nhất bảo vệ chó con khỏi những căn bệnh nguy hiểm có thể gây tử vong. Các bệnh như Parvovirus, Distemper (sài sốt chó), hay Leptospirosis đều có thể phòng ngừa hoàn toàn bằng vaccine, nhưng nếu mắc phải thì tỷ lệ tử vong rất cao, đặc biệt ở chó con dưới 6 tháng tuổi."
+            },
+            {
+              "type": "heading",
+              "text": "📅 Lịch tiêm vaccine cơ bản (từ 6–8 tuần tuổi)"
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "<strong>6–8 tuần tuổi:</strong> Vaccine 5 in 1 hoặc 6 in 1 (mũi 1) — phòng Distemper, Parvovirus, Adenovirus, Parainfluenza, Leptospirosis",
+                "<strong>10–12 tuần tuổi:</strong> Nhắc lại vaccine combo (mũi 2) — bắt buộc để đảm bảo miễn dịch",
+                "<strong>14–16 tuần tuổi:</strong> Vaccine Dại (mũi 1) + nhắc lại combo (mũi 3)",
+                "<strong>12–16 tháng tuổi:</strong> Tiêm nhắc toàn bộ hàng năm để duy trì miễn dịch"
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Lưu ý quan trọng về thời gian tiêm",
+              "text": "Chó con cần hoàn thành toàn bộ phác đồ 3 mũi trước khi tiếp xúc với chó lạ hoặc ra ngoài công viên. Kháng thể từ mẹ sẽ làm giảm hiệu quả vaccine ở mũi đầu, đó là lý do tại sao phải tiêm nhiều mũi nhắc lại."
+            },
+            {
+              "type": "heading",
+              "text": "💉 Các loại vaccine cần biết"
+            },
+            {
+              "type": "list",
+              "items": [
+                "<strong>Combo 6 in 1 (DHPPI + L):</strong> Phổ biến nhất, phòng 6 bệnh cùng lúc. Chi phí: 150.000–250.000đ/mũi",
+                "<strong>Vaccine Dại:</strong> Bắt buộc theo pháp luật Việt Nam, tiêm từ 3 tháng tuổi trở lên. Chi phí: 100.000–150.000đ/mũi",
+                "<strong>Vaccine Bordetella (ho cũi chó):</strong> Khuyến nghị nếu cho chó đến pet shop, cắt tỉa hoặc giao lưu nhiều. Chi phí: 120.000–200.000đ/mũi"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🏠 Chăm sóc chó sau tiêm phòng"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Theo dõi chó 30 phút sau tiêm tại phòng khám",
+                "Cho nghỉ ngơi, tránh vận động mạnh trong 24 giờ",
+                "Không tắm trong 3 ngày sau tiêm",
+                "Có thể sốt nhẹ, bỏ ăn 1–2 ngày — bình thường",
+                "Nếu sưng tấy nặng tại vị trí tiêm, nôn mửa hoặc khó thở: đưa đến thú y ngay"
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Tiết kiệm chi phí tiêm phòng",
+              "text": "Nhiều địa phương có chương trình tiêm phòng vaccine dại miễn phí hoặc trợ giá cho thú cưng vào tháng 3–4 hàng năm. Liên hệ UBND phường/xã hoặc trạm thú y địa phương để biết lịch tiêm chủng."
+            }
+          ]
+        },
+        {
+          "id": "tam-meo-tai-nha",
+          "categoryLabel": "Mèo",
+          "badgeClass": "badge--cat",
+          "title": "Cách tắm mèo đúng cách tại nhà mà không bị cào",
+          "excerpt": "Tắm mèo là thử thách với nhiều chủ nuôi. Hãy học cách làm đúng để biến đây thành trải nghiệm bình tĩnh cho cả hai.",
+          "image": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=600&auto=format&fit=crop&q=80",
+          "date": "05 Thg 5, 2024",
+          "readTime": 6,
+          "author": "Chuyên gia grooming Lan Phương",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Mèo là động vật vệ sinh rất cao — chúng có thể tự làm sạch đến 50% thời gian thức. Tuy nhiên, có những lúc bạn cần phải tắm cho mèo: khi chúng lăn vào thứ gì đó bẩn, khi có nấm da, ve rận, hoặc với mèo lông dài cần làm sạch dầu thừa định kỳ."
+            },
+            {
+              "type": "heading",
+              "text": "📅 Tần suất tắm cho mèo"
+            },
+            {
+              "type": "list",
+              "items": [
+                "<strong>Mèo lông ngắn, sống trong nhà:</strong> 4–6 tuần/lần hoặc khi cần",
+                "<strong>Mèo lông dài (Ba Tư, Ragdoll, Maine Coon):</strong> 2–4 tuần/lần",
+                "<strong>Mèo không lông (Sphynx):</strong> 1–2 tuần/lần (da tiết nhiều dầu)",
+                "<strong>Mèo bị nấm hoặc ve:</strong> Theo chỉ định của thú y"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🛁 Chuẩn bị trước khi tắm"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chải lông kỹ trước để loại bỏ lông rối và giảm lượng lông rụng vào nước",
+                "Cắt móng trước 1–2 ngày (không cắt ngay trước khi tắm)",
+                "Chuẩn bị khăn lớn, sấy tóc chỉnh nhiệt thấp",
+                "Sữa tắm chuyên dụng cho mèo (pH khác người)",
+                "Hãy tắm mèo lúc bụng rỗng — 2 giờ sau khi ăn"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🚿 Các bước tắm đúng cách"
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "Làm ướt lông dần dần bằng nước ấm 38–39°C, bắt đầu từ phần thân, tránh đầu",
+                "Thoa sữa tắm pha loãng, massage nhẹ nhàng theo chiều lông từ lưng xuống bụng",
+                "Tránh để nước và sữa tắm vào mắt, tai, miệng",
+                "Xả sạch hoàn toàn — sữa tắm đọng lại gây kích ứng da",
+                "Dùng khăn lớn thấm bớt nước, sau đó sấy ở chế độ ấm (không nóng), giữ cách 20cm"
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Bí quyết để mèo ít chống cự",
+              "text": "Tập dần từ nhỏ — nhúng chân vào nước ấm khi mèo còn nhỏ giúp chúng quen với cảm giác ướt. Luôn thưởng đồ ăn trong và sau khi tắm. Nói chuyện nhẹ nhàng, bình tĩnh trong suốt quá trình. Nếu mèo quá kích động, dừng lại và thử vào ngày khác — đừng ép."
+            },
+            {
+              "type": "warning",
+              "title": "Những sai lầm phổ biến cần tránh",
+              "text": "Không bao giờ để nước chảy thẳng vào tai mèo — có thể gây viêm tai. Không tắm mèo bệnh, mèo vừa phẫu thuật hoặc mèo con dưới 3 tháng tuổi. Không dùng máy sấy tóc ở chế độ nóng — lớp lông mèo rất mỏng và dễ bỏng."
+            }
+          ]
+        },
+        {
+          "id": "dau-hieu-cho-bi-benh",
+          "categoryLabel": "Chó",
+          "badgeClass": "badge--dog",
+          "title": "8 dấu hiệu nhận biết chó đang bị bệnh",
+          "excerpt": "Chó không thể nói với bạn khi chúng đau. Hãy học cách đọc ngôn ngữ cơ thể để phát hiện bệnh sớm nhất có thể.",
+          "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&auto=format&fit=crop&q=80",
+          "date": "01 Thg 5, 2024",
+          "readTime": 8,
+          "author": "BS. Thú y Tuấn Khoa",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Bản năng sinh tồn khiến chó che giấu sự đau đớn — đây là di sản từ tổ tiên hoang dã, khi thể hiện yếu đuối đồng nghĩa với nguy hiểm. Điều này có nghĩa là khi bạn nhận thấy chó có vẻ bệnh, thực tế bệnh đã diễn ra từ trước đó rồi. Hãy học cách quan sát những thay đổi nhỏ."
+            },
+            {
+              "type": "heading",
+              "text": "🍖 1. Biếng ăn hoặc bỏ ăn"
+            },
+            {
+              "type": "paragraph",
+              "text": "Chó bỏ ăn 1 bữa trong ngày nóng có thể bình thường. Nhưng nếu bỏ ăn liên tục trên 24 giờ, đặc biệt kèm các triệu chứng khác, đây là dấu hiệu đáng lo ngại. Nguyên nhân có thể từ đau răng, buồn nôn, sốt, đến các bệnh nội tạng nghiêm trọng."
+            },
+            {
+              "type": "heading",
+              "text": "💧 2. Uống nước nhiều bất thường"
+            },
+            {
+              "type": "paragraph",
+              "text": "Khát nước nhiều hơn bình thường (polydipsia) kèm theo tiểu nhiều (polyuria) là dấu hiệu kinh điển của đái tháo đường, bệnh thận, hoặc hội chứng Cushing. Nếu bạn thấy mình phải thay nước trong bát của chó nhiều hơn bình thường, hãy ghi chép lại và đưa đến thú y."
+            },
+            {
+              "type": "heading",
+              "text": "🚽 3. Thay đổi thói quen vệ sinh"
+            },
+            {
+              "type": "paragraph",
+              "text": "Tiêu chảy trên 2 ngày, hoặc tiêu chảy có máu, hoặc táo bón kéo dài — tất cả đều cần kiểm tra. Chú ý màu sắc phân: đen sệt gợi ý chảy máu tiêu hóa trên; đỏ tươi gợi ý trực tràng. Nước tiểu có màu nâu đậm hoặc có máu: đưa đến thú y ngay."
+            },
+            {
+              "type": "heading",
+              "text": "😮 4. Thở khó khăn hoặc thở bất thường"
+            },
+            {
+              "type": "paragraph",
+              "text": "Chó bình thường thở 15–30 lần/phút. Thở dốc liên tục khi nghỉ ngơi, thở khò khè, hoặc thở mà phải há miệng rộng, dùng cơ bụng — đây đều là dấu hiệu cấp cứu. Có thể do bệnh tim, phổi, hoặc dị vật trong đường thở."
+            },
+            {
+              "type": "heading",
+              "text": "😴 5. Mệt mỏi và lờ đờ bất thường"
+            },
+            {
+              "type": "paragraph",
+              "text": "Nếu chú chó vốn hiếu động của bạn bỗng nhiên chỉ nằm, từ chối chơi, hoặc không hào hứng khi nghe từ 'đi dạo' — đây là tín hiệu quan trọng. Mệt mỏi có thể là triệu chứng của nhiều bệnh từ nhiễm trùng, thiếu máu, đến ung thư."
+            },
+            {
+              "type": "heading",
+              "text": "🦵 6. Đi khập khiễng hoặc tránh chạm vào một vùng"
+            },
+            {
+              "type": "paragraph",
+              "text": "Chó đột nhiên khập khiễng có thể do chấn thương, gai đâm vào chân, viêm khớp, hoặc bệnh dây chằng. Nếu chó tránh để bạn chạm vào một vùng cụ thể trên cơ thể, đây thường là dấu hiệu đau tại đó."
+            },
+            {
+              "type": "heading",
+              "text": "👁️ 7. Thay đổi ở mắt, tai, miệng"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Mắt đỏ, chảy nhiều ghèn, mắt mờ: có thể viêm kết mạc, đục thủy tinh thể",
+                "Tai có mùi hôi, chó hay cào tai, nghiêng đầu: viêm tai hoặc ve tai",
+                "Hơi thở cực kỳ hôi, chảy nước miếng nhiều: bệnh răng miệng, hoặc có dị vật trong miệng",
+                "Lợi (nướu) nhợt nhạt hoặc vàng: thiếu máu hoặc vàng da, cần thú y ngay"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🧠 8. Thay đổi tính cách đột ngột"
+            },
+            {
+              "type": "paragraph",
+              "text": "Một con chó vui vẻ bỗng trở nên hung hăng khi bị chạm vào, hoặc chó thường tự tin bỗng trở nên sợ hãi, thu mình — đây thường là phản ứng với đau hoặc sự không thoải mái nội tâm. Đừng bỏ qua những thay đổi về tâm lý này."
+            },
+            {
+              "type": "tip",
+              "title": "Lời khuyên từ chuyên gia",
+              "text": "Hãy chụp video khi bạn thấy triệu chứng bất thường — thú y sẽ đánh giá chính xác hơn khi có video thực tế, đặc biệt với các triệu chứng không xuất hiện liên tục như co giật, khập khiễng nhẹ, hoặc thở bất thường."
+            }
+          ]
+        }
+      ]
+    },
+    "tips-an-uong": {
+      "label": "Tips ăn uống",
+      "icon": "🍽️",
+      "articles": [
+        {
+          "id": "che-do-an-cho-gia",
+          "categoryLabel": "Dinh dưỡng",
+          "badgeClass": "badge--nutrition",
+          "title": "Chế độ ăn đặc biệt cho chó lớn tuổi",
+          "excerpt": "Khi chó già đi, nhu cầu dinh dưỡng của chúng thay đổi. Tìm hiểu cách điều chỉnh chế độ ăn phù hợp để kéo dài sức khỏe và tuổi thọ.",
+          "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&auto=format&fit=crop&q=80",
+          "date": "05 Thg 5, 2024",
+          "readTime": 6,
+          "author": "Chuyên gia dinh dưỡng thú y",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Chó được gọi là 'senior' (cao tuổi) khi đạt khoảng 7–8 tuổi (chó lớn) hoặc 9–10 tuổi (chó nhỏ). Ở giai đoạn này, cơ thể chúng trải qua nhiều thay đổi: trao đổi chất chậm lại, cơ bắp yếu dần, thận và gan hoạt động kém hiệu quả hơn. Chế độ ăn cần được điều chỉnh để theo kịp những thay đổi đó."
+            },
+            {
+              "type": "heading",
+              "text": "🥩 Protein: Chất lượng quan trọng hơn số lượng"
+            },
+            {
+              "type": "paragraph",
+              "text": "Nhiều người lầm tưởng chó già cần ít protein hơn. Thực tế ngược lại: chó cao tuổi cần protein chất lượng cao để duy trì cơ bắp — nhưng protein đó cần dễ tiêu hóa hơn. Chọn thức ăn có nguồn protein thực (gà, cá, trứng) là thành phần đầu tiên trong danh sách nguyên liệu, không phải 'bột thịt' hay 'phế phẩm gia cầm'."
+            },
+            {
+              "type": "heading",
+              "text": "⚖️ Kiểm soát cân nặng — ưu tiên số 1"
+            },
+            {
+              "type": "paragraph",
+              "text": "Béo phì là kẻ thù lớn nhất của chó già. Nó làm trầm trọng thêm viêm khớp, tăng gánh nặng cho tim và thận, rút ngắn tuổi thọ. Giảm lượng calo 10–20% so với khi còn trẻ, chia thành 2–3 bữa nhỏ thay vì 1–2 bữa lớn để dễ tiêu hóa hơn."
+            },
+            {
+              "type": "list",
+              "title": "Dưỡng chất đặc biệt cho chó già",
+              "items": [
+                "<strong>Glucosamine & Chondroitin:</strong> Hỗ trợ khớp, giảm đau viêm khớp — tìm trong thức ăn senior hoặc supplement",
+                "<strong>Omega-3 (EPA & DHA từ dầu cá):</strong> Tốt cho tim, não, giảm viêm khớp",
+                "<strong>Chất xơ hòa tan:</strong> Hỗ trợ tiêu hóa, kiểm soát đường huyết",
+                "<strong>Vitamin E và C:</strong> Chống oxy hóa, hỗ trợ hệ miễn dịch già nua",
+                "<strong>Ít phosphorus:</strong> Quan trọng nếu chó có vấn đề thận"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🚫 Thức ăn cần hạn chế"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Thức ăn nhiều muối (hại thận và tim)",
+                "Thức ăn giàu chất béo bão hòa",
+                "Đồ ăn người — gia vị, hành tỏi, muối, đường đều có hại",
+                "Xương chín (dễ vỡ, gây thủng ruột)",
+                "Thức ăn khô nếu chó có vấn đề răng miệng"
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Chuyển sang thức ăn mới như thế nào?",
+              "text": "Thay đổi thức ăn đột ngột có thể gây tiêu chảy. Hãy chuyển dần trong 7–10 ngày: 25% thức ăn mới + 75% cũ trong 3 ngày đầu → 50/50 trong 3 ngày tiếp → 75% mới + 25% cũ trong 3 ngày cuối → 100% thức ăn mới."
+            }
+          ]
+        },
+        {
+          "id": "thuc-pham-cam-meo",
+          "categoryLabel": "Cảnh báo",
+          "badgeClass": "badge--warning",
+          "title": "10 Thực phẩm tuyệt đối không cho mèo ăn",
+          "excerpt": "Nhiều loại thực phẩm an toàn với người nhưng lại vô cùng độc hại với mèo. Nhận biết và tránh xa những thực phẩm này ngay hôm nay.",
+          "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&auto=format&fit=crop&q=80",
+          "date": "02 Thg 5, 2024",
+          "readTime": 4,
+          "author": "BS. Thú y Minh Anh",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Mèo là loài ăn thịt bắt buộc (obligate carnivore) — hệ tiêu hóa của chúng không được thiết kế để xử lý nhiều loại thực phẩm mà con người ăn hàng ngày. Điều nguy hiểm là nhiều thực phẩm gây độc cho mèo hoàn toàn vô hại với người, thậm chí còn tốt cho sức khỏe người. Hãy ghi nhớ danh sách này."
+            },
+            {
+              "type": "warning",
+              "title": "Quan trọng",
+              "text": "Nếu mèo của bạn đã ăn bất kỳ thực phẩm nào trong danh sách dưới đây và có biểu hiện bất thường (nôn mửa, lờ đờ, co giật), hãy liên hệ thú y NGAY LẬP TỨC. Đừng chờ đợi để xem tình trạng có cải thiện không."
+            },
+            {
+              "type": "list",
+              "title": "❌ 10 thực phẩm cấm",
+              "items": [
+                "<strong>Hành, tỏi, hẹ, kiệu:</strong> Chứa hợp chất thiosulfate phá hủy hồng cầu, gây thiếu máu tán huyết. Nguy hiểm cả khi nấu chín. Chỉ một lượng rất nhỏ cũng đủ gây hại.",
+                "<strong>Socola:</strong> Chứa theobromine và caffeine mà mèo không thể chuyển hóa. Gây nôn mửa, tiêu chảy, co giật, tim đập nhanh, có thể tử vong.",
+                "<strong>Rượu, bia và đồ uống có cồn:</strong> Cực kỳ độc với gan và não mèo — chỉ 1–2ml rượu mạnh/kg thể trọng đã có thể gây tử vong.",
+                "<strong>Nho, nho khô, nho khô Thổ Nhĩ Kỳ (currant):</strong> Nguyên nhân độc chưa được giải thích rõ, nhưng có thể gây suy thận cấp ngay cả với lượng rất nhỏ.",
+                "<strong>Cà phê và trà:</strong> Caffeine gây kích thích tim, co giật, khó thở. Mèo nhạy cảm với caffeine hơn người gấp 5–7 lần.",
+                "<strong>Macadamia nuts:</strong> Gây yếu cơ, nôn mửa, sốt, run rẩy ở chó và mèo.",
+                "<strong>Sữa bò và sản phẩm từ sữa:</strong> Hầu hết mèo trưởng thành không có enzyme lactase để tiêu hóa lactose — gây tiêu chảy, đầy hơi.",
+                "<strong>Xylitol (chất tạo ngọt nhân tạo):</strong> Có trong kẹo cao su, một số bánh ngọt ít đường. Gây hạ đường huyết nguy hiểm và tổn thương gan.",
+                "<strong>Xương chín:</strong> Xương chín giòn dễ vỡ thành mảnh nhọn, có thể đâm thủng thực quản, dạ dày hoặc ruột. Chỉ xương sống (raw) và đúng loại mới an toàn.",
+                "<strong>Thực phẩm nhiều muối:</strong> Chips, bánh mặn, thức ăn người nhiều gia vị — gây mất nước, tăng huyết áp, và suy thận nếu dùng thường xuyên."
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Thay thế lành mạnh",
+              "text": "Mèo có thể ăn: thịt gà/cá hấp không gia vị, dưa leo (số ít), cà rốt luộc (số ít), dưa hấu bỏ hạt, bông cải xanh luộc nhỏ. Nhưng nhớ rằng 90% khẩu phần mèo nên là thức ăn chuyên dụng đã được cân bằng dinh dưỡng."
+            }
+          ]
+        },
+        {
+          "id": "thuc-an-tu-nau",
+          "categoryLabel": "Dinh dưỡng",
+          "badgeClass": "badge--nutrition",
+          "title": "Thực đơn tự nấu cho thú cưng tại nhà",
+          "excerpt": "Tự nấu thức ăn cho thú cưng giúp bạn kiểm soát nguyên liệu, nhưng cần nắm vững nguyên tắc dinh dưỡng để tránh thiếu hụt.",
+          "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=600&auto=format&fit=crop&q=80",
+          "date": "28 Thg 4, 2024",
+          "readTime": 7,
+          "author": "Chuyên gia dinh dưỡng thú y",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Ngày càng nhiều chủ nuôi muốn tự nấu ăn cho thú cưng để kiểm soát chất lượng nguyên liệu và tránh các phụ gia. Tuy nhiên, một chế độ ăn tự nấu không được cân bằng đúng cách có thể thiếu hụt canxi, vitamin D, kẽm, và nhiều vi chất khác — gây tổn hại sức khỏe lâu dài."
+            },
+            {
+              "type": "warning",
+              "title": "Khuyến cáo quan trọng",
+              "text": "Trước khi chuyển sang chế độ ăn tự nấu hoàn toàn, hãy tham khảo ý kiến bác sĩ thú y về dinh dưỡng. Đây là quyết định lớn ảnh hưởng đến sức khỏe lâu dài của thú cưng."
+            },
+            {
+              "type": "heading",
+              "text": "📊 Tỷ lệ dinh dưỡng cơ bản (theo AAFCO)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "<strong>Chó:</strong> 40–50% protein, 30–40% rau củ + tinh bột, 10–20% chất béo tốt",
+                "<strong>Mèo:</strong> 60–70% protein (bắt buộc), 20–30% chất béo, 5–10% rau củ (ít tinh bột)",
+                "<strong>Luôn bổ sung:</strong> Canxi (từ bột xương hoặc eggshell powder), Omega-3 (dầu cá hồi), Vitamin E"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🍗 Công thức cơm gà đơn giản cho chó (1 ngày, ~10kg)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "150g ức gà luộc, xé nhỏ (không gia vị)",
+                "50g gạo trắng nấu chín (hoặc khoai lang hấp)",
+                "50g bông cải xanh hoặc cà rốt luộc mềm",
+                "1 thìa cà phê dầu cá hồi",
+                "1/4 thìa cà phê bột xương canxi (calcium carbonate)",
+                "Trộn đều, chia 2 bữa"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🐟 Công thức cá hồi cho mèo (1 ngày, ~4kg)"
+            },
+            {
+              "type": "list",
+              "items": [
+                "80–100g cá hồi hấp chín, gỡ xương kỹ",
+                "20g gan gà luộc (không quá 3 lần/tuần)",
+                "1/2 thìa cà phê dầu cá hồi",
+                "Nhỏ 1 ít Taurine supplement (quan trọng với mèo)",
+                "Không thêm muối, hành tỏi, hay gia vị"
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Mẹo bảo quản và tiết kiệm thời gian",
+              "text": "Nấu số lượng lớn và chia thành phần nhỏ, đông lạnh. Giữ trong tủ lạnh được 3–4 ngày, đông lạnh được 3 tháng. Rã đông trong tủ lạnh qua đêm, không dùng lò vi sóng (phá hủy enzyme). Luôn có thức ăn khô dự phòng cho những ngày bận."
+            }
+          ]
+        },
+        {
+          "id": "nuoc-uong-thu-cung",
+          "categoryLabel": "Dinh dưỡng",
+          "badgeClass": "badge--nutrition",
+          "title": "Lượng nước uống cần thiết cho thú cưng mỗi ngày",
+          "excerpt": "Nước là nền tảng của mọi chức năng cơ thể. Biết cách tính và đảm bảo thú cưng uống đủ nước mỗi ngày.",
+          "image": "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=600&auto=format&fit=crop&q=80",
+          "date": "25 Thg 4, 2024",
+          "readTime": 5,
+          "author": "Đội ngũ Petopia",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Nước chiếm 60–80% cơ thể thú cưng và tham gia vào gần như mọi chức năng sinh lý: vận chuyển dinh dưỡng, điều hòa nhiệt độ, bài tiết độc tố qua thận, bôi trơn khớp, và tiêu hóa. Mất nước dù chỉ 10% đã gây nguy hiểm tính mạng."
+            },
+            {
+              "type": "heading",
+              "text": "💧 Lượng nước cần mỗi ngày"
+            },
+            {
+              "type": "list",
+              "items": [
+                "<strong>Chó:</strong> Khoảng 50–60ml/kg thể trọng. Chó 5kg → 250–300ml/ngày. Chó 10kg → 500–600ml/ngày",
+                "<strong>Mèo:</strong> Khoảng 40–50ml/kg thể trọng. Mèo 4kg → 160–200ml/ngày",
+                "<strong>Mùa hè hoặc chó hoạt động nhiều:</strong> Tăng thêm 20–30%",
+                "<strong>Ăn thức ăn ướt:</strong> Nhu cầu uống nước giảm vì thức ăn đã chứa 70–80% nước"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🔍 Dấu hiệu mất nước"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Véo da ở sau gáy: da lâu co lại về vị trí cũ (>2 giây = mất nước)",
+                "Nướu khô, dính khi chạm vào (nướu bình thường ẩm và trơn)",
+                "Mắt trũng, da nhăn nheo",
+                "Nước tiểu màu vàng sậm hoặc nâu",
+                "Lờ đờ, yếu, không muốn vận động"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "🌊 Cách khuyến khích thú cưng uống nhiều nước hơn"
+            },
+            {
+              "type": "ordered-list",
+              "items": [
+                "Đặt 3–4 tô nước ở các góc khác nhau trong nhà",
+                "Dùng đài phun nước (pet fountain) — tiếng nước chảy kích thích mèo uống nhiều hơn đến 70%",
+                "Thêm một ít nước luộc gà (không muối) vào nước để thêm mùi hấp dẫn",
+                "Dùng bát nước bằng thủy tinh hoặc gốm sứ — plastic có thể tạo mùi khiến thú cưng không muốn uống",
+                "Thay nước ít nhất 2 lần/ngày — nước tươi hấp dẫn hơn nước cũ đọng bụi"
+              ]
+            },
+            {
+              "type": "tip",
+              "title": "Đặc biệt với mèo",
+              "text": "Mèo tiến hóa từ môi trường sa mạc — bản năng uống ít nước và lấy phần lớn độ ẩm từ con mồi. Vì vậy mèo ăn thức ăn khô hoàn toàn rất dễ bị bệnh thận mạn tính. Hãy pha thêm ít nước vào pate hoặc chuyển một phần sang thức ăn ướt."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "popular": [
+    {
+      "id": "grooming-bao-lau",
+      "categoryLabel": "Chăm sóc",
+      "badgeClass": "badge--dog",
+      "title": "Bao lâu nên đưa chó đi grooming một lần?",
+      "excerpt": "Tần suất grooming phụ thuộc vào giống chó, độ dài lông và lối sống. Hãy tìm hiểu lịch grooming phù hợp nhất cho cún cưng của bạn.",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300&auto=format&fit=crop&q=80",
+      "date": "20 Thg 4, 2024",
+      "readTime": 4,
+      "author": "Chuyên gia grooming Lan Phương",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Grooming không chỉ là vấn đề thẩm mỹ — đây là dịch vụ chăm sóc sức khỏe thiết yếu. Lông rối gây đau khi kéo da, lông bẩn giữ vi khuẩn và ký sinh trùng, và móng quá dài ảnh hưởng đến cách chó đi lại."
+        },
+        {
+          "type": "heading",
+          "text": "📅 Lịch grooming theo loại lông"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Chó lông ngắn (Phú Quốc, Dachshund):</strong> 6–8 tuần/lần. Chủ yếu tắm, cắt móng",
+            "<strong>Chó lông trung bình (Shiba, Corgi):</strong> 4–6 tuần/lần",
+            "<strong>Chó lông dài (Golden, Husky):</strong> 4–6 tuần/lần, chải hàng ngày tại nhà",
+            "<strong>Chó lông xoăn (Poodle, Bichon):</strong> 4–6 tuần/lần, cần cắt tạo kiểu"
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Dấu hiệu đến lúc cần grooming",
+          "text": "Lông bắt đầu rối từng mảng, móng kêu 'cộc cộc' khi đi trên sàn cứng, tai có mùi (cần vệ sinh), hoặc chó hay cào người và đồ vật vì móng quá dài."
+        }
+      ]
+    },
+    {
+      "id": "dem-ngu-thu-cung",
+      "categoryLabel": "Phụ kiện",
+      "badgeClass": "badge--cat",
+      "title": "Review top 5 đệm ngủ êm ái cho thú cưng",
+      "excerpt": "Một chiếc đệm tốt giúp thú cưng ngủ ngon hơn, giảm đau khớp và giữ ấm trong mùa lạnh. Hãy xem các lựa chọn tốt nhất.",
+      "image": "https://i.pinimg.com/1200x/bb/da/f1/bbdaf1b47cf8c98cc4184665bd79cda6.jpg",
+      "date": "15 Thg 4, 2024",
+      "readTime": 5,
+      "author": "Đội ngũ Petopia",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Chất lượng giấc ngủ ảnh hưởng trực tiếp đến sức khỏe thú cưng — cũng giống như con người. Thú cưng ngủ trung bình 12–18 giờ/ngày, vì vậy đệm ngủ là một trong những đầu tư quan trọng nhất bạn có thể làm cho chúng."
+        },
+        {
+          "type": "list",
+          "title": "5 tiêu chí chọn đệm ngủ tốt",
+          "items": [
+            "<strong>Kích thước:</strong> Thú cưng phải nằm duỗi hoàn toàn thoải mái (không co chân)",
+            "<strong>Chất liệu đệm:</strong> Memory foam tốt nhất cho chó già/đau khớp; bông PP hạt cho chó trẻ",
+            "<strong>Bọc ngoài:</strong> Vải chống thấm, tháo rời được để giặt máy",
+            "<strong>Nhiệt độ:</strong> Vải Sherpa cho mùa lạnh; vải lưới mesh cho mùa nóng",
+            "<strong>Độ bền:</strong> Chó hay gặm cần đệm canvas hoặc Oxford dày"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "do-choi-an-toan",
+      "categoryLabel": "An toàn",
+      "badgeClass": "badge--dog",
+      "title": "Cách chọn đồ chơi an toàn cho chó",
+      "excerpt": "Không phải đồ chơi nào cũng an toàn. Hãy biết cách chọn đồ chơi phù hợp với kích thước, tính cách và độ tuổi của cún.",
+      "image": "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=300&auto=format&fit=crop&q=80",
+      "date": "10 Thg 4, 2024",
+      "readTime": 4,
+      "author": "Đội ngũ Petopia",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Đồ chơi không đúng loại có thể gây nguy hiểm nghiêm trọng: chó có thể nuốt các mảnh vỡ nhỏ gây tắc ruột, hoặc bị hóc bởi đồ chơi quá nhỏ vừa khớp với họng."
+        },
+        {
+          "type": "list",
+          "title": "Nguyên tắc vàng khi chọn đồ chơi",
+          "items": [
+            "<strong>Kích thước đúng:</strong> Đồ chơi phải to hơn miệng chó — không thể nuốt chửng được",
+            "<strong>Không có chi tiết nhỏ:</strong> Tránh đồ có mắt nhựa, nút bấm, hay dây rút có thể bị nuốt",
+            "<strong>Không độc:</strong> Nhựa BPA-free, cao su thiên nhiên, hoặc vải an toàn",
+            "<strong>Phù hợp tính cách:</strong> Chó cắn mạnh cần Kong hoặc Nylabone; chó thích rượt bắt cần bóng hay frisbee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7-cach-de-ngoi-nha-khong-co-mui-thu-cung",
+      "categoryLabel": "Chăm sóc",
+      "badgeClass": "badge--care",
+      "title": "7 cách để ngôi nhà của bạn không có mùi của thú cưng",
+      "excerpt": "Những mẹo đơn giản giúp loại bỏ mùi hôi thú cưng trong nhà, từ việc vệ sinh thú cưng, dọn dẹp khu vực sinh hoạt đến sử dụng các sản phẩm làm sạch an toàn.",
+      "image": "https://images.contentstack.io/v3/assets/blt6f84e20c72a89efa/blt53205da717c19349/64c2c912c53087800bbc248e/article-keep_litter_box_from_smelling-slug-header-mobile@1.5x.jpg",
+      "date": "04 Thg 7, 2025",
+      "readTime": 8,
+      "author": "Pet Things",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Chúng tôi yêu những bé chó và mèo của mình, nhưng không thích những mùi hôi đi kèm với chúng. Từ mùi nhà vệ sinh, hơi thở cho đến mùi lông thú cưng, tất cả đều có thể khiến khách nhận ra bạn đang nuôi thú cưng ngay khi bước vào nhà."
+        },
+        {
+          "type": "paragraph",
+          "text": "May mắn thay, có nhiều cách giúp ngôi nhà luôn thơm tho và sạch sẽ hơn dù vẫn sống cùng những người bạn bốn chân."
+        },
+        {
+          "type": "heading",
+          "text": "1. Lên lịch tắm cho thú cưng"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tắm định kỳ giúp loại bỏ mùi hôi và giữ cơ thể thú cưng sạch sẽ. Chó thường nên được tắm từ 4–6 tuần một lần, trong khi mèo cũng cần được hỗ trợ vệ sinh định kỳ."
+        },
+        {
+          "type": "heading",
+          "text": "2. Giữ thú cưng sạch sẽ giữa các lần tắm"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sử dụng khăn ướt kháng khuẩn hoặc chải lông thường xuyên để loại bỏ bụi bẩn, lông rụng và da chết giữa các lần tắm."
+        },
+        {
+          "type": "heading",
+          "text": "3. Vệ sinh ổ nằm của thú cưng thường xuyên"
+        },
+        {
+          "type": "paragraph",
+          "text": "Giường và nệm của thú cưng hấp thụ nhiều mùi hôi, nước dãi và vi khuẩn. Hãy giặt hoặc vệ sinh chúng ít nhất mỗi tuần một lần."
+        },
+        {
+          "type": "heading",
+          "text": "4. Dọn sạch cát vệ sinh cho mèo hàng ngày"
+        },
+        {
+          "type": "paragraph",
+          "text": "Loại bỏ phân và nước tiểu mỗi ngày, thay cát định kỳ và vệ sinh khay thường xuyên để hạn chế mùi hôi."
+        },
+        {
+          "type": "heading",
+          "text": "5. Cho thú cưng ăn chế độ dinh dưỡng lành mạnh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dinh dưỡng kém có thể gây tiêu hóa không tốt, tiêu chảy và làm phát sinh mùi khó chịu. Hãy lựa chọn thực phẩm cân bằng và phù hợp với từng thú cưng."
+        },
+        {
+          "type": "heading",
+          "text": "6. Xử lý ngay các sự cố vệ sinh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Khi thú cưng đi vệ sinh không đúng chỗ, cần làm sạch ngay bằng các sản phẩm khử mùi chuyên dụng để tránh mùi bám lâu trong nhà."
+        },
+        {
+          "type": "heading",
+          "text": "7. Sử dụng sản phẩm làm sạch không khí an toàn"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ưu tiên các sản phẩm có thành phần tự nhiên và an toàn cho vật nuôi. Tránh sử dụng các loại tinh dầu hoặc hóa chất có thể gây độc cho chó mèo."
+        }
+      ]
+    },
+    {
+  "id": "bien-doi-khi-hau-anh-huong-den-thu-cung",
+  "categoryLabel": "Sức khỏe",
+  "badgeClass": "badge--health",
+  "title": "Biến đổi khí hậu ảnh hưởng đến thú cưng như thế nào?",
+  "excerpt": "Biến đổi khí hậu đang làm gia tăng nguy cơ mắc các bệnh do ký sinh trùng truyền sang thú cưng như giun tim, Lyme, bọ chét và nhiều bệnh truyền nhiễm khác.",
+  "image": "https://www.petful.com/wp-content/uploads/2018/12/happy-1845090_1280.jpg",
+  "date": "04/12/2018",
+  "readTime": 12,
+  "author": "Tiến sĩ Debora Lichtenberg, VMD",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Biến đổi khí hậu đang tác động trực tiếp đến thú cưng thông qua nhiệt độ tăng cao, thời tiết khắc nghiệt và sự gia tăng của các loại ký sinh trùng gây bệnh."
+    },
+    {
+      "type": "heading",
+      "text": "Ký sinh trùng trở nên nguy hiểm hơn"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nhiệt độ ấm hơn và độ ẩm cao tạo điều kiện thuận lợi cho bọ ve, muỗi, bọ chét và các loại ký sinh trùng phát triển mạnh hơn, kéo dài thời gian hoạt động và phạm vi lây nhiễm."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Giun tim",
+        "Bệnh do ve truyền",
+        "Nhiễm bọ chét",
+        "Bệnh ký sinh trùng đường hô hấp",
+        "Bệnh ký sinh trùng đường tiêu hóa",
+        "Các bệnh lây từ động vật sang người"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Ký sinh trùng đang mở rộng lãnh thổ"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nhiều bệnh trước đây chỉ xuất hiện ở một số khu vực nhất định nay đã lan rộng sang nhiều vùng khác do khí hậu thay đổi."
+    },
+    {
+      "type": "heading",
+      "text": "Bọ chét và các bệnh liên quan"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bọ chét không chỉ gây ngứa và viêm da mà còn là vật trung gian truyền nhiều bệnh nguy hiểm cho chó mèo."
+    },
+    {
+      "type": "heading",
+      "text": "Bệnh sốt thỏ (Tularemia)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lây qua bọ chét, ve hoặc ruồi hươu. Bệnh có thể gây sốt, sưng hạch và cũng có khả năng lây sang người."
+    },
+    {
+      "type": "heading",
+      "text": "Bartonella"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vi khuẩn Bartonella có thể lây qua bọ chét và ve. Mèo thường không có triệu chứng nhưng có thể truyền bệnh cho người."
+    },
+    {
+      "type": "heading",
+      "text": "Bệnh huyết khối (Hemoplasmosis)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Một dạng ký sinh trùng máu ở mèo có thể gây thiếu máu nghiêm trọng và cần điều trị chuyên sâu."
+    },
+    {
+      "type": "heading",
+      "text": "Ký sinh trùng đường ruột"
+    },
+    {
+      "type": "paragraph",
+      "text": "Giun tròn, giun móc, giun roi và cầu trùng đang trở nên phổ biến hơn khi điều kiện khí hậu thay đổi."
+    },
+    {
+      "type": "heading",
+      "text": "Nguy cơ đối với con người"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nhiều ký sinh trùng có thể lây từ động vật sang người, làm gia tăng các bệnh truyền nhiễm trong cộng đồng."
+    },
+    {
+      "type": "heading",
+      "text": "Phòng chống ký sinh trùng"
+    },
+    {
+      "type": "paragraph",
+      "text": "Việc phòng ngừa giun tim, ve rận, bọ chét và tẩy giun định kỳ quanh năm ngày càng trở nên cần thiết."
+    },
+    {
+      "type": "heading",
+      "text": "Điều trị không phải lúc nào cũng thành công"
+    },
+    {
+      "type": "paragraph",
+      "text": "Một số bệnh như giun tim hoặc Lyme có thể khó điều trị và gây biến chứng nghiêm trọng nếu phát hiện muộn."
+    },
+    {
+      "type": "heading",
+      "text": "Kháng ký sinh trùng"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nhiều loại ký sinh trùng đang phát triển khả năng kháng thuốc, khiến việc kiểm soát trở nên khó khăn hơn trong tương lai."
+    },
+    {
+      "type": "paragraph",
+      "text": "Biến đổi khí hậu không chỉ ảnh hưởng đến môi trường mà còn làm gia tăng nguy cơ bệnh tật cho thú cưng và con người. Chủ nuôi cần chủ động phòng ngừa ký sinh trùng quanh năm để bảo vệ sức khỏe cho vật nuôi."
+    }
+  ]
+},
+{
+  "id": "5-ly-do-khien-meo-di-ve-sinh-sai-cho",
+  "categoryLabel": "Chăm sóc mèo",
+  "badgeClass": "badge--cat",
+  "title": "5 Lý Do Khiến Mèo Đi Vệ Sinh Sai Chỗ",
+  "excerpt": "Mèo đi vệ sinh ngoài khay cát có thể xuất phát từ vấn đề sức khỏe, khay vệ sinh không phù hợp, nhà nhiều mèo, căng thẳng tâm lý hoặc hành vi đánh dấu lãnh thổ.",
+  "image": "https://file.hstatic.net/1000217401/article/hinh_blogs_website__17__1d23659c903e4440b565961a4ed84c9b_grande.png",
+  "date": "04/07/2025",
+  "readTime": 8,
+  "author": "Đội ngũ Petopia",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Mèo đi vệ sinh ngoài khay cát là một trong những vấn đề phổ biến mà nhiều người nuôi mèo gặp phải. Có nhiều nguyên nhân khác nhau dẫn đến hành vi này và việc xác định đúng nguyên nhân là bước đầu tiên để giải quyết hiệu quả."
+    },
+    {
+      "type": "heading",
+      "text": "1. Vấn đề sức khỏe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Các bệnh như nhiễm trùng đường tiết niệu, sỏi bàng quang hoặc viêm bàng quang có thể khiến mèo đau khi đi tiểu và né tránh việc sử dụng khay cát."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Nhiễm trùng đường tiết niệu (UTI)",
+        "Sỏi bàng quang",
+        "Viêm bàng quang",
+        "Tiểu ra máu",
+        "Tiểu nhiều lần với lượng ít"
+      ]
+    },
+    {
+      "type": "tip",
+      "title": "Cách xử lý",
+      "text": "Đưa mèo đến bác sĩ thú y để kiểm tra và điều trị kịp thời, không tự ý sử dụng thuốc."
+    },
+    {
+      "type": "heading",
+      "text": "2. Khay vệ sinh hoặc cát vệ sinh không phù hợp"
+    },
+    {
+      "type": "paragraph",
+      "text": "Khay cát bẩn, kích thước không phù hợp hoặc thay đổi loại cát đột ngột đều có thể khiến mèo từ chối sử dụng khay vệ sinh."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Khay cát quá bẩn",
+        "Đổi loại cát đột ngột",
+        "Đổi vị trí đặt khay",
+        "Nhà nhiều mèo nhưng thiếu khay",
+        "Khay quá kín",
+        "Khay quá nhỏ"
+      ]
+    },
+    {
+      "type": "tip",
+      "title": "Cách xử lý",
+      "text": "Dọn khay hàng ngày, đặt ở nơi yên tĩnh, sử dụng khay đủ lớn và chuẩn bị số khay theo nguyên tắc số mèo + 1."
+    },
+    {
+      "type": "heading",
+      "text": "3. Nhà nuôi nhiều mèo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trong môi trường nhiều mèo, những con mạnh hơn có thể khiến các cá thể nhút nhát không dám sử dụng khay cát chung."
+    },
+    {
+      "type": "tip",
+      "title": "Cách xử lý",
+      "text": "Bố trí nhiều khay cát ở các khu vực khác nhau để giảm cạnh tranh và tạo không gian riêng tư cho từng mèo."
+    },
+    {
+      "type": "heading",
+      "text": "4. Mèo bị stress hoặc lo âu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Những thay đổi trong môi trường sống như chuyển nhà, thêm thành viên mới hoặc thay đổi thói quen sinh hoạt có thể làm mèo căng thẳng và đi vệ sinh sai chỗ."
+    },
+    {
+      "type": "tip",
+      "title": "Cách xử lý",
+      "text": "Giữ môi trường ổn định, tạo nơi trú ẩn an toàn và hạn chế các tác nhân gây căng thẳng cho mèo."
+    },
+    {
+      "type": "heading",
+      "text": "5. Hành vi đánh dấu lãnh thổ"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mèo chưa triệt sản thường đánh dấu lãnh thổ bằng nước tiểu, đặc biệt khi phát hiện sự hiện diện của động vật khác."
+    },
+    {
+      "type": "tip",
+      "title": "Cách xử lý",
+      "text": "Triệt sản và vệ sinh kỹ những khu vực mèo từng đánh dấu để giảm khả năng tái diễn."
+    },
+    {
+      "type": "heading",
+      "text": "Những điều không nên làm"
+    },
+    {
+      "type": "warning",
+      "text": "Không la mắng, đánh đập hoặc dụi mặt mèo vào nơi mèo đi vệ sinh sai chỗ vì chỉ làm tăng căng thẳng và khiến hành vi trở nên nghiêm trọng hơn."
+    },
+    {
+      "type": "warning",
+      "text": "Không sử dụng chất tẩy rửa chứa amoniac vì mùi tương tự nước tiểu có thể khiến mèo tiếp tục đi bậy ở cùng vị trí."
+    },
+    {
+      "type": "heading",
+      "text": "Kết luận"
+    },
+    {
+      "type": "paragraph",
+      "text": "Để giải quyết tình trạng mèo đi vệ sinh ngoài khay cát, cần ưu tiên kiểm tra sức khỏe, cải thiện điều kiện sử dụng khay vệ sinh, giảm căng thẳng và xử lý các vấn đề hành vi. Sự kiên nhẫn và quan sát kỹ lưỡng sẽ giúp tìm ra nguyên nhân thực sự."
+    }
+  ]
+},
+{
+  "id": "khay-ve-sinh-cho-meo-nen-chon-loai-co-nap-hay-khong-nap",
+  "categoryLabel": "Chăm sóc mèo",
+  "badgeClass": "badge--cat",
+  "title": "Khay vệ sinh cho mèo: Nên chọn loại có nắp hay không nắp?",
+  "excerpt": "Khay vệ sinh có nắp và không nắp đều có ưu nhược điểm riêng. Điều quan trọng nhất không phải là có nắp hay không mà là kích thước phù hợp, độ sạch sẽ và sự thoải mái của mèo.",
+  "image": "https://images.contentstack.io/v3/assets/blt6f84e20c72a89efa/blt53205da717c19349/64c2c912c53087800bbc248e/article-keep_litter_box_from_smelling-slug-header-mobile@1.5x.jpg",
+  "date": "04/07/2025",
+  "readTime": 6,
+  "author": "Đội ngũ Petopia",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Sau nhiều năm nuôi mèo và trải nghiệm nhiều loại khay vệ sinh khác nhau, câu hỏi phổ biến nhất là nên chọn khay có nắp hay không có nắp. Câu trả lời phụ thuộc vào đặc điểm và sở thích của từng chú mèo."
+    },
+    {
+      "type": "heading",
+      "text": "Nghiên cứu khoa học nói gì?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Một nghiên cứu năm 2013 trên 27 chú mèo khỏe mạnh cho thấy phần lớn mèo không có sự ưu tiên rõ ràng giữa khay vệ sinh có nắp và không nắp. Có tới 19 trong số 27 con mèo sử dụng cả hai loại như nhau."
+    },
+    {
+      "type": "heading",
+      "text": "Khay vệ sinh có nắp"
+    },
+    {
+      "type": "subheading",
+      "text": "Ưu điểm"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Giữ mùi bên trong khay tốt hơn",
+        "Hạn chế cát văng ra sàn",
+        "Tạo không gian riêng tư cho mèo nhút nhát"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Nhược điểm"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Không gian bên trong hạn chế",
+        "Mèo lớn trên 6kg khó xoay trở",
+        "Mùi hôi dễ tích tụ bên trong",
+        "Mèo khó quan sát xung quanh",
+        "Chủ nuôi dễ quên dọn vệ sinh"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Khay vệ sinh không nắp"
+    },
+    {
+      "type": "subheading",
+      "text": "Ưu điểm"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Thông thoáng, ít tích tụ mùi",
+        "Mèo dễ quan sát môi trường xung quanh",
+        "Tạo cảm giác an toàn hơn",
+        "Dễ vệ sinh và làm sạch"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Nhược điểm"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mùi có thể lan ra ngoài",
+        "Cát dễ bị văng ra sàn",
+        "Không tạo được sự riêng tư cho một số mèo"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Bí kíp lựa chọn khay vệ sinh"
+    },
+    {
+      "type": "ordered-list",
+      "items": [
+        "Ưu tiên kích thước lớn và thoải mái hơn là kiểu dáng có nắp hay không nắp",
+        "Luôn giữ khay vệ sinh sạch sẽ bằng cách dọn dẹp thường xuyên",
+        "Nếu có điều kiện, hãy cho mèo trải nghiệm cả hai loại để tự lựa chọn"
+      ]
+    },
+    {
+      "type": "tip",
+      "title": "Lưu ý",
+      "text": "Chiều dài lòng khay nên tối thiểu bằng 1.5 lần chiều dài cơ thể mèo để đảm bảo mèo có thể xoay trở thoải mái."
+    },
+    {
+      "type": "tip",
+      "title": "Khuyến nghị cho mèo lớn",
+      "text": "Những chú mèo trên 6kg thường phù hợp với khay vệ sinh không nắp vì có nhiều không gian hơn khi sử dụng."
+    },
+    {
+      "type": "heading",
+      "text": "Kết luận"
+    },
+    {
+      "type": "paragraph",
+      "text": "Không có loại khay vệ sinh nào hoàn hảo cho mọi chú mèo. Điều quan trọng nhất là kích thước phù hợp, vị trí đặt hợp lý, vệ sinh thường xuyên và đáp ứng được sở thích của mèo. Một chiếc khay rộng rãi, sạch sẽ luôn mang lại hiệu quả tốt hơn việc chỉ tập trung vào yếu tố có nắp hay không nắp."
+    }
+  ]
+}
+]
+}
+  

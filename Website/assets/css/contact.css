@@ -1,0 +1,369 @@
+/* ============================================================
+   contact.css  –  Petopia Contact Page Stylesheet
+   ============================================================ */
+
+/* ── WRAPPER ─────────────────────────────────────────────── */
+.contact-wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 44px 0 80px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── PAGE HEADING ────────────────────────────────────────── */
+.contact-page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffae00;
+  margin-bottom: 8px;
+}
+.contact-page-sub {
+  text-align: center;
+  font-size: 15px;
+  color: #648b79;
+  margin-bottom: 36px;
+}
+
+/* ── 4 CHANNEL CARDS ─────────────────────────────────────── */
+.contact-channels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 44px;
+}
+
+.channel-card {
+  background: #fff;
+  border: 1.5px solid #E8EDF3;
+  border-radius: 16px;
+  padding: 28px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: default;
+  transition: transform .22s, box-shadow .22s, border-color .22s;
+  position: relative;
+  overflow: hidden;
+}
+.channel-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 60%, rgba(0,0,0,.03) 100%);
+  pointer-events: none;
+}
+.channel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 42px rgba(0,0,0,.11);
+  border-color: transparent;
+}
+
+/* Clickable variant */
+.channel-card--link { cursor: pointer; }
+.channel-card--link:hover .channel-card__name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Icon circle */
+.channel-card__icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: transform .22s;
+}
+.channel-card:hover .channel-card__icon { transform: scale(1.1) rotate(-4deg); }
+
+.icon--hotline  { background: #EFF6FF; color: #6d951d; }
+.icon--email    { background: #FFFBEB; color: #F59E0B; }
+.icon--zalo     { background: #EFF6FF; color: #ffb300; }
+.icon--facebook { background: #F5F0FF; color: #7C3AED; }
+
+.channel-card__label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94A3B8;
+}
+.channel-card__name {
+  font-size: 16px;
+  font-weight: 800;
+  color:#6d951d ;
+  line-height: 1.3;
+}
+.channel-card--email .channel-card__name  { color: #D97706; }
+.channel-card--zalo .channel-card__name   { color: #ffb300; }
+.channel-card--fb .channel-card__name     { color: #7C3AED; }
+
+.channel-card__note {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+/* ── MAIN 2-COLUMN ───────────────────────────────────────── */
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ── FORM SECTION ────────────────────────────────────────── */
+.contact-form-section { min-width: 0; }
+
+.contact-form-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1A202C;
+  margin-bottom: 6px;
+}
+.contact-form-sub {
+  font-size: 14px;
+  color: #64748B;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.contact-form { display: flex; flex-direction: column; gap: 18px; }
+
+/* Row 2 cột */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+}
+.form-group label span { color: #EF4444; margin-left: 2px; }
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1.5px solid  #eef7eb;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #1A202C;
+  background: #F8FAFC;
+  outline: none;
+  transition: border-color .2s, background .2s, box-shadow .2s;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: #8dde71; }
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f6c13b;
+  background: #fff;
+  box-shadow: 0 0 0 3px  #eef7eb;
+}
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 3px rgba(239,68,68,.08);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.65;
+}
+
+/* Error message */
+.form-error-msg {
+  font-size: 12px;
+  color: #EF4444;
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+.form-error-msg.show { display: flex; }
+
+/* Submit button */
+.btn-contact-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 30px;
+  background: #eb9225;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  align-self: flex-start;
+}
+.btn-contact-submit:hover {
+  background: orange;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px  #eef7eb;
+}
+.btn-contact-submit:active { transform: translateY(0); }
+.btn-contact-submit.loading {
+  pointer-events: none;
+  opacity: .75;
+}
+.btn-contact-submit.success { background: #16A34A; }
+
+/* Success message */
+.contact-success-msg {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  background: #F0FDF4;
+  border: 1.5px solid #86EFAC;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #166534;
+  font-weight: 600;
+}
+.contact-success-msg.show { display: flex; }
+.contact-success-msg i { font-size: 20px; color: #22C55E; }
+
+/* ── RIGHT COLUMN ────────────────────────────────────────── */
+.contact-right { display: flex; flex-direction: column; gap: 20px; }
+
+/* Info card */
+.contact-info-card,
+.contact-social-card {
+  background: #fff;
+  border: 1.5px solid #E8EDF3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,.06);
+}
+
+.contact-card-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1A202C;
+  padding: 18px 20px 14px;
+  border-bottom: 1.5px solid #F1F5F9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-card-title i { color: #F97316; }
+
+/* Info table */
+.contact-info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact-info-table tr {
+  border-bottom: 1px solid #F1F5F9;
+}
+.contact-info-table tr:last-child { border-bottom: none; }
+.contact-info-table td {
+  padding: 11px 20px;
+  font-size: 13.5px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+.contact-info-table td:first-child {
+  color: #94A3B8;
+  font-weight: 600;
+  width: 80px;
+  flex-shrink: 0;
+}
+.contact-info-table td:last-child {
+  color: #374151;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Social pills */
+.contact-social-body {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 1.5px solid #E2E8F0;
+  background: #F8FAFC;
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+.social-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  border-color: transparent;
+  color: #fff;
+}
+
+.pill--facebook:hover  { background: #1877F2; }
+.pill--instagram:hover { background: linear-gradient(135deg,#F58529,#DD2A7B,#8134AF); }
+.pill--tiktok:hover    { background: #000; }
+.pill--zalo:hover      { background: #0068FF; }
+.pill--shopee:hover    { background: #EE4D2D; }
+.pill--lazada:hover    { background: #0F146D; }
+
+.pill--facebook  i { color: #1877F2; transition: color .2s; }
+.pill--instagram i { color: #E4405F; transition: color .2s; }
+.pill--tiktok    i { color: #000;    transition: color .2s; }
+.pill--zalo      i { color: #0068FF; transition: color .2s; }
+.pill--shopee    i { color: #EE4D2D; transition: color .2s; }
+.pill--lazada    i { color: #0F146D; transition: color .2s; }
+.social-pill:hover i { color: #fff !important; }
+
+/* ── TOAST ───────────────────────────────────────────────── */
+.contact-toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1A202C;
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.2);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .3s;
+  pointer-events: none;
+}
+.contact-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-toast i { color: #22C55E; font-size: 18px; }

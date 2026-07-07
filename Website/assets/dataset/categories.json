@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Thức ăn cho chó",
+    "description": "Thức ăn khô, ướt, dinh dưỡng cho chó",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Thức+ăn+chó",
+    "createdAt": "01/01/2025"
+  },
+  {
+    "id": 2,
+    "name": "Thức ăn cho mèo",
+    "description": "Thức ăn khô, ướt, pate cho mèo",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Thức+ăn+mèo",
+    "createdAt": "01/01/2025"
+  },
+  {
+    "id": 3,
+    "name": "Đồ dùng cho thú cưng",
+    "description": "Vệ sinh, tiện nghi, đồ chơi cho thú cưng",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Đồ+dùng",
+    "createdAt": "02/01/2025"
+  },
+  {
+    "id": 4,
+    "name": "Thú nuôi khác",
+    "description": "Thức ăn và đồ dùng cho thú cưng khác",
+    "image": "https://placehold.co/400x300/e9f7ee/1b934b?text=Thú+nuôi+khác",
+    "createdAt": "03/01/2025"
+  }
+]

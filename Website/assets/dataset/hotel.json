@@ -1,0 +1,596 @@
+{
+  "dog": {
+    "normal": [
+      {
+        "roomNumber": "P101",
+        "roomName": "Sunny Room",
+        "price": "200.000đ / đêm",
+        "image": "https://i.pinimg.com/1200x/7d/c9/66/7dc9663c96aeb90cc1973278d3150598.jpg",
+
+        "description": "Phòng tiêu chuẩn dành cho chó nhỏ và vừa dưới 15kg. Không gian thoáng mát, sạch sẽ, có khu vực nghỉ ngơi riêng và được vệ sinh định kỳ mỗi ngày.",
+
+        "features": [
+          "Camera giám sát 24/7",
+          "Cho ăn 2 bữa/ngày",
+          "Vệ sinh phòng hằng ngày",
+          "Khu vui chơi chung",
+          "Điều hòa nhiệt độ"
+        ]
+      },
+
+      {
+        "roomNumber": "P102",
+        "roomName": "Garden Room",
+        "price": "220.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/49/b8/d9/49b8d95aa9b788f0cdf0a9156324d7d1.jpg",
+
+        "description": "Phòng gần khu vui chơi ngoài trời, phù hợp với các bé năng động thích chạy nhảy và giao lưu cùng thú cưng khác.",
+
+        "features": [
+          "Camera 24/7",
+          "Không gian rộng",
+          "Khu vui chơi ngoài trời",
+          "Khử khuẩn định kỳ",
+          "Theo dõi sức khỏe"
+        ]
+      },
+        {
+        "roomNumber": "P103",
+        "roomName": "Cozy Room",
+        "price": "210.000đ / đêm",
+        "image": "https://i.pinimg.com/1200x/d6/e5/38/d6e538dcec74931090e674816fedc516.jpg",
+        "description": "Phòng ấm cúng với giường nệm mềm mại, phù hợp cho các bé chó thích nghỉ ngơi trong không gian yên tĩnh.",
+        "features": [
+          "Camera giám sát",
+          "Nệm cao cấp",
+          "Vệ sinh mỗi ngày",
+          "Điều hòa",
+          "Chăm sóc cơ bản"
+        ]
+      },
+      {
+  "roomNumber": "P104",
+  "roomName": "Happy Room",
+  "price": "230.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/13/38/89/133889f0d608eb5df0950848a22a7b40.jpg",
+  "description": "Phòng dành cho các bé chó năng động, có không gian vận động rộng rãi và khu vực nghỉ ngơi riêng biệt.",
+  "features": [
+    "Camera giám sát 24/7",
+    "Khu vui chơi trong nhà",
+    "Cho ăn 2 bữa/ngày",
+    "Điều hòa nhiệt độ",
+    "Vệ sinh hằng ngày"
+  ]
+},
+{
+  "roomNumber": "P105",
+  "roomName": "Cloud Room",
+  "price": "240.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/c8/65/b2/c865b279343645c4b038f26ec0ad9cf7.jpg",
+  "description": "Không gian yên tĩnh, thích hợp cho những bé chó nhút nhát hoặc cần nghỉ dưỡng sau khi điều trị.",
+  "features": [
+    "Camera 24/7",
+    "Đệm ngủ cao cấp",
+    "Theo dõi sức khỏe",
+    "Khử khuẩn định kỳ",
+    "Điều hòa"
+  ]
+},
+{
+  "roomNumber": "P106",
+  "roomName": "Forest Room",
+  "price": "250.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/5b/05/7d/5b057ddb6e6c20d3c31810bb467f704c.jpg",
+  "description": "Phòng thiết kế theo phong cách thiên nhiên với không gian thoáng đãng và ánh sáng dịu nhẹ.",
+  "features": [
+    "Camera giám sát",
+    "Không gian rộng",
+    "Khu vui chơi chung",
+    "Vệ sinh mỗi ngày",
+    "Theo dõi sức khỏe"
+  ]
+},
+{
+  "roomNumber": "P107",
+  "roomName": "Rainbow Room",
+  "price": "260.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/db/bd/31/dbbd31c57722fdd342cd90eecaa8a684.jpg",
+  "description": "Phòng nhiều màu sắc tạo cảm giác vui vẻ, phù hợp với các bé chó thân thiện và thích giao lưu.",
+  "features": [
+    "Camera 24/7",
+    "Đồ chơi miễn phí",
+    "Cho ăn 2 bữa/ngày",
+    "Khử mùi tự động",
+    "Điều hòa nhiệt độ"
+  ]
+},
+{
+  "roomNumber": "P108",
+  "roomName": "Ocean Room",
+  "price": "270.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/ad/39/0a/ad390ae5b61560edfb7713071344984c.jpg",
+  "description": "Không gian rộng rãi với thiết kế tông xanh dịu mắt, giúp thú cưng thư giãn và nghỉ ngơi tốt hơn.",
+  "features": [
+    "Camera giám sát 24/7",
+    "Đệm ngủ mềm mại",
+    "Theo dõi sức khỏe",
+    "Vệ sinh hằng ngày",
+    "Khu vui chơi chung"
+  
+  ]
+}
+    ],
+
+    "premium": [
+      {
+        "roomNumber": "C201",
+        "roomName": "Premium Comfort",
+        "price": "350.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/f2/a1/58/f2a158c7851e8b0772916c611d6b178c.jpg",
+
+        "description": "Phòng cao cấp với diện tích lớn hơn, có giường nệm riêng và khu vận động riêng biệt.",
+
+        "features": [
+          "Camera trực tuyến",
+          "Giường nệm cao cấp",
+          "Khu vui chơi riêng",
+          "Theo dõi sức khỏe",
+          "Báo cáo hình ảnh mỗi ngày"
+        ]
+      },
+      {
+  "roomNumber": "C202",
+  "roomName": "Premium Garden",
+  "price": "370.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/48/bf/ca/48bfca4afe04856fe06b0fdfef6f1798.jpg",
+  "description": "Phòng cao cấp nằm gần khu sân vườn, mang lại không gian thoáng đãng và nhiều cơ hội vận động cho thú cưng.",
+  "features": [
+    "Camera trực tuyến",
+    "Giường nệm cao cấp",
+    "Sân chơi riêng",
+    "Theo dõi sức khỏe",
+    "Báo cáo hình ảnh mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "C203",
+  "roomName": "Premium Deluxe",
+  "price": "390.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/46/09/a5/4609a5c589f483ae2033289a9c602f48.jpg",
+  "description": "Phòng rộng rãi với nội thất hiện đại, phù hợp cho những bé chó cần không gian nghỉ dưỡng thoải mái.",
+  "features": [
+    "Camera trực tuyến 24/7",
+    "Điều hòa riêng",
+    "Giường nệm cao cấp",
+    "Dịch vụ chăm sóc đặc biệt",
+    "Báo cáo sức khỏe hằng ngày"
+  ]
+},
+{
+  "roomNumber": "C204",
+  "roomName": "Premium Family",
+  "price": "420.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/36/89/e9/3689e93fd24dd4ad73fbb5374a82cf4e.jpg",
+  "description": "Phòng dành cho nhiều thú cưng cùng gia đình, có diện tích lớn và khu vui chơi riêng biệt.",
+  "features": [
+    "Camera trực tuyến",
+    "Không gian rộng rãi",
+    "Khu vận động riêng",
+    "Theo dõi sức khỏe",
+    "Khử khuẩn hằng ngày"
+  ]
+},
+{
+  "roomNumber": "C205",
+  "roomName": "Premium Royal",
+  "price": "450.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/ae/10/51/ae10512a07fc41be7b5388c9c44b89ee.jpg",
+  "description": "Phòng premium cao cấp nhất với dịch vụ chăm sóc toàn diện và không gian nghỉ ngơi sang trọng.",
+  "features": [
+    "Camera HD trực tuyến",
+    "Giường nệm hạng sang",
+    "Thực đơn dinh dưỡng riêng",
+    "Theo dõi sức khỏe chuyên sâu",
+    "Báo cáo hình ảnh và video mỗi ngày"
+  ]
+}
+    ],
+
+    "vip": [
+      {
+        "roomNumber": "VIP301",
+        "roomName": "Royal Suite",
+        "price": "600.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/26/d4/32/26d432bf9acdac745cad97565c24cace.jpg",
+
+        "description": "Phòng VIP cao cấp nhất với không gian riêng tư, dịch vụ chăm sóc cá nhân hóa và cập nhật tình trạng thú cưng liên tục cho chủ nuôi.",
+
+        "features": [
+          "Bác sĩ thú y theo dõi",
+          "Spa miễn phí",
+          "Camera livestream",
+          "Thực đơn riêng",
+          "Đưa đón tận nơi"
+        ]
+      },
+      {
+        "roomNumber": "VIP302",
+        "roomName": "Deluxe Royal",
+        "price": "600.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/17/ac/32/17ac32277a5d7548bf73f16a2eb4b99c.jpg",
+
+        "description": "Phòng VIP cao cấp nhất với không gian riêng tư, dịch vụ chăm sóc cá nhân hóa và cập nhật tình trạng thú cưng liên tục cho chủ nuôi.",
+
+        "features": [
+          "Bác sĩ thú y theo dõi",
+          "Spa miễn phí",
+          "Camera livestream",
+          "Thực đơn riêng",
+          "Đưa đón tận nơi"
+        ]
+      },
+      {
+  "roomNumber": "VIP303",
+  "roomName": "Golden Palace",
+  "price": "650.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/27/0c/15/270c153921a7a09d2204624c9cd16f89.jpg",
+  "description": "Phòng VIP sang trọng với không gian rộng rãi, khu nghỉ ngơi riêng biệt và dịch vụ chăm sóc toàn diện dành cho thú cưng.",
+  "features": [
+    "Bác sĩ thú y theo dõi",
+    "Spa cao cấp miễn phí",
+    "Camera livestream 24/7",
+    "Thực đơn dinh dưỡng riêng",
+    "Đưa đón tận nơi"
+  ]
+},
+{
+  "roomNumber": "VIP304",
+  "roomName": "Diamond Suite",
+  "price": "700.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/5b/d8/79/5bd8798b1f99a35a54bfc636352447fb.jpg",
+  "description": "Phòng hạng sang với nội thất cao cấp, dịch vụ cá nhân hóa và chế độ chăm sóc đặc biệt cho từng thú cưng.",
+  "features": [
+    "Bác sĩ thú y trực ca",
+    "Massage thư giãn",
+    "Camera livestream HD",
+    "Thực đơn theo yêu cầu",
+    "Báo cáo sức khỏe mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "VIP305",
+  "roomName": "Presidential Suite",
+  "price": "750.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/c9/99/08/c99908ec2096d1fecd28dbd3efa3c2d3.jpg",
+  "description": "Phòng VIP cao cấp nhất với dịch vụ chăm sóc chuyên biệt, không gian riêng tư tuyệt đối và khu vui chơi độc quyền.",
+  "features": [
+    "Bác sĩ thú y riêng",
+    "Spa & Grooming miễn phí",
+    "Camera livestream không giới hạn",
+    "Chế độ ăn cá nhân hóa",
+    "Đưa đón VIP tận nơi"
+  ]
+},
+{
+  "roomNumber": "VIP306",
+  "roomName": "Emerald Royal",
+  "price": "800.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/19/18/78/191878dc3e68dc85d7c5b6d24749b066.jpg",
+  "description": "Không gian nghỉ dưỡng chuẩn resort dành cho thú cưng với dịch vụ chăm sóc cao cấp và khu vận động riêng.",
+  "features": [
+    "Theo dõi sức khỏe 24/7",
+    "Spa thư giãn",
+    "Camera livestream",
+    "Khu vui chơi riêng",
+    "Dịch vụ đưa đón cao cấp"
+  ]
+}
+    ]
+  },
+
+  "cat": {
+    "normal": [
+      {
+        "roomNumber": "M101",
+        "roomName": "Cozy Corner",
+        "price": "180.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/fb/e4/ac/fbe4acb11c66b06a2a567ac5b90ab18b.jpg",
+
+        "description": "Phòng tiêu chuẩn dành cho mèo nhỏ với không gian ấm cúng, có giá để trèo và khu vực riêng tư để mèo cảm thấy an toàn.",
+
+        "features": [
+          "Camera giám sát 24/7",
+          "Cho ăn 2 bữa/ngày",
+          "Vệ sinh phòng hằng ngày",
+          "Giá trèo và chỗ ẩn",
+          "Điều hòa nhiệt độ"
+        ]
+      },
+
+      {
+        "roomNumber": "M102",
+        "roomName": "Sunny Cat Room",
+        "price": "200.000đ / đêm",
+        "image": "https://i.pinimg.com/1200x/94/df/30/94df30012fa8407acd93f0e779973461.jpg",
+
+        "description": "Phòng tiêu chuẩn với cửa sổ thoáng sáng, giá trèo cao và khu vực chơi an toàn cho mèo thích khám phá.",
+
+        "features": [
+          "Camera 24/7",
+          "Ánh sáng tự nhiên",
+          "Giá trèo cao",
+          "Khử khuẩn định kỳ",
+          "Theo dõi sức khỏe"
+        ]
+      },
+      {
+  "roomNumber": "M103",
+  "roomName": "Moonlight Room",
+  "price": "210.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/87/ec/bd/87ecbdc4b66ae8b7e45f08bbb3dfd80a.jpg",
+  "description": "Phòng yên tĩnh dành cho những bé mèo thích nghỉ ngơi trong không gian riêng tư, có khu vực leo trèo và góc ngủ mềm mại.",
+  "features": [
+    "Camera giám sát 24/7",
+    "Giá trèo nhiều tầng",
+    "Góc nghỉ ngơi riêng",
+    "Vệ sinh hằng ngày",
+    "Điều hòa nhiệt độ"
+  ]
+},
+{
+  "roomNumber": "M104",
+  "roomName": "Kitty Garden",
+  "price": "220.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/1e/e4/ee/1ee4eeeef44004f2cdc9255d4e6d0b7a.jpg",
+  "description": "Phòng gần khu vui chơi trong nhà với nhiều đồ chơi tương tác và khu vực vận động dành riêng cho mèo.",
+  "features": [
+    "Camera 24/7",
+    "Đồ chơi tương tác",
+    "Giá trèo cao cấp",
+    "Khử khuẩn định kỳ",
+    "Theo dõi sức khỏe"
+  ]
+},
+{
+  "roomNumber": "M105",
+  "roomName": "Dreamy Cat Room",
+  "price": "230.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/dd/c0/36/ddc0363132ac7a1b1df66982f9ac3b54.jpg",
+  "description": "Không gian rộng rãi với nhiều khu vực khám phá, thích hợp cho mèo năng động và thích vận động.",
+  "features": [
+    "Camera trực tuyến",
+    "Nhà ngủ riêng",
+    "Khu vui chơi an toàn",
+    "Cho ăn 2 bữa/ngày",
+    "Điều hòa nhiệt độ"
+  ]
+},
+{
+  "roomNumber": "M106",
+  "roomName": "Forest Cat Room",
+  "price": "240.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/7f/0d/25/7f0d25a2a6577f4dfa6384f1b7781f28.jpg",
+  "description": "Thiết kế lấy cảm hứng từ thiên nhiên với các bệ leo trèo bằng gỗ và nhiều góc nghỉ ngơi thoải mái.",
+  "features": [
+    "Camera giám sát",
+    "Giá trèo bằng gỗ",
+    "Khử khuẩn hằng ngày",
+    "Theo dõi sức khỏe",
+    "Không gian rộng"
+  ]
+},
+{
+  "roomNumber": "M107",
+  "roomName": "Luxury Cat Nest",
+  "price": "250.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/55/cd/60/55cd6081b6afb7a187ce421cae7b1c4e.jpg",
+  "description": "Phòng tiêu chuẩn cao cấp với nội thất mềm mại, khu vực leo trèo và chỗ ẩn nấp giúp mèo cảm thấy an toàn.",
+  "features": [
+    "Camera 24/7",
+    "Đệm ngủ cao cấp",
+    "Giá trèo nhiều tầng",
+    "Cho ăn theo khẩu phần",
+    "Vệ sinh mỗi ngày"
+  ]
+}
+    ],
+
+    "premium": [
+      {
+        "roomNumber": "MC201",
+        "roomName": "Premium Comfort",
+        "price": "350.000đ / đêm",
+        "image": "https://i.pinimg.com/1200x/a2/ee/c2/a2eec2bc2456e958794417f8e7ee8b84.jpg",
+
+        "description": "Phòng cao cấp dành cho mèo với diện tích rộng, cây cảnh thiên nhiên, giá trèo nhiều tầng và khu vận động riêng biệt.",
+
+        "features": [
+          "Camera trực tuyến",
+          "Giá trèo đa tầng",
+          "Cây cảnh thiên nhiên",
+          "Theo dõi sức khỏe",
+          "Báo cáo hình ảnh mỗi ngày"
+        ]
+      },
+
+      {
+        "roomNumber": "MC202",
+        "roomName": "Luxury Suite",
+        "price": "350.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/9a/f4/9c/9af49c6474458e7680b5c98616b34681.jpg",
+
+        "description": "Phòng cao cấp dành cho mèo với không gian rộng rãi, có giường cao cấp và khu vui chơi riêng biệt.",
+
+        "features": [
+          "Camera trực tuyến",
+          "Giường nệm cao cấp",
+          "Khu vui chơi riêng",
+          "Theo dõi sức khỏe",
+          "Báo cáo hình ảnh mỗi ngày"
+        ]
+      },
+      {
+  "roomNumber": "MC203",
+  "roomName": "Royal Cat Garden",
+  "price": "380.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/a0/77/75/a07775f6219482961efc943ebf04d5d5.jpg",
+  "description": "Phòng premium với khu vườn mini trong nhà, nhiều giá trèo và khu vực nghỉ ngơi riêng tư cho mèo.",
+  "features": [
+    "Camera trực tuyến",
+    "Giá trèo đa tầng",
+    "Khu vườn mini",
+    "Theo dõi sức khỏe",
+    "Báo cáo hình ảnh mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "MC204",
+  "roomName": "Sky View Suite",
+  "price": "400.000đ / đêm",
+  "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mftxthu1p3pp02@resize_w900_nl.webp",
+  "description": "Phòng cao cấp với cửa sổ lớn đón ánh sáng tự nhiên, phù hợp cho mèo thích quan sát và thư giãn.",
+  "features": [
+    "Camera livestream",
+    "Ánh sáng tự nhiên",
+    "Giá trèo cao cấp",
+    "Điều hòa riêng",
+    "Báo cáo sức khỏe hằng ngày"
+  ]
+},
+{
+  "roomNumber": "MC205",
+  "roomName": "Diamond Cat Suite",
+  "price": "420.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/b6/0a/c9/b60ac9a5d60d5d51013fde8230747677.jpg",
+  "description": "Phòng hạng sang dành cho mèo với nội thất cao cấp, khu vui chơi riêng và không gian nghỉ ngơi rộng rãi.",
+  "features": [
+    "Camera HD trực tuyến",
+    "Đệm ngủ cao cấp",
+    "Đồ chơi tương tác",
+    "Theo dõi sức khỏe",
+    "Báo cáo hình ảnh mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "MC206",
+  "roomName": "Elite Cat Palace",
+  "price": "450.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/fa/fc/a9/fafca934923d9d82005985fb885657b4.jpg",
+  "description": "Không gian nghỉ dưỡng cao cấp với hệ thống leo trèo hiện đại và dịch vụ chăm sóc đặc biệt dành cho mèo.",
+  "features": [
+    "Camera livestream 24/7",
+    "Giá trèo đa tầng cao cấp",
+    "Khu vui chơi riêng",
+    "Theo dõi sức khỏe chuyên sâu",
+    "Báo cáo ảnh và video mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "MC207",
+  "roomName": "Golden Whiskers Suite",
+  "price": "480.000đ / đêm",
+  "image": "https://i.pinimg.com/1200x/9d/9d/42/9d9d4220815bf2e7ef61355d23115701.jpg",
+  "description": "Phòng premium rộng rãi với khu vực leo trèo, nghỉ ngơi và giải trí được thiết kế riêng cho mèo.",
+  "features": [
+    "Camera trực tuyến HD",
+    "Khu leo trèo cao cấp",
+    "Giường nệm sang trọng",
+    "Theo dõi sức khỏe",
+    "Dịch vụ chăm sóc đặc biệt"
+  ]
+}
+    ],
+
+    "vip": [
+      {
+        "roomNumber": "MV301",
+        "roomName": "Royal Kitty Suite",
+        "price": "600.000đ / đêm",
+        "image": "https://i.pinimg.com/1200x/6f/e0/99/6fe09991d227020ee1e3f344debd852d.jpg",
+
+        "description": "Phòng VIP cao cấp nhất dành cho mèo với không gian riêng tư sang trọng, dịch vụ chăm sóc cá nhân hóa và cập nhật liên tục.",
+
+        "features": [
+          "Bác sĩ thú y theo dõi",
+          "Spa miễn phí",
+          "Camera livestream",
+          "Thực đơn dinh dưỡng riêng",
+          "Đưa đón tận nơi"
+        ]
+      },
+
+      {
+        "roomNumber": "MV302",
+        "roomName": "Deluxe Feline",
+        "price": "600.000đ / đêm",
+        "image": "https://i.pinimg.com/736x/8e/ac/8f/8eac8f1d2501ec576ac4d3ca71cfd9b7.jpg",
+
+        "description": "Phòng VIP cao cấp nhất dành cho mèo với không gian riêng tư, dịch vụ chăm sóc đặc biệt và giám sát liên tục.",
+
+        "features": [
+          "Bác sĩ thú y theo dõi",
+          "Spa miễn phí",
+          "Camera livestream",
+          "Thực đơn riêng",
+          "Đưa đón tận nơi"
+        ]
+      },
+      {
+  "roomNumber": "MC203",
+  "roomName": "Royal Cat Garden",
+  "price": "380.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/91/f8/bd/91f8bd60e78f534fede0984ce0ae6323.jpg",
+  "description": "Phòng premium với khu vườn trong nhà, nhiều giá trèo và khu vực nghỉ ngơi riêng tư dành cho mèo thích khám phá.",
+  "features": [
+    "Camera trực tuyến",
+    "Giá trèo đa tầng",
+    "Khu vườn mini trong nhà",
+    "Theo dõi sức khỏe",
+    "Báo cáo hình ảnh mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "MC204",
+  "roomName": "Premium Sky Room",
+  "price": "390.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/f7/a5/59/f7a5591c7b0d9a90c8c5673635c11600.jpg",
+  "description": "Phòng cao cấp với cửa sổ lớn đón ánh sáng tự nhiên, hệ thống leo trèo cao tầng và khu vui chơi riêng.",
+  "features": [
+    "Camera livestream",
+    "Ánh sáng tự nhiên",
+    "Giá trèo cao cấp",
+    "Khử khuẩn định kỳ",
+    "Báo cáo sức khỏe hằng ngày"
+  ]
+},
+{
+  "roomNumber": "MC205",
+  "roomName": "Diamond Cat Suite",
+  "price": "420.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/05/fc/3e/05fc3ee83543772d6c35fc4eb6dacb7b.jpg",
+  "description": "Phòng hạng sang dành cho mèo với nội thất cao cấp, khu nghỉ ngơi riêng và nhiều hoạt động giải trí an toàn.",
+  "features": [
+    "Camera HD trực tuyến",
+    "Đệm ngủ cao cấp",
+    "Đồ chơi tương tác",
+    "Theo dõi sức khỏe",
+    "Báo cáo hình ảnh mỗi ngày"
+  ]
+},
+{
+  "roomNumber": "MC206",
+  "roomName": "Elite Cat Palace",
+  "price": "450.000đ / đêm",
+  "image": "https://i.pinimg.com/736x/5d/aa/30/5daa30dd10fdc81758f1bdaac02dc8c1.jpg",
+  "description": "Không gian nghỉ dưỡng cao cấp dành cho mèo với hệ thống leo trèo hiện đại, khu thư giãn riêng và dịch vụ chăm sóc đặc biệt.",
+  "features": [
+    "Camera livestream 24/7",
+    "Giá trèo đa tầng cao cấp",
+    "Khu vui chơi riêng",
+    "Theo dõi sức khỏe chuyên sâu",
+    "Báo cáo ảnh và video mỗi ngày"
+  ]
+}
+    ]
+  }
+}

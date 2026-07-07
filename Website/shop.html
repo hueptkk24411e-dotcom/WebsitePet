@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petopia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/grooming.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chinhsach.css">
+<link rel="stylesheet" href="assets/css/hotel.css">
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/member.css">
+<link rel="stylesheet" href="assets/css/recruit.css">
+<link rel="stylesheet" href="assets/css/blog.css">
+<link rel="stylesheet" href="assets/css/contact.css"/>
+<link rel="stylesheet" href="assets/css/shop.css"/>
+    <script src="assets/js/momo-payment.js"></script>
+    <script src="assets/js/home.js"></script>
+    <link rel="stylesheet" href="assets/css/home.css"/>
+    <script src="assets/js/shop.js"></script>
+<link rel="stylesheet" href="assets/css/chatbox.css">
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/hotel.js"></script>
+<script src="assets/js/trangchu.js"></script>
+<script src="assets/js/blog.js"></script> 
+<script src="assets/js/grooming.js"></script>
+<script src="assets/js/grooming-booking.js"></script> 
+
+<script>
+    // Hàm này sẽ được gọi khi nhấp vào "Cửa hàng"
+    function openShop() {
+        showPage('shop'); // Hiển thị toàn bộ section cửa hàng
+        switchTab('home'); // Kích hoạt tab sản phẩm (tab-home) bên trong section cửa hàng
+    }
+</script>
+<script src="assets/js/chinhsach.js"></script>
+</head>
+<header>
+
+    <div class="top-header">
+
+        <div class="left-box">
+
+            <div class="header-logo">
+                <a href="#" onclick="showPage('home')"><img  src="assets/img/bglogo.png" alt=""></a>
+            </div>
+
+<div class="header-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+                        autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions"
+                        oninput="handleSearch()" onfocus="handleSearchFocus()" onkeydown="handleSearchKeydown(event)">
+                    <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Gợi ý sản phẩm"></div>
+                </div>
+        </div>
+     
+        <div class="right-box">
+
+            <a href="#"   onclick="showPage('contact')" class="header-action-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span> Hỗ trợ</span>
+            </a>
+                    
+                <a class="header-action-item" onclick="switchTab('wishlist')" id="tab-btn-wishlist">
+                    <i class="fas fa-heart"></i> Yêu Thích <span class="badge-count" id="wishlistCount">0</span>
+                </a>
+                <a class="header-action-item" onclick="switchTab('orders')" id="tab-btn-orders">
+                    <i class="fas fa-box-open"></i><span> Đơn Hàng</span>
+                </a>              
+            <a class="header-action-item" onclick="switchTab('cart')" id="tab-btn-cart">
+                    <i class="fas fa-shopping-cart"></i><span> Giỏ Hàng </span><span class="badge-count" id="cartCount">0</span>
+            </a>
+
+           <div id="userAuthSection">
+    <a href="login.html" class="header-action-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Đăng nhập</span>
+    </a>
+</div>
+<a href="#"class="header-btn-profile" onclick="showPage('lich-su-dat-lich')">Hồ sơ thú cưng</a>
+                     
+        </div>
+
+    </div>
+<nav class="main-nav">
+
+        <ul class="menu">
+
+            <li>
+                <a href="#" onclick="showPage('home')" >
+                    Trang chủ
+                </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openShop()">
+    Cửa hàng
+</a>
+
+            </li>
+
+            <li>
+                <a href="#"  onclick="showPage('grooming')" >
+                    Grooming
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('hotel')">
+                    Pet Hotel
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('blog')">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('contact')" >
+                    Liên hệ
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header><body data-page="shop">
+<section id="shop-page">
+ 
+    <div id="tab-home" class="tab-content active">
+
+    <div class="home-banner-wrap">
+    <img src="assets/img/banner.jpg" alt="Petopia Banner" class="home-banner-img">
+</div>
+
+        <!-- ===== TÌM KIẾM HÔM NAY ===== -->
+        <div class="shop-extra-section shop-trending-section">
+            <div class="shop-section-header">
+                <h3><i class="fas fa-fire"></i> Tìm kiếm hôm nay</h3>
+            </div>
+            <div class="trending-tags" id="trendingTags">
+                <span class="tag-pill tag-pill--loading">Đang tải gợi ý...</span>
+            </div>
+        </div>
+
+        <!-- ===== GỢI Ý HÀNG ĐẦU ===== -->
+        <div class="shop-extra-section">
+            <div class="shop-section-header">
+                <h3><i class="fas fa-star"></i> Gợi ý hàng đầu</h3>
+                <span class="shop-section-viewall" onclick="scrollToShopGrid()">Xem tất cả <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="shop-mini-grid" id="topPicksGrid">
+                <div class="shop-mini-loading"><i class="fas fa-spinner fa-spin"></i> Đang tải sản phẩm...</div>
+            </div>
+        </div>
+
+        <!-- ===== SẢN PHẨM NỔI BẬT ===== -->
+        <div class="shop-extra-section">
+            <div class="shop-section-header">
+                <h3><i class="fas fa-crown"></i> Sản phẩm nổi bật</h3>
+                <span class="shop-section-viewall" onclick="scrollToShopGrid()">Xem tất cả <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="shop-mini-grid" id="featuredProductsGrid">
+                <div class="shop-mini-loading"><i class="fas fa-spinner fa-spin"></i> Đang tải sản phẩm...</div>
+            </div>
+        </div>
+
+        <!-- ===== BÁN CHẠY NHẤT & ƯU ĐÃI HÔM NAY ===== -->
+        <div class="shop-extra-section">
+            <div class="shop-ranking-columns">
+                <div class="shop-ranking-col">
+                    <div class="shop-section-header">
+                        <h3><i class="fas fa-medal"></i> Bán chạy nhất</h3>
+                    </div>
+                    <ol class="shop-ranking-list" id="bestSellerList">
+                        <li class="shop-mini-loading">Đang tải...</li>
+                    </ol>
+                </div>
+                <div class="shop-ranking-col">
+                    <div class="shop-section-header">
+                        <h3><i class="fas fa-bolt"></i> Ưu đãi hôm nay</h3>
+                    </div>
+                    <ol class="shop-ranking-list" id="dealsList">
+                        <li class="shop-mini-loading">Đang tải...</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <aside class="sidebar-filter">
+                <div class="filter-section">
+                    <div class="filter-title">Danh mục thú cưng</div>
+                    <ul class="filter-list" id="filter-category">
+                        <li class="active" onclick="applyFilter('category', 'all')"><i class="fas fa-paw"></i> Tất cả</li>
+                        <li onclick="applyFilter('category', 'Chó')"><i class="fas fa-dog"></i> Dành cho Chó</li>
+                        <li onclick="applyFilter('category', 'Mèo')"><i class="fas fa-cat"></i> Dành cho Mèo</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">Loại sản phẩm</div>
+                    <ul class="filter-list" id="filter-type">
+                        <li class="active" onclick="applyFilter('type', 'all')"><i class="fas fa-list"></i> Tất cả</li>
+                        <li onclick="applyFilter('type', 'Thức ăn')"><i class="fas fa-bone"></i> Thức ăn hạt</li>
+                        <li onclick="applyFilter('type', 'Snack')"><i class="fas fa-cookie"></i> Bánh thưởng / Snack</li>
+                        <li onclick="applyFilter('type', 'Đồ dùng')"><i class="fas fa-shapes"></i> Đồ dùng / Đồ chơi</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">Thương hiệu</div>
+                    <ul class="filter-list" id="filter-brand">
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">Khoảng giá</div>
+                    <ul class="filter-list" id="filter-price">
+                        <li class="active" onclick="applyFilter('price', 'all')"><i class="fas fa-coins"></i> Tất cả</li>
+                        <li onclick="applyFilter('price', '0-200000')"><i class="fas fa-coins"></i> Dưới 200.000đ</li>
+                        <li onclick="applyFilter('price', '200000-500000')"><i class="fas fa-coins"></i> 200.000đ - 500.000đ</li>
+                        <li onclick="applyFilter('price', '500000-1000000')"><i class="fas fa-coins"></i> 500.000đ - 1.000.000đ</li>
+                        <li onclick="applyFilter('price', '1000000-999999999')"><i class="fas fa-coins"></i> Trên 1.000.000đ</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="content-area">
+                <div class="products-grid" id="productGrid"></div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab-wishlist" class="tab-content">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-heart"></i> Sản phẩm yêu thích</h2>
+        <div class="products-grid" id="wishlistGrid"></div>
+    </div>
+
+    <div id="tab-cart" class="tab-content">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-shopping-cart"></i> Giỏ hàng của bạn</h2>
+        <div class="cart-container" id="cartContainer"></div>
+    </div>
+
+    <div id="tab-orders" class="tab-content">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-box"></i> Quản lý đơn hàng (Tracking)</h2>
+        <div id="ordersContainer"></div>
+    </div>
+
+    <div id="tab-account" class="tab-content">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-user-cog"></i> Quản lý tài khoản</h2>
+        <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); max-width: 600px;">
+            <p style="margin-bottom: 15px; color: var(--text-grey);">Cập nhật thông tin giao hàng mặc định để thanh toán nhanh hơn.</p>
+
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: 600;">Họ và tên người nhận:</label>
+                <input type="text" id="profileName" class="auth-input" placeholder="Nhập họ và tên">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: 600;">Số điện thoại:</label>
+                <input type="text" id="profilePhone" class="auth-input" placeholder="Nhập số điện thoại">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: 600;">Địa chỉ giao hàng mặc định:</label>
+                <input type="text" id="profileAddress" class="auth-input" placeholder="Nhập địa chỉ chi tiết (VD: Số nhà, Đường, Quận/Huyện, Tỉnh/TP)">
+            </div>
+
+            <button class="btn-checkout" style="width: auto; padding: 10px 25px;" onclick="saveProfile()">Lưu Thông Tin</button>
+        </div>
+    </div>
+
+    <div id="tab-product-detail" class="tab-content">
+        <button class="pd-back-btn" onclick="backFromProductDetail()"><i class="fas fa-arrow-left"></i> Quay lại</button>
+        <div class="pd-breadcrumb">
+            <span onclick="switchTab('home')">Cửa hàng</span> <i class="fas fa-chevron-right"></i> <span id="pdBreadcrumbName">Sản phẩm</span>
+        </div>
+
+        <div class="pd-main">
+            <div class="pd-gallery">
+                <div class="pd-gallery-main">
+                    <img id="pdImage" src="" alt="">
+                </div>
+                <div class="pd-gallery-thumbs" id="pdGalleryThumbs"></div>
+            </div>
+
+            <div class="pd-info">
+                <div class="pd-brand" id="pdBrand"></div>
+                <h1 class="pd-title" id="pdTitle"></h1>
+
+                <div class="pd-rating-row">
+                    <span class="pd-rating-stars" id="pdRatingStars"></span>
+                    <span class="pd-rating-number" id="pdRatingNumber"></span>
+                    <span class="pd-divider">|</span>
+                    <span id="pdReviewsCount"></span>
+                    <span class="pd-divider">|</span>
+                    <span id="pdSoldCount"></span>
+                    <span class="pd-divider">|</span>
+                    <span class="pd-category-tag" id="pdCategory"></span>
+                </div>
+
+                <div class="pd-price-box">
+                    <span class="pd-price" id="pdPrice"></span>
+                    <span class="pd-original-price" id="pdOriginalPrice"></span>
+                    <span class="pd-discount-badge" id="pdDiscountBadge"></span>
+                </div>
+
+                <div class="pd-stock" id="pdStockBadge"></div>
+
+                <div class="pd-qty-row">
+                    <span class="pd-qty-label">Số lượng</span>
+                    <div class="pd-qty-selector">
+                        <button onclick="changePdQty(-1)"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="pdQty" value="1" min="1" readonly>
+                        <button onclick="changePdQty(1)"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="pd-actions">
+                    <button class="pd-btn-add-cart" id="pdAddToCartBtn"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                    <button class="pd-btn-buy-now" id="pdBuyNowBtn">Mua ngay</button>
+                    <button class="pd-btn-wishlist" id="pdWishlistBtn"><i class="far fa-heart"></i> Yêu thích</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pd-section">
+            <div class="pd-section-title"><i class="fas fa-align-left"></i> Mô tả sản phẩm</div>
+            <div class="pd-description" id="pdDescription"></div>
+        </div>
+
+        <div class="pd-section">
+            <div class="pd-section-title"><i class="fas fa-comment-dots"></i> Đánh giá sản phẩm <span class="pd-sample-note">(dữ liệu minh hoạ)</span></div>
+            <div id="pdReviewsList"></div>
+        </div>
+
+        <div class="pd-section">
+            <div class="pd-section-title"><i class="fas fa-layer-group"></i> Sản phẩm tương tự</div>
+            <div class="shop-mini-grid" id="pdSimilarGrid"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="checkoutModal" onclick="closeModal('checkoutModal', event)">
+        <div class="checkout-modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('checkoutModal')">&times;</button>
+
+            <!-- HEADER -->
+            <div class="checkout-modal-header">
+                <i class="fas fa-shopping-bag"></i>
+                <h2>Đặt hàng</h2>
+            </div>
+
+            <div class="checkout-modal-body">
+                <!-- CỘT TRÁI: Thông tin -->
+                <div class="checkout-col-left">
+                    <!-- Thông tin giao hàng -->
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">
+                            <i class="fas fa-map-marker-alt"></i> Thông tin giao hàng
+                        </div>
+                        <input type="text" id="checkoutName" class="checkout-input" placeholder="Họ và tên người nhận *">
+                        <input type="text" id="checkoutPhone" class="checkout-input" placeholder="Số điện thoại *">
+                        <select id="checkoutProvince" class="checkout-input">
+                            <option value="">-- Chọn tỉnh/thành phố --</option>
+                        </select>
+                        <input type="text" id="checkoutAddress" class="checkout-input" placeholder="Địa chỉ giao hàng chi tiết (số nhà, đường, phường/xã...) *">
+                        <textarea id="checkoutNote" class="checkout-input checkout-textarea" placeholder="Ghi chú cho đơn hàng (không bắt buộc)"></textarea>
+                    </div>
+
+                    <!-- Phương thức thanh toán -->
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">
+                            <i class="fas fa-credit-card"></i> Phương thức thanh toán
+                        </div>
+                        <div class="pay-method-list">
+                            <label class="pay-method-card">
+                                <input type="radio" name="payMethod" value="COD" checked onchange="toggleInlineQR()">
+                                <div class="pay-method-inner">
+                                    <i class="fas fa-motorcycle" style="color:#f47920;font-size:22px;"></i>
+                                    <div>
+                                        <div class="pay-method-name">Thanh toán khi nhận hàng</div>
+                                        <div class="pay-method-desc">Trả tiền mặt khi shipper giao đến tận nhà (COD)</div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="pay-method-card">
+                                <input type="radio" name="payMethod" value="BANK" onchange="toggleInlineQR()">
+                                <div class="pay-method-inner">
+                                    <i class="fas fa-university" style="color:#1a56db;font-size:22px;"></i>
+                                    <div>
+                                        <div class="pay-method-name">Chuyển khoản ngân hàng</div>
+                                        <div class="pay-method-desc">Quét mã QR — MB Bank • Nhanh & an toàn</div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="pay-method-card">
+                                <input type="radio" name="payMethod" value="MOMO" onchange="toggleInlineQR()">
+                                <div class="pay-method-inner">
+                                    <i class="fas fa-wallet" style="color:#ae2070;font-size:22px;"></i>
+                                    <div>
+                                        <div class="pay-method-name">Ví điện tử MoMo</div>
+                                        <div class="pay-method-desc">Quét mã QR MoMo — Xử lý tức thì</div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- INLINE QR: Ẩn hoàn toàn - QR nay hiển thị qua popup riêng -->
+                        <div id="inlineQRBox" style="display:none;">
+                            <div style="display:flex; gap:16px; align-items:flex-start;">
+                                <!-- Ảnh QR -->
+                                <div style="flex-shrink:0;">
+                                    <div style="background:white; border-radius:10px; padding:10px; box-shadow:0 2px 10px rgba(0,0,0,0.08); width:140px; height:140px; display:flex; align-items:center; justify-content:center;">
+                                        <img id="inlineQRImg" src="" alt="QR" style="width:100%; height:100%; object-fit:contain; border-radius:4px;"
+                                             onerror="this.style.display='none'; document.getElementById('inlineQRErr').style.display='flex';">
+                                        <div id="inlineQRErr" style="display:none; flex-direction:column; align-items:center; gap:6px; color:#94a3b8; font-size:11px; text-align:center;">
+                                            <i class="fas fa-image" style="font-size:28px;"></i>
+                                            <span>Không tải được QR</span>
+                                        </div>
+                                    </div>
+                                    <p style="text-align:center; font-size:11px; color:#94a3b8; margin:6px 0 0; display:flex; align-items:center; justify-content:center; gap:4px;">
+                                        <i class="fas fa-mobile-alt"></i> Quét bằng app
+                                    </p>
+                                </div>
+                                <!-- Thông tin -->
+                                <div style="flex:1; min-width:0;">
+                                    <div id="inlineQRMethod" style="font-weight:700; font-size:13px; color:#1a202c; margin-bottom:10px;"></div>
+                                    <div style="background:white; border-radius:8px; padding:10px 12px; border:1px solid #e2e8f0; margin-bottom:8px;">
+                                        <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; font-weight:600; margin-bottom:3px;">Số tiền</div>
+                                        <div id="inlineQRAmount" style="font-size:20px; font-weight:800; color:#dc2626;"></div>
+                                    </div>
+                                    <div style="background:white; border-radius:8px; padding:10px 12px; border:1px solid #e2e8f0; margin-bottom:8px;">
+                                        <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; font-weight:600; margin-bottom:3px;">Nội dung chuyển khoản</div>
+                                        <div id="inlineQRContent" style="font-size:13px; font-weight:700; color:#f47920; word-break:break-all;"></div>
+                                    </div>
+                                    <button onclick="
+                                        const txt = document.getElementById('inlineQRContent').innerText;
+                                        navigator.clipboard.writeText(txt);
+                                        this.innerHTML='<i class=\'fas fa-check\'></i> Đã sao chép!';
+                                        this.style.borderColor='#38a169'; this.style.color='#38a169';
+                                        setTimeout(()=>{ this.innerHTML='<i class=\'fas fa-copy\'></i> Sao chép nội dung'; this.style.borderColor=''; this.style.color=''; },2000);
+                                    " style="width:100%; padding:7px; background:white; border:1.5px solid #cbd5e1; border-radius:7px; font-size:12px; font-weight:600; color:#475569; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px;">
+                                        <i class="fas fa-copy"></i> Sao chép nội dung
+                                    </button>
+                                </div>
+                            </div>
+                            <div style="margin-top:12px; background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:9px 12px; display:flex; gap:8px; align-items:flex-start; font-size:12px; color:#92400e; line-height:1.5;">
+                                <i class="fas fa-exclamation-circle" style="margin-top:2px; flex-shrink:0;"></i>
+                                <span>Sau khi chuyển khoản xong, bấm <b>"Đặt hàng ngay"</b> để xác nhận đơn hàng.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CỘT PHẢI: Tóm tắt đơn hàng -->
+                <div class="checkout-col-right">
+                    <div class="checkout-section order-summary-box">
+                        <div class="checkout-section-title">
+                            <i class="fas fa-receipt"></i> Tóm tắt đơn hàng
+                        </div>
+                        <div id="checkoutCartSummary" class="checkout-cart-summary"></div>
+                        <div class="order-price-breakdown">
+                            <div class="price-row">
+                                <span>Tạm tính</span>
+                                <span id="checkoutSubtotal">0đ</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Phí vận chuyển</span>
+                                <span class="free-ship"><i class="fas fa-check-circle"></i> Miễn phí</span>
+                            </div>
+                            <div class="price-row total-row">
+                                <span>Tổng cộng</span>
+                                <span id="checkoutTotal" class="total-price">0đ</span>
+                            </div>
+                        </div>
+                        <button class="btn-place-order" onclick="event.stopPropagation(); confirmCheckout()">
+                            <i class="fas fa-lock"></i> Đặt hàng ngay
+                        </button>
+                        <p class="checkout-secure-note"><i class="fas fa-shield-alt"></i> Thông tin của bạn được bảo mật tuyệt đối</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR PAYMENT MODAL: dùng cho thanh toán Bank/MoMo khi nhấn "Đặt hàng ngay" -->
+    <div id="qrCheckoutModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.65); z-index:999999; justify-content:center; align-items:center;">
+        <div class="qr-modal-content">
+
+            <!-- NÚT ĐÓNG -->
+            <button onclick="handleQRPaymentCancel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;color:#9ca3af;cursor:pointer;line-height:1;">&times;</button>
+
+            <!-- CỘT TRÁI: Thông tin thanh toán -->
+            <div class="qr-modal-left">
+                <div class="qr-method-badge" id="qrMethodBadge">
+                    <i class="fas fa-university"></i>
+                    <span id="qrModalTitle">Chuyển khoản Ngân hàng</span>
+                </div>
+
+                <p class="qr-subtitle">Quét mã QR bên phải để thanh toán. Nhớ nhập <b>đúng nội dung</b> để đơn hàng được xử lý tự động.</p>
+
+                <!-- Số tiền nổi bật -->
+                <div class="qr-amount-block">
+                    <span class="qr-amount-label">Số tiền cần thanh toán</span>
+                    <span class="qr-amount-value" id="qrTransferAmount">0đ</span>
+                </div>
+
+                <!-- Nội dung chuyển khoản -->
+                <div class="qr-info-box">
+                    <div class="qr-info-row">
+                        <span class="qr-info-label"><i class="fas fa-tag"></i> Nội dung CK</span>
+                        <span class="qr-info-val" id="qrTransferContent">PETOPIA...</span>
+                    </div>
+                    <button class="qr-copy-btn" onclick="
+                        navigator.clipboard.writeText(document.getElementById('qrTransferContent').innerText);
+                        this.innerHTML='<i class=\'fas fa-check\'></i> Đã sao chép!';
+                        setTimeout(()=>this.innerHTML='<i class=\'fas fa-copy\'></i> Sao chép nội dung',1800);
+                    ">
+                        <i class="fas fa-copy"></i> Sao chép nội dung
+                    </button>
+                </div>
+
+                <!-- Cảnh báo -->
+                <div class="qr-notice">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Sản phẩm vẫn được giữ trong giỏ hàng. Sau khi chuyển khoản xong, bấm <b>"Đã chuyển khoản"</b> để xác nhận đơn hàng.</p>
+                </div>
+
+                <!-- Nút hành động -->
+                <div class="qr-actions">
+                    <button type="button" class="btn-qr-success" onclick="handleQRPaymentSuccess()">
+                        <i class="fas fa-check-circle"></i> Đã chuyển khoản
+                    </button>
+                    <button type="button" class="btn-qr-cancel" onclick="handleQRPaymentCancel()">
+                        <i class="fas fa-arrow-left"></i> Quay lại giỏ hàng
+                    </button>
+                </div>
+            </div>
+
+            <!-- CỘT PHẢI: Ảnh QR -->
+            <div class="qr-modal-right">
+                <div class="qr-right-header" id="qrRightHeader">Quét mã để thanh toán</div>
+                <div class="qr-image-wrapper">
+                    <img id="qrModalImg" src="" alt="Mã QR Thanh Toán"
+                         onerror="this.style.display='none'; document.getElementById('qrImgError').style.display='flex';">
+                    <div id="qrImgError" style="display:none; flex-direction:column; align-items:center; justify-content:center; gap:10px; height:200px; color:#9ca3af;">
+                        <i class="fas fa-image" style="font-size:40px;"></i>
+                        <p style="margin:0;font-size:13px;text-align:center;">Không tải được ảnh QR.<br>Vui lòng liên hệ shop.</p>
+                    </div>
+                </div>
+                <p class="qr-scan-hint"><i class="fas fa-mobile-alt"></i> Mở app và quét mã QR này</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+ </section>
+<footer>
+
+        <div class="footer-top-bg">
+            <div class="container footer-top">
+                <div class="footer-col col-info" style="flex: 1.5;">
+                    <a href="#" onclick="showPage('home')"> <img src="assets/img/bglogo.png" alt="Petopia Logo" class="logo"></a>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:0365507533"> <strong>1900 1234</strong></a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hueptkk24411e@st.uel.edu.vn" > support.petopia@gmail.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90HQG-HCM+(UEL)/@10.8704278,106.7757352,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8704225!4d106.7783101!16s%2Fm%2F0ds8rvh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D"> <div>669 Đỗ Mười, phường Linh Xuân TP. Thủ Đức, TP. Hồ Chí Minh</div></a></li>
+                    </ul>
+                    <div class="social-wrap">
+
+                        <span class="social-title">
+                            KẾT NỐI VỚI CHÚNG TÔI</span> 
+                       
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://zalo.me/0365507533"><img src="assets/img/zalo.png" class="zalo-icon" alt="Zalo"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col about">
+                    <h4><i class="fa-solid fa-house col-icon">
+                    
+                    </i> VỀ PETOPIA</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about');showAbout('intro')">Giới thiệu</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('member')">Thành viên</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Liên hệ</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('recruit')">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-cart-shopping col-icon"></i> MUA SẮM</h4>
+                    <ul>
+                        <li><a href="#">Thức ăn cho chó</a></li>
+                        <li><a href="#">Thức ăn cho mèo</a></li>
+                        <li><a href="#">Đồ chơi & phụ kiện</a></li>
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col support" >
+                    <h4><i class="fa-solid fa-headset col-icon"></i> HỖ TRỢ KHÁCH HÀNG</h4>
+                    
+                    <ul>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('return')">Chính sách đổi trả</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('warranty')">Chính sách bảo hành</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('buy')">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('payment')">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('shipping')">Chính sách vận chuyển</a></li>
+                        <li><a href="#"  onclick="showPage('policy');showPolicy('faq')">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" >
+                    <h4><i class="fa-solid fa-location-dot col-icon" style="color: #f7941d;"></i> HỆ THỐNG CỬA HÀNG</h4>
+                    <p style="font-size: 17px; line-height: 1.6; margin-bottom: 15px;">Hệ thống cửa hàng Petopia trải dài khắp TP. Hồ Chí Minh</p>
+                    <button class="store-btn"
+            onclick="openStoreModal()">
+        XEM CỬA HÀNG GẦN BẠN
+    </button>
+                </div>
+                <div id="storeModal" class="store-modal">
+
+    <div class="store-modal-content">
+
+    <span class="close-btn" onclick="closeStoreModal()"> &times; </span>
+
+    <h2>Hệ Thống Cửa Hàng Petopia</h2>
+<span class="close-btn" onclick="closeStoreModal()">
+    &times;
+</span>
+
+    <div id="storeContainer"></div>
+
+</div>
+        <h2>Hệ Thống Cửa Hàng Petopia</h2>
+        <div id="storeContainer"></div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-features">
+            <div class="container features-wrapper">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('warranty')">
+                    <div class="feature-text">
+                        <h5>100% CHÍNH HÃNG</h5>
+                        <p>Cam kết sản phẩm chính hãng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('shipping')">
+                    <div class="feature-text">
+                        <h5>GIAO HÀNG NHANH</h5>
+                        <p>Giao hàng toàn quốc, nhanh chóng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-right-left"></i></div>
+                <a href="#" onclick="showPage('policy');showPolicy('return')">
+                    <div class="feature-text">
+                        <h5>ĐỔI HÀNG DỄ DÀNG</h5>
+                        <p>Đổi trả trong vòng 3 ngày</p>
+                    </div>
+                </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-text">
+                        <h5>HỖ TRỢ 24/7</h5>
+                        <p>Hỗ trợ khách hàng mọi lúc mọi nơi</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <div class="feature-text">
+                        <h5>TÍCH ĐIỂM ƯU ĐÃI</h5>
+                        <p>Tích điểm thành viên, nhận nhiều ưu đãi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bg">
+            <div class="container footer-partners">
+                <div class="partner-group">
+                    <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+<div class="partner-logos">
+                        <img src="assets/img/payment method/visa.png" alt="Visa">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHJp7Jq6QVMw-_-_ar5n4GzK_sXhdWKCYBi3JSHR04A&s=10" alt="MoMo">
+                        <img src="assets/img/payment method/QRR.png" alt="VNPay">
+                        <img src="assets/img/payment method/bank.png" alt="Bank Transfer">
+                        <img src="assets/img/payment method/COD.png" alt="COD">
+                    </div>
+                </div>
+                <div class="partner-group" style="padding-left: 30px;">
+                    <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+                    <div class="partner-logos">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL31d7lx8ioc5orJkvsIxq3T5PDPXkhilRewvZGwMSg&s=10" alt="GHN">
+                        <img src="assets/img/shipping unit/J&T.png" alt="J&T">
+                        <img src="assets/img/shipping unit/viettel port.png" alt="Viettel Post">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <div class="bottom-wrapper">
+                    <div class="company-info">
+                        <strong>@ Công Ty Cổ Phần TM & DV Petopia. MST: (028) 372 44 555.</strong><br>
+                        <a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76" >669 Đỗ Mười, khu phố 13, phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh</a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Đăng ký để nhận thông tin và ưu đãi</p>
+                        <form class="newsletter-form" action="#">
+                            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+                            <button type="submit">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+
+document.querySelectorAll(".hotel-faq-question").forEach(function(btn){
+
+    btn.onclick = function(){
+
+        let answer = this.nextElementSibling;
+
+        if(answer.style.display === "block"){
+            answer.style.display = "none";
+        }else{
+            answer.style.display = "block";
+        }
+
+    };
+
+});
+
+</script>
+<script>
+
+document.querySelectorAll(".grooming-faq-question")
+.forEach(function(btn){
+
+    btn.onclick = function(){
+
+        this.nextElementSibling.classList.toggle("show");
+
+    };
+
+});
+
+</script>
+
+
+<!-- ===== AI CHATBOX ===== -->
+<div class="chat-fab" id="chatFab" title="Chat với Petopia AI">
+  <span class="chat-fab__icon">🐾</span>
+  <span class="chat-fab__badge" id="chatBadge"></span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header__info">
+      <div class="chat-header__avatar">🐾</div>
+      <div>
+        <div class="chat-header__name">Petopia AI</div>
+        <div class="chat-header__status"><span class="chat-status-dot"></span> Đang hoạt động</div>
+      </div>
+    </div>
+    <button class="chat-header__close" id="chatClose" title="Đóng">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages">
+    <!-- messages injected by JS -->
+  </div>
+
+  <div class="chat-quick-btns" id="quickBtns">
+    <button class="quick-btn" data-q="Dịch vụ grooming có gì?">🛁 Dịch vụ</button>
+    <button class="quick-btn" data-q="Bảng giá dịch vụ?">💰 Bảng giá</button>
+    <button class="quick-btn" data-q="Giờ làm việc?">🕐 Giờ mở cửa</button>
+    <button class="quick-btn" data-q="Cần chuẩn bị gì trước khi grooming?">📋 Chuẩn bị</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Nhắn tin cho Petopia AI..." maxlength="300"/>
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+
+
+<div id="petModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;width:90%;max-width:560px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 40px rgba(0,0,0,0.2);">
+
+    <!-- Header -->
+    <div style="padding:20px 24px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 style="margin:0;font-size:18px;color:#ff6600;"><i class="fa-solid fa-paw"></i> Hồ Sơ Thú Cưng</h2>
+        <button onclick="closePetModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#aaa;line-height:1;">✕</button>
+      </div>
+      <!-- Tabs -->
+      <div style="display:flex;gap:0;">
+        <button class="pet-modal-tab active" data-tab="profile" onclick="switchPetModalTab('profile')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-id-card"></i> Hồ sơ
+        </button>
+        <button class="pet-modal-tab" data-tab="bookings" onclick="switchPetModalTab('bookings')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-hotel"></i> Đặt phòng
+        </button>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div style="flex:1;overflow-y:auto;padding:20px 24px;">
+
+      <!-- Panel: Hồ sơ -->
+      <div id="petPanel-profile" class="pet-modal-panel">
+        <h3 id="petFormTitle" style="margin-top:0;color:#ff6600;">🐾 Thêm thú cưng mới</h3>
+        <form id="petForm" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+          <input type="hidden" name="petId" value="">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="petName" placeholder="Tên thú cưng" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <select name="petType" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="dog">🐕 Chó</option>
+              <option value="cat">🐈 Mèo</option>
+            </select>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="breed" placeholder="Giống (VD: Poodle)" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <input name="weight" type="number" step="0.1" min="0.1" placeholder="Cân nặng (kg)" required style="flex:1;min-width:80px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <select name="gender" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="">Giới tính</option>
+              <option value="male">Đực</option>
+              <option value="female">Cái</option>
+            </select>
+            <input name="color" placeholder="Màu lông" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <input name="birthDate" type="date" placeholder="Ngày sinh" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          <textarea name="notes" rows="2" placeholder="Ghi chú (tùy chọn)" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;"></textarea>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-submit-booking" style="flex:1;">💾 Lưu thông tin</button>
+            <button type="button" onclick="document.getElementById('petForm').reset(); document.getElementById('petForm').removeAttribute('data-edit-id'); document.getElementById('petFormTitle').textContent='🐾 Thêm thú cưng mới';" class="btn-submit-booking" style="flex:1;background:#bbb;">Đặt lại</button>
+          </div>
+        </form>
+        <div id="petListContainer"></div>
+      </div>
+
+      <!-- Panel: Đặt phòng -->
+      <div id="petPanel-bookings" class="pet-modal-panel" style="display:none;">
+        <!-- Booking status legend -->
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
+          <span style="background:#fff8e1;color:#f57c00;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Chờ xác nhận</span>
+          <span style="background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã xác nhận</span>
+          <span style="background:#e3f2fd;color:#1565c0;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đang lưu trú</span>
+          <span style="background:#f3e5f5;color:#6a1b9a;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Hoàn thành</span>
+          <span style="background:#ffebee;color:#c62828;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã hủy</span>
+        </div>
+
+        <div id="modalBookingHistoryList">
+          <div style="text-align:center;padding:30px;color:#aaa;">Đang tải...</div>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div>
+</div>
+</body>
+<script src="assets/js/chatbox.js"></script>
+<script src="assets/js/pet-profile.js"></script>
+</html>
+
+<script src="router.js"></script>

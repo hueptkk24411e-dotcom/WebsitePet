@@ -1,0 +1,82 @@
+html {
+    font-size: 16px;
+}
+
+.petopia-footer {
+}
+
+.benefit-item p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* PAYMENT */
+.payment-table td {
+    width: 50%;
+    padding: 1.25rem 2.5rem;
+}
+
+.payment-table h3 {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+}
+
+.icon-box {
+    border: 1px solid #e5e5e5;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #fff;
+}
+
+.icon-box img {
+    max-height: 2.5rem;
+    width: auto;
+}
+
+/* BOTTOM */
+.footer-bottom-table {
+    border: 1px solid #f58220;
+    margin: 0 0.75rem 0.75rem;
+}
+
+.footer-bottom-table td {
+    padding: 0.875rem 1.5rem;
+    vertical-align: middle;
+}
+
+.company-info {
+    line-height: 1.5;
+}
+
+.newsletter-cell {
+    width: 26.25rem;
+}
+
+.newsletter-cell p {
+    margin-bottom: 0.625rem;
+}
+
+.newsletter-form {
+    display: flex;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.12);
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    padding: 0.75rem 0.875rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    border: none;
+    background: #f7931e;
+    color: white;
+    padding: 0 1.75rem;
+    font-weight: 700;
+}

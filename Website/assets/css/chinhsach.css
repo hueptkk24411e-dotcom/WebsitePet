@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+.policy-page{
+    max-width:75rem;
+    margin:3.125rem auto;
+    display:flex;
+    gap:2.5rem;
+}
+
+.policy-sidebar{
+    width:15.625rem;
+}
+
+.policy-sidebar a{
+    display:block;
+    padding:0.9375rem;
+    margin-bottom:0.625rem;
+    background:#f1f1f1;
+    border-radius:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+
+.policy-sidebar a:hover{
+    background:#dbeafe;
+}
+
+.policy-content{
+    flex:1;
+}
+
+.policy-content section{
+    margin-bottom:3.75rem;
+}
+
+.policy-content h2{
+    margin-bottom:0.9375rem;
+    color:#2c3e50;
+}
+
+.policy-content p{
+    line-height:1.8;
+}
+.faq-answer{
+    display:none;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}

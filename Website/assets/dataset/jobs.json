@@ -1,0 +1,173 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Nhân viên bán hàng",
+      "salary": "8 - 12 triệu",
+      "location": "TP.HCM",
+      "description": [
+        "Tư vấn sản phẩm cho khách hàng",
+        "Hỗ trợ chăm sóc thú cưng tại cửa hàng",
+        "Sắp xếp và kiểm kê hàng hóa"
+      ],
+      "requirements": [
+        "Tốt nghiệp THPT trở lên",
+        "Giao tiếp tốt",
+        "Yêu động vật"
+      ]
+    },
+
+    {
+      "id": 2,
+      "title": "Nhân viên kho",
+      "salary": "7 - 10 triệu",
+      "location": "TP.HCM",
+      "description": [
+        "Nhập xuất hàng hóa",
+        "Kiểm tra tồn kho",
+        "Đóng gói đơn hàng"
+      ],
+      "requirements": [
+        "Cẩn thận",
+        "Có trách nhiệm",
+        "Biết sử dụng Excel cơ bản"
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "Nhân viên Marketing",
+      "salary": "10 - 15 triệu",
+      "location": "TP.HCM",
+      "description": [
+        "Quản lý Fanpage",
+        "Viết nội dung quảng bá",
+        "Hỗ trợ chiến dịch truyền thông"
+      ],
+      "requirements": [
+        "Biết Canva",
+        "Có tư duy sáng tạo",
+        "Ưu tiên kinh nghiệm Marketing"
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Nhân viên giao hàng",
+      "salary": "8 - 12 triệu",
+      "location": "TP.HCM",
+      "description": [
+        "Giao sản phẩm đến khách hàng",
+        "Kiểm tra đơn hàng",
+        "Thu hộ COD"
+      ],
+      "requirements": [
+        "Có xe máy",
+        "Thông thạo đường phố",
+        "Trung thực"
+      ]
+    },
+    {
+  "id": 5,
+  "title": "Nhân viên Chăm sóc thú cưng",
+  "salary": "8 - 12 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Cho thú cưng ăn uống theo lịch",
+    "Vệ sinh khu vực chăm sóc",
+    "Theo dõi tình trạng sức khỏe thú cưng",
+    "Hỗ trợ khách hàng gửi thú cưng lưu trú"
+  ],
+  "requirements": [
+    "Yêu động vật",
+    "Kiên nhẫn và cẩn thận",
+    "Ưu tiên có kinh nghiệm chăm sóc thú cưng"
+  ]
+},
+{
+  "id": 6,
+  "title": "Nhân viên Grooming",
+  "salary": "10 - 15 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Tắm và sấy lông thú cưng",
+    "Cắt tỉa lông theo yêu cầu",
+    "Vệ sinh tai, móng cho thú cưng",
+    "Tư vấn dịch vụ grooming"
+  ],
+  "requirements": [
+    "Có kinh nghiệm grooming",
+    "Yêu thích thú cưng",
+    "Khéo léo, tỉ mỉ"
+  ]
+},
+{
+  "id": 7,
+  "title": "Nhân viên CSKH",
+  "salary": "8 - 11 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Tiếp nhận cuộc gọi khách hàng",
+    "Giải đáp thắc mắc về sản phẩm và dịch vụ",
+    "Xử lý phản hồi và khiếu nại",
+    "Hỗ trợ đặt lịch dịch vụ"
+  ],
+  "requirements": [
+    "Giao tiếp tốt",
+    "Thành thạo tin học văn phòng",
+    "Thái độ thân thiện"
+  ]
+},
+{
+  "id": 8,
+  "title": "Nhân viên Livestream",
+  "salary": "9 - 14 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Livestream giới thiệu sản phẩm",
+    "Tương tác với khách hàng trực tiếp",
+    "Tư vấn và chốt đơn",
+    "Phối hợp với Marketing"
+  ],
+  "requirements": [
+    "Tự tin trước ống kính",
+    "Giọng nói rõ ràng",
+    "Có kinh nghiệm bán hàng online là lợi thế"
+  ]
+},
+{
+  "id": 9,
+  "title": "Nhân viên Thiết kế đồ họa",
+  "salary": "10 - 16 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Thiết kế banner quảng cáo",
+    "Thiết kế bài đăng mạng xã hội",
+    "Phối hợp cùng Marketing triển khai chiến dịch",
+    "Thiết kế hình ảnh sản phẩm"
+  ],
+  "requirements": [
+    "Thành thạo Photoshop hoặc Canva",
+    "Có tư duy thẩm mỹ",
+    "Có portfolio cá nhân"
+  ]
+},
+{
+  "id": 10,
+  "title": "Bác sĩ thú y",
+  "salary": "15 - 25 triệu",
+  "location": "TP.HCM",
+  "description": [
+    "Khám và tư vấn sức khỏe thú cưng",
+    "Tiêm phòng và điều trị bệnh",
+    "Theo dõi hồ sơ thú cưng",
+    "Hỗ trợ các trường hợp khẩn cấp"
+  ],
+  "requirements": [
+    "Tốt nghiệp ngành Thú y",
+    "Có chứng chỉ hành nghề",
+    "Có kinh nghiệm là lợi thế"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loại phòng - Petopia Admin Panel</title>
+<link rel="icon" href="../assets/img/admin/logo.png">
+<link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="stylesheet" href="../assets/css/admin-pages.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell" id="adminShell">
+
+  <!-- SIDEBAR -->
+  <aside class="admin-sidebar" id="sidebar">
+    <!-- ... sidebar content truncated for brevity ... -->
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <p class="nav-group-title">TỔNG QUAN</p>
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          Dashboard
+        </a>
+      </div>
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN LÝ PET HOTEL</p>
+        <a href="room-types.html" class="nav-item active">Loại phòng</a>
+        <a href="bookings.html" class="nav-item">Đặt phòng</a>
+      </div>
+      <div class="nav-group">
+        <p class="nav-group-title">QUẢN TRỊ NGƯỜI DÙNG</p>
+        <a href="users.html" class="nav-item">Người dùng</a>
+        <a href="reviews.html" class="nav-item">Đánh giá</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- TOPBAR -->
+  <header class="admin-topbar">
+    <div class="topbar-left">
+      <button class="hamburger-btn" id="toggleSidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <h1 class="page-title">Loại phòng</h1>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="admin-main">
+    <div class="page-head-row">
+      <div class="page-head-text">
+        <h2>Loại phòng</h2>
+        <p>Quản lý các loại phòng pet hotel</p>
+      </div>
+      <button class="btn-primary" id="addRoomTypeBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        Thêm loại phòng
+      </button>
+    </div>
+
+    <section class="filter-bar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="roomTypeSearch" placeholder="Tìm loại phòng...">
+      </div>
+    </section>
+
+    <section class="table-card">
+      <div class="table-scroll">
+        <table class="data-table" id="roomTypesTable">
+          <thead>
+            <tr>
+              <th>Tên phòng</th>
+              <th>Diện tích</th>
+              <th>Giá/đêm</th>
+              <th>Mô tả</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- MODAL: THÊM/SỬA PHÒNG -->
+<div class="modal-overlay" id="roomFormModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="roomFormTitle">Thêm loại phòng</h3>
+      <button class="modal-close-btn" data-close-modal="roomFormModal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group"><label>Tên loại phòng</label><input type="text" class="form-control" id="roomFormName"></div>
+      <div class="form-group"><label>Diện tích</label><input type="text" class="form-control" id="roomFormSize" placeholder="VD: 3m x 3m"></div>
+      <div class="form-group"><label>Giá/đêm</label><input type="number" class="form-control" id="roomFormPrice" placeholder="150000"></div>
+      <div class="form-group"><label>Ảnh (URL)</label><input type="text" class="form-control" id="roomFormImage"></div>
+      <div class="form-group"><label>Mô tả</label><textarea class="form-control" id="roomFormDesc"></textarea></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn-secondary" data-close-modal="roomFormModal">Hủy</button>
+      <button class="btn-primary" id="roomFormSaveBtn">Lưu</button>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/admin-common.js"></script>
+<script src="../assets/js/room-types-page.js"></script>
+</body>
+</html>

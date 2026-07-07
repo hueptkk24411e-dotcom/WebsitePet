@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petopia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/grooming.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chinhsach.css">
+<link rel="stylesheet" href="assets/css/hotel.css">
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/member.css">
+<link rel="stylesheet" href="assets/css/recruit.css">
+<link rel="stylesheet" href="assets/css/blog.css">
+<link rel="stylesheet" href="assets/css/contact.css"/>
+<link rel="stylesheet" href="assets/css/shop.css"/>
+    <script src="assets/js/momo-payment.js"></script>
+    <script src="assets/js/home.js"></script>
+    <link rel="stylesheet" href="assets/css/home.css"/>
+    <script src="assets/js/shop.js"></script>
+<link rel="stylesheet" href="assets/css/chatbox.css">
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/hotel.js"></script>
+<script src="assets/js/trangchu.js"></script>
+<script src="assets/js/blog.js"></script> 
+<script src="assets/js/grooming.js"></script>
+<script src="assets/js/grooming-booking.js"></script> 
+
+<script>
+    // Hàm này sẽ được gọi khi nhấp vào "Cửa hàng"
+    function openShop() {
+        showPage('shop'); // Hiển thị toàn bộ section cửa hàng
+        switchTab('home'); // Kích hoạt tab sản phẩm (tab-home) bên trong section cửa hàng
+    }
+</script>
+<script src="assets/js/chinhsach.js"></script>
+</head>
+<header>
+
+    <div class="top-header">
+
+        <div class="left-box">
+
+            <div class="header-logo">
+                <a href="#" onclick="showPage('home')"><img  src="assets/img/bglogo.png" alt=""></a>
+            </div>
+
+<div class="header-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+                        autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions"
+                        oninput="handleSearch()" onfocus="handleSearchFocus()" onkeydown="handleSearchKeydown(event)">
+                    <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Gợi ý sản phẩm"></div>
+                </div>
+        </div>
+     
+        <div class="right-box">
+
+            <a href="#"   onclick="showPage('contact')" class="header-action-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span> Hỗ trợ</span>
+            </a>
+                    
+                <a class="header-action-item" onclick="switchTab('wishlist')" id="tab-btn-wishlist">
+                    <i class="fas fa-heart"></i> Yêu Thích <span class="badge-count" id="wishlistCount">0</span>
+                </a>
+                <a class="header-action-item" onclick="switchTab('orders')" id="tab-btn-orders">
+                    <i class="fas fa-box-open"></i><span> Đơn Hàng</span>
+                </a>              
+            <a class="header-action-item" onclick="switchTab('cart')" id="tab-btn-cart">
+                    <i class="fas fa-shopping-cart"></i><span> Giỏ Hàng </span><span class="badge-count" id="cartCount">0</span>
+            </a>
+
+           <div id="userAuthSection">
+    <a href="login.html" class="header-action-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Đăng nhập</span>
+    </a>
+</div>
+<a href="#"class="header-btn-profile" onclick="showPage('lich-su-dat-lich')">Hồ sơ thú cưng</a>
+                     
+        </div>
+
+    </div>
+<nav class="main-nav">
+
+        <ul class="menu">
+
+            <li>
+                <a href="#" onclick="showPage('home')" >
+                    Trang chủ
+                </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openShop()">
+    Cửa hàng
+</a>
+
+            </li>
+
+            <li>
+                <a href="#"  onclick="showPage('grooming')" >
+                    Grooming
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('hotel')">
+                    Pet Hotel
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('blog')">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showPage('contact')" >
+                    Liên hệ
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header><body data-page="blog">
+<section id="blog-page">
+   <div class="blog-wrapper">
+
+    <!-- Breadcrumb điều hướng (ẩn khi ở trang chủ blog) -->
+    <nav id="blog-breadcrumb" style="display:none;">
+      <button class="blog-back-btn" onclick="Blog.goBack()">
+        <i class="fa-solid fa-arrow-left"></i> Quay lại Blog
+      </button>
+      <span class="blog-breadcrumb-sep">/</span>
+      <span id="blog-breadcrumb-title"></span>
+    </nav>
+
+    <!-- Trạng thái loading (hiện khi đang tải dữ liệu) -->
+    <div id="blog-loading" class="blog-loading">
+      <div class="blog-spinner"></div>
+      <p>Đang tải bài viết...</p>
+    </div>
+
+    <!-- 3 view — blog.js tự fill nội dung vào đây -->
+    <div id="blog-home-view"     style="display:none;"></div>
+    <div id="blog-category-view" style="display:none;"></div>
+    <div id="blog-detail-view"   style="display:none;"></div>
+
+  </div>
+</section>
+<footer>
+
+        <div class="footer-top-bg">
+            <div class="container footer-top">
+                <div class="footer-col col-info" style="flex: 1.5;">
+                    <a href="#" onclick="showPage('home')"> <img src="assets/img/bglogo.png" alt="Petopia Logo" class="logo"></a>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:0365507533"> <strong>1900 1234</strong></a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hueptkk24411e@st.uel.edu.vn" > support.petopia@gmail.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90HQG-HCM+(UEL)/@10.8704278,106.7757352,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8704225!4d106.7783101!16s%2Fm%2F0ds8rvh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D"> <div>669 Đỗ Mười, phường Linh Xuân TP. Thủ Đức, TP. Hồ Chí Minh</div></a></li>
+                    </ul>
+                    <div class="social-wrap">
+
+                        <span class="social-title">
+                            KẾT NỐI VỚI CHÚNG TÔI</span> 
+                       
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://zalo.me/0365507533"><img src="assets/img/zalo.png" class="zalo-icon" alt="Zalo"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col about">
+                    <h4><i class="fa-solid fa-house col-icon">
+                    
+                    </i> VỀ PETOPIA</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about');showAbout('intro')">Giới thiệu</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('member')">Thành viên</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Liên hệ</a></li>
+                        <li><a href="#" onclick="showPage('about');showAbout('recruit')">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-cart-shopping col-icon"></i> MUA SẮM</h4>
+                    <ul>
+                        <li><a href="#">Thức ăn cho chó</a></li>
+                        <li><a href="#">Thức ăn cho mèo</a></li>
+                        <li><a href="#">Đồ chơi & phụ kiện</a></li>
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col support" >
+                    <h4><i class="fa-solid fa-headset col-icon"></i> HỖ TRỢ KHÁCH HÀNG</h4>
+                    
+                    <ul>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('return')">Chính sách đổi trả</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('warranty')">Chính sách bảo hành</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('buy')">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('payment')">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#" onclick="showPage('policy');showPolicy('shipping')">Chính sách vận chuyển</a></li>
+                        <li><a href="#"  onclick="showPage('policy');showPolicy('faq')">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" >
+                    <h4><i class="fa-solid fa-location-dot col-icon" style="color: #f7941d;"></i> HỆ THỐNG CỬA HÀNG</h4>
+                    <p style="font-size: 17px; line-height: 1.6; margin-bottom: 15px;">Hệ thống cửa hàng Petopia trải dài khắp TP. Hồ Chí Minh</p>
+                    <button class="store-btn"
+            onclick="openStoreModal()">
+        XEM CỬA HÀNG GẦN BẠN
+    </button>
+                </div>
+                <div id="storeModal" class="store-modal">
+
+    <div class="store-modal-content">
+
+    <span class="close-btn" onclick="closeStoreModal()"> &times; </span>
+
+    <h2>Hệ Thống Cửa Hàng Petopia</h2>
+<span class="close-btn" onclick="closeStoreModal()">
+    &times;
+</span>
+
+    <div id="storeContainer"></div>
+
+</div>
+        <h2>Hệ Thống Cửa Hàng Petopia</h2>
+        <div id="storeContainer"></div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-features">
+            <div class="container features-wrapper">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('warranty')">
+                    <div class="feature-text">
+                        <h5>100% CHÍNH HÃNG</h5>
+                        <p>Cam kết sản phẩm chính hãng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <a href="#" onclick="showPage('policy');showPolicy('shipping')">
+                    <div class="feature-text">
+                        <h5>GIAO HÀNG NHANH</h5>
+                        <p>Giao hàng toàn quốc, nhanh chóng</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-right-left"></i></div>
+                <a href="#" onclick="showPage('policy');showPolicy('return')">
+                    <div class="feature-text">
+                        <h5>ĐỔI HÀNG DỄ DÀNG</h5>
+                        <p>Đổi trả trong vòng 3 ngày</p>
+                    </div>
+                </a>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-text">
+                        <h5>HỖ TRỢ 24/7</h5>
+                        <p>Hỗ trợ khách hàng mọi lúc mọi nơi</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+                    <div class="feature-text">
+                        <h5>TÍCH ĐIỂM ƯU ĐÃI</h5>
+                        <p>Tích điểm thành viên, nhận nhiều ưu đãi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bg">
+            <div class="container footer-partners">
+                <div class="partner-group">
+                    <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+<div class="partner-logos">
+                        <img src="assets/img/payment method/visa.png" alt="Visa">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHJp7Jq6QVMw-_-_ar5n4GzK_sXhdWKCYBi3JSHR04A&s=10" alt="MoMo">
+                        <img src="assets/img/payment method/QRR.png" alt="VNPay">
+                        <img src="assets/img/payment method/bank.png" alt="Bank Transfer">
+                        <img src="assets/img/payment method/COD.png" alt="COD">
+                    </div>
+                </div>
+                <div class="partner-group" style="padding-left: 30px;">
+                    <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+                    <div class="partner-logos">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL31d7lx8ioc5orJkvsIxq3T5PDPXkhilRewvZGwMSg&s=10" alt="GHN">
+                        <img src="assets/img/shipping unit/J&T.png" alt="J&T">
+                        <img src="assets/img/shipping unit/viettel port.png" alt="Viettel Post">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <div class="bottom-wrapper">
+                    <div class="company-info">
+                        <strong>@ Công Ty Cổ Phần TM & DV Petopia. MST: (028) 372 44 555.</strong><br>
+                        <a href="https://maps.app.goo.gl/upxYFEVHobfBSbx76" >669 Đỗ Mười, khu phố 13, phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh</a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Đăng ký để nhận thông tin và ưu đãi</p>
+                        <form class="newsletter-form" action="#">
+                            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+                            <button type="submit">ĐĂNG KÝ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+
+document.querySelectorAll(".hotel-faq-question").forEach(function(btn){
+
+    btn.onclick = function(){
+
+        let answer = this.nextElementSibling;
+
+        if(answer.style.display === "block"){
+            answer.style.display = "none";
+        }else{
+            answer.style.display = "block";
+        }
+
+    };
+
+});
+
+</script>
+<script>
+
+document.querySelectorAll(".grooming-faq-question")
+.forEach(function(btn){
+
+    btn.onclick = function(){
+
+        this.nextElementSibling.classList.toggle("show");
+
+    };
+
+});
+
+</script>
+
+
+<!-- ===== AI CHATBOX ===== -->
+<div class="chat-fab" id="chatFab" title="Chat với Petopia AI">
+  <span class="chat-fab__icon">🐾</span>
+  <span class="chat-fab__badge" id="chatBadge"></span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header__info">
+      <div class="chat-header__avatar">🐾</div>
+      <div>
+        <div class="chat-header__name">Petopia AI</div>
+        <div class="chat-header__status"><span class="chat-status-dot"></span> Đang hoạt động</div>
+      </div>
+    </div>
+    <button class="chat-header__close" id="chatClose" title="Đóng">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages">
+    <!-- messages injected by JS -->
+  </div>
+
+  <div class="chat-quick-btns" id="quickBtns">
+    <button class="quick-btn" data-q="Dịch vụ grooming có gì?">🛁 Dịch vụ</button>
+    <button class="quick-btn" data-q="Bảng giá dịch vụ?">💰 Bảng giá</button>
+    <button class="quick-btn" data-q="Giờ làm việc?">🕐 Giờ mở cửa</button>
+    <button class="quick-btn" data-q="Cần chuẩn bị gì trước khi grooming?">📋 Chuẩn bị</button>
+  </div>
+
+  <div class="chat-input-row">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Nhắn tin cho Petopia AI..." maxlength="300"/>
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+
+
+<div id="petModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:16px;width:90%;max-width:560px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 40px rgba(0,0,0,0.2);">
+
+    <!-- Header -->
+    <div style="padding:20px 24px 0;border-bottom:1px solid #f0f0f0;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 style="margin:0;font-size:18px;color:#ff6600;"><i class="fa-solid fa-paw"></i> Hồ Sơ Thú Cưng</h2>
+        <button onclick="closePetModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#aaa;line-height:1;">✕</button>
+      </div>
+      <!-- Tabs -->
+      <div style="display:flex;gap:0;">
+        <button class="pet-modal-tab active" data-tab="profile" onclick="switchPetModalTab('profile')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-id-card"></i> Hồ sơ
+        </button>
+        <button class="pet-modal-tab" data-tab="bookings" onclick="switchPetModalTab('bookings')"
+          style="flex:1;padding:10px;border:none;border-bottom:3px solid transparent;background:none;cursor:pointer;font-weight:600;font-size:13px;color:#888;">
+          <i class="fa-solid fa-hotel"></i> Đặt phòng
+        </button>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div style="flex:1;overflow-y:auto;padding:20px 24px;">
+
+      <!-- Panel: Hồ sơ -->
+      <div id="petPanel-profile" class="pet-modal-panel">
+        <h3 id="petFormTitle" style="margin-top:0;color:#ff6600;">🐾 Thêm thú cưng mới</h3>
+        <form id="petForm" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+          <input type="hidden" name="petId" value="">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="petName" placeholder="Tên thú cưng" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <select name="petType" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="dog">🐕 Chó</option>
+              <option value="cat">🐈 Mèo</option>
+            </select>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input name="breed" placeholder="Giống (VD: Poodle)" required style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+            <input name="weight" type="number" step="0.1" min="0.1" placeholder="Cân nặng (kg)" required style="flex:1;min-width:80px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <select name="gender" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+              <option value="">Giới tính</option>
+              <option value="male">Đực</option>
+              <option value="female">Cái</option>
+            </select>
+            <input name="color" placeholder="Màu lông" style="flex:1;min-width:120px;padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          </div>
+          <input name="birthDate" type="date" placeholder="Ngày sinh" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;">
+          <textarea name="notes" rows="2" placeholder="Ghi chú (tùy chọn)" style="padding:8px 10px;border:1px solid #ddd;border-radius:6px;"></textarea>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-submit-booking" style="flex:1;">💾 Lưu thông tin</button>
+            <button type="button" onclick="document.getElementById('petForm').reset(); document.getElementById('petForm').removeAttribute('data-edit-id'); document.getElementById('petFormTitle').textContent='🐾 Thêm thú cưng mới';" class="btn-submit-booking" style="flex:1;background:#bbb;">Đặt lại</button>
+          </div>
+        </form>
+        <div id="petListContainer"></div>
+      </div>
+
+      <!-- Panel: Đặt phòng -->
+      <div id="petPanel-bookings" class="pet-modal-panel" style="display:none;">
+        <!-- Booking status legend -->
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;">
+          <span style="background:#fff8e1;color:#f57c00;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Chờ xác nhận</span>
+          <span style="background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã xác nhận</span>
+          <span style="background:#e3f2fd;color:#1565c0;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đang lưu trú</span>
+          <span style="background:#f3e5f5;color:#6a1b9a;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Hoàn thành</span>
+          <span style="background:#ffebee;color:#c62828;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">Đã hủy</span>
+        </div>
+
+        <div id="modalBookingHistoryList">
+          <div style="text-align:center;padding:30px;color:#aaa;">Đang tải...</div>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div>
+</div>
+</body>
+<script src="assets/js/chatbox.js"></script>
+<script src="assets/js/pet-profile.js"></script>
+</html>
+
+<script src="router.js"></script>

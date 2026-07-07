@@ -1,0 +1,12 @@
+{
+  "Dog": {
+    "Short": 1,
+    "Medium": 1.2,
+    "Long": 1.5
+  },
+  "Cat": {
+    "Short": 1,
+    "Medium": 1.15,
+    "Long": 1.3
+  }
+}

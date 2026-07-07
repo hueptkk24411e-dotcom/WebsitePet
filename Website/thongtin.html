@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petopia - Nhập thông tin thú cưng</title>
+    <link rel="stylesheet" href="testgrooming.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/41bb54_a1498b39e5904f7eaddf9eb102cf18c7~mv2.jpeg" alt="Petopia Logo" style="width: 200px; height: 120px; object-fit:cover;">
+        </div>
+    </header>
+    <div class="booking-section" id="petInfoSection">
+        <h2>📝 Nhập thông tin thú cưng</h2>
+        <form class="booking-form" id="petInfoForm">
+            <div class="form-group">
+                <label for="ownerName">Tên chủ nuôi</label>
+                <input id="ownerName" type="text" placeholder="Tên chủ nuôi" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input id="phone" type="tel" placeholder="0123 456 789" required>
+            </div>
+            <div class="form-group">
+                <label for="petName">Tên thú cưng</label>
+                <input id="petName" type="text" placeholder="Tên thú cưng" required>
+            </div>
+            <div class="form-group">
+                <label for="petType">Loại thú cưng</label>
+                <select id="petType" required>
+                    <option value="">Chọn loại</option>
+                    <option value="dog">Chó</option>
+                    <option value="cat">Mèo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="breed">Giống</label>
+                <select id="breed" required>
+                    <option value="">Chọn giống</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weight">Cân nặng (kg)</label>
+                <select id="weight" required>
+                    <option value="">Chọn cân nặng</option>
+                    <option value="1-5">1 - 5 kg</option>
+                    <option value="5-10">5 - 10 kg</option>
+                    <option value="10-20">10 - 20 kg</option>
+                    <option value="20+">20+ kg</option>
+                </select>
+            </div>
+            <div class="special-notes">
+                <button type="submit" class="btn-submit-booking">✅ Xác nhận thông tin</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+var petInfoForm = document.getElementById('petInfoForm');
+var petTypeSelect = document.getElementById('petType');
+var breedSelect = document.getElementById('breed');
+var dogBreeds = ['Poodle','Golden Retriever','Labrador','Corgi','Husky','Pomeranian','Shiba Inu'];
+var catBreeds = ['British Shorthair','Persian','Maine Coon','Ragdoll','Scottish Fold','Siamese'];
+
+function updateBreeds() {
+    if (!breedSelect || !petTypeSelect) return;
+    var breeds = petTypeSelect.value === 'dog' ? dogBreeds
+               : petTypeSelect.value === 'cat' ? catBreeds : [];
+    breedSelect.innerHTML = '<option value="">Chọn giống</option>';
+    breeds.forEach(function(b) {
+        var opt = document.createElement('option');
+        opt.value = opt.textContent = b;
+        breedSelect.appendChild(opt);
+    });
+}
+
+petTypeSelect.addEventListener('change', updateBreeds);
+
+if (petInfoForm) {
+    petInfoForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = {
+            ownerName: document.getElementById('ownerName').value,
+            phone: document.getElementById('phone').value,
+            petName: document.getElementById('petName').value,
+            petType: petTypeSelect.value,
+            breed: breedSelect.value,
+            weight: document.getElementById('weight').value
+        };
+        sessionStorage.setItem('petInfo', JSON.stringify(data));
+        window.location.href = 'testgrooming.html';
+    });
+}
+</script>
+</body>
+</html>
